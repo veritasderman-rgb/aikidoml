@@ -15,22 +15,57 @@ export default function Zkousky() {
     <>
       <PageHeader title="Zkoušky" subtitle="Přehled stupňů a požadavků" />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-lg text-gray-700 mb-8">
+        {/* Decorative kanji */}
+        <div className="text-center mb-10">
+          <span className="text-6xl text-ink/5 select-none" style={{ fontFamily: "serif" }}>
+            段
+          </span>
+        </div>
+
+        <div className="text-lg text-ink/80 leading-relaxed mb-10">
           <p>
             V aikidu se postupuje systémem kjú (žákovských) a dan (mistrovských) stupňů. Zkoušky
             se skládají před komisí a zahrnují předvedení požadovaných technik.
           </p>
         </div>
 
-        <div className="space-y-4">
+        {/* Table for larger screens */}
+        <div className="hidden md:block overflow-hidden rounded-lg border border-tatami/30">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-ink text-washi">
+                <th className="text-left px-5 py-3 font-semibold tracking-widest text-sm uppercase" style={{ fontFamily: "Georgia, serif" }}>Stupeň</th>
+                <th className="text-left px-5 py-3 font-semibold tracking-widest text-sm uppercase" style={{ fontFamily: "Georgia, serif" }}>Pásek</th>
+                <th className="text-left px-5 py-3 font-semibold tracking-widest text-sm uppercase" style={{ fontFamily: "Georgia, serif" }}>Požadavek</th>
+                <th className="text-left px-5 py-3 font-semibold tracking-widest text-sm uppercase" style={{ fontFamily: "Georgia, serif" }}>Popis</th>
+              </tr>
+            </thead>
+            <tbody>
+              {zkousky.map((z, i) => (
+                <tr
+                  key={z.stupen}
+                  className={i % 2 === 0 ? "bg-washi" : "bg-white"}
+                >
+                  <td className="px-5 py-4 font-bold text-ink">{z.stupen}</td>
+                  <td className="px-5 py-4 text-ink/70">{z.barva}</td>
+                  <td className="px-5 py-4 text-sm text-ink/60">{z.cas}</td>
+                  <td className="px-5 py-4 text-ink/70">{z.popis}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Cards for mobile */}
+        <div className="md:hidden space-y-4">
           {zkousky.map((z) => (
-            <div key={z.stupen} className="bg-white p-5 rounded-lg shadow border border-gray-100">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                <span className="font-bold text-primary text-lg">{z.stupen}</span>
-                <span className="text-gray-600">({z.barva})</span>
-                <span className="text-sm text-gray-400 sm:ml-auto">{z.cas}</span>
+            <div key={z.stupen} className="bg-white p-5 rounded-lg border border-tatami/30">
+              <div className="flex flex-col gap-1">
+                <span className="font-bold text-ink text-lg" style={{ fontFamily: "Georgia, serif" }}>{z.stupen}</span>
+                <span className="text-ink/60">({z.barva})</span>
+                <span className="text-sm text-tatami">{z.cas}</span>
               </div>
-              <p className="text-gray-600 mt-1">{z.popis}</p>
+              <p className="text-ink/70 mt-2">{z.popis}</p>
             </div>
           ))}
         </div>

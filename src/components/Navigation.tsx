@@ -33,7 +33,7 @@ const navItems = [
   },
   { label: "Galerie", href: "/galerie" },
   { label: "Napište nám", href: "/napiste-nam" },
-  { label: "O nás & Kontakty", href: "/o-nas" },
+  { label: "O nás", href: "/o-nas" },
   { label: "Sociální sítě", href: "/socialni-site" },
 ];
 
@@ -42,15 +42,21 @@ export default function Navigation() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <nav className="bg-primary text-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-ink text-washi sticky top-0 z-50 border-b border-ink-soft/30">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-200 transition-colors">
-            Aikido Mariánské Lázně
+          {/* Logo with kanji */}
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <span className="text-vermillion text-2xl font-bold leading-none" style={{ fontFamily: "serif" }}>
+              合氣道
+            </span>
+            <span className="hidden sm:block text-sm tracking-wide text-tatami/80 font-light">
+              Mariánské Lázně
+            </span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-0.5">
             {navItems.map((item) => (
               <div
                 key={item.href}
@@ -60,18 +66,18 @@ export default function Navigation() {
               >
                 <Link
                   href={item.href}
-                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-primary-light transition-colors"
+                  className="px-3 py-2 text-sm tracking-wide text-tatami/90 hover:text-vermillion transition-colors"
                 >
                   {item.label}
-                  {item.children && <span className="ml-1">▾</span>}
+                  {item.children && <span className="ml-1 text-xs opacity-50">▾</span>}
                 </Link>
                 {item.children && openDropdown === item.href && (
-                  <div className="absolute left-0 top-full w-64 bg-white text-gray-800 rounded-md shadow-xl py-1 z-50">
+                  <div className="absolute left-0 top-full w-64 bg-ink border border-ink-soft/30 rounded-b-md shadow-xl py-1 z-50">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2 text-sm hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-sm text-tatami/80 hover:text-vermillion hover:bg-ink-light/50 transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -84,15 +90,15 @@ export default function Navigation() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 rounded-md hover:bg-primary-light"
+            className="lg:hidden p-2 text-tatami hover:text-vermillion transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -100,23 +106,23 @@ export default function Navigation() {
 
         {/* Mobile Nav */}
         {mobileOpen && (
-          <div className="lg:hidden pb-4">
+          <div className="lg:hidden pb-4 border-t border-ink-soft/20 mt-1 pt-3">
             {navItems.map((item) => (
               <div key={item.href}>
                 <Link
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-sm font-medium hover:bg-primary-light"
+                  className="block px-3 py-2 text-sm text-tatami/90 hover:text-vermillion transition-colors"
                   onClick={() => !item.children && setMobileOpen(false)}
                 >
                   {item.label}
                 </Link>
                 {item.children && (
-                  <div className="pl-4">
+                  <div className="pl-4 border-l border-vermillion/20 ml-3">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-3 py-1.5 text-xs text-gray-300 hover:text-white hover:bg-primary-light rounded"
+                        className="block px-3 py-1.5 text-xs text-tatami/60 hover:text-vermillion transition-colors"
                         onClick={() => setMobileOpen(false)}
                       >
                         {child.label}

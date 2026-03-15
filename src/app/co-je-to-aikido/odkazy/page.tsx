@@ -11,6 +11,13 @@ export default function Odkazy() {
     <>
       <PageHeader title="Odkazy a soubory" subtitle="Užitečné zdroje a materiály" />
       <div className="max-w-4xl mx-auto px-4 py-12">
+        {/* Decorative kanji */}
+        <div className="text-center mb-10">
+          <span className="text-6xl text-ink/5 select-none" style={{ fontFamily: "serif" }}>
+            鏈
+          </span>
+        </div>
+
         <div className="space-y-4">
           {odkazy.map((link) => (
             <a
@@ -18,11 +25,16 @@ export default function Odkazy() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-white p-5 rounded-lg shadow hover:shadow-md transition-shadow border border-gray-100 hover:border-primary/20"
+              className="block bg-white p-6 rounded-lg border border-tatami/30 hover:border-vermillion/40 hover:shadow-md transition-all group"
             >
-              <h3 className="font-semibold text-primary mb-1">{link.title}</h3>
-              <p className="text-sm text-gray-500">{link.desc}</p>
-              <p className="text-xs text-gray-400 mt-1">{link.url}</p>
+              <h3
+                className="font-semibold text-ink group-hover:text-vermillion transition-colors tracking-tight"
+                style={{ fontFamily: "Georgia, serif" }}
+              >
+                {link.title}
+              </h3>
+              <p className="text-sm text-ink/60 mt-1">{link.desc}</p>
+              <p className="text-xs text-tatami mt-2">{link.url}</p>
             </a>
           ))}
         </div>

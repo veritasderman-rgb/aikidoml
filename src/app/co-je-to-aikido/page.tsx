@@ -2,7 +2,7 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 const subpages = [
-  { href: "/co-je-to-aikido/co-je-to-ai-ki-do", title: "Co je to Ai Ki Dó", desc: "Význam jednotlivých znaků a filozofie aikida" },
+  { href: "/co-je-to-aikido/co-je-to-ai-ki-do", title: "Co je to Ai Ki Do", desc: "Význam jednotlivých znaků a filozofie aikida" },
   { href: "/co-je-to-aikido/pro-dospele", title: "Aikido pro dospívající a dospělé", desc: "Informace pro začínající dospělé cvičence" },
   { href: "/co-je-to-aikido/pro-deti", title: "Aikido pro děti", desc: "Informace pro rodiče dětských cvičenců" },
   { href: "/co-je-to-aikido/kdy-mohu-cvicit", title: "Kdy mohu a nemohu cvičit", desc: "Věkové a zdravotní podmínky" },
@@ -18,9 +18,9 @@ const subpages = [
 export default function CoJeToAikido() {
   return (
     <>
-      <PageHeader title="Co je to aikidó" subtitle="Poznejte bojové umění harmonie" />
+      <PageHeader title="Co je to aikido" subtitle="Poznejte bojové umění harmonie" />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-lg text-gray-700 mb-12">
+        <div className="prose prose-lg text-ink-soft max-w-none mb-12">
           <p>
             Aikido je jedno z nejmladších bojových umění na světě. Jeho filozofie zdůrazňuje
             harmonii namísto destrukce. Jedná se o systém neodporování, který umožňuje efektivní
@@ -33,16 +33,26 @@ export default function CoJeToAikido() {
           </p>
         </div>
 
-        <h2 className="text-2xl font-bold text-primary mb-6">Zjistěte více</h2>
+        <h2
+          className="text-2xl font-bold text-ink tracking-tight mb-6"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
+          <span className="text-vermillion mr-2">道</span>Zjistěte více
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {subpages.map((page) => (
             <Link
               key={page.href}
               href={page.href}
-              className="block bg-white p-5 rounded-lg shadow hover:shadow-md transition-shadow border border-gray-100 hover:border-primary/20"
+              className="card-ink block bg-white p-5 rounded-lg hover:shadow-md transition-shadow border border-tatami/30"
             >
-              <h3 className="font-semibold text-primary mb-1">{page.title}</h3>
-              <p className="text-sm text-gray-500">{page.desc}</p>
+              <h3
+                className="font-semibold text-ink mb-1 tracking-tight"
+                style={{ fontFamily: "Georgia, serif" }}
+              >
+                {page.title}
+              </h3>
+              <p className="text-sm text-ink-soft">{page.desc}</p>
             </Link>
           ))}
         </div>

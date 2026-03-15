@@ -5,28 +5,33 @@ export default function CoOcekavat() {
     <>
       <PageHeader title="Co očekávat" subtitle="Co vás čeká na prvním tréninku" />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-lg text-gray-700 max-w-none">
+        <div className="prose prose-lg text-ink-soft max-w-none">
           <p>
             Pokud vás zajímá co vlastně očekávat na tréninku aikida, doporučuji navštívit
             následující stránku a vše si důkladně přečíst. Osobní zkušenosti se to ovšem nevyrovná.
           </p>
 
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-4 my-6 not-prose rounded-r-lg">
-            <h3 className="font-bold text-blue-800 mb-2">Doporučený zdroj</h3>
-            <p className="text-blue-700">
+          <div className="bg-washi-dark border-l-3 border-vermillion p-4 my-6 not-prose rounded-r-lg">
+            <h3
+              className="font-bold text-ink mb-2 tracking-tight"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
+              <span className="text-vermillion mr-1">書</span> Doporučený zdroj
+            </h3>
+            <p className="text-ink-soft">
               Podrobný průvodce pro začátečníky najdete na:{" "}
               <a
                 href="http://www.cfai.cz/aikido/prirucka/prirucka-aikido"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline font-semibold"
+                className="text-vermillion hover:text-vermillion-dark underline font-semibold"
               >
                 www.cfai.cz/aikido/prirucka/prirucka-aikido
               </a>
             </p>
           </div>
 
-          <h2>Obecně na tréninku očekávejte</h2>
+          <h2 style={{ fontFamily: "Georgia, serif" }} className="text-ink tracking-tight">Obecně na tréninku očekávejte</h2>
           <ul>
             <li>Rozcvičku a protažení na začátku</li>
             <li>Nácvik pádů (ukemi) – základní dovednost v aikidu</li>

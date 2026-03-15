@@ -5,25 +5,53 @@ export default function JakZavazatPasek() {
     <>
       <PageHeader title="Jak si správně zavázat pásek" />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-lg text-gray-700 max-w-none">
-          <p>
+        {/* Decorative kanji */}
+        <div className="text-center mb-10">
+          <span className="text-6xl text-ink/5 select-none" style={{ fontFamily: "serif" }}>
+            帯
+          </span>
+        </div>
+
+        <div className="max-w-none text-ink/80 leading-relaxed">
+          <p className="text-lg">
             Pro všechny, kteří si v tom nejste jistí, přinášíme návod, jak si zavázat pásek
             u vašeho obi.
           </p>
 
-          <h2>Postup vázání</h2>
-          <ol className="space-y-3">
-            <li>Najděte střed pásku a přiložte jej na břicho, těsně pod pupek.</li>
-            <li>Oba konce obtočte kolem těla dozadu a zpět dopředu.</li>
-            <li>Překřižte oba konce – pravý přes levý.</li>
-            <li>Spodní konec protáhněte pod všemi vrstvami pásku zdola nahoru.</li>
-            <li>Utáhněte a zavažte jednoduchý uzel.</li>
-            <li>Oba konce by měly být stejně dlouhé a uzel plochý.</li>
+          <h2
+            className="text-2xl font-bold text-ink mt-10 mb-6 tracking-tight"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Postup vázání
+          </h2>
+          <ol className="space-y-4">
+            {[
+              "Najděte střed pásku a přiložte jej na břicho, těsně pod pupek.",
+              "Oba konce obtočte kolem těla dozadu a zpět dopředu.",
+              "Překřižte oba konce – pravý přes levý.",
+              "Spodní konec protáhněte pod všemi vrstvami pásku zdola nahoru.",
+              "Utáhněte a zavažte jednoduchý uzel.",
+              "Oba konce by měly být stejně dlouhé a uzel plochý.",
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-4">
+                <span
+                  className="flex-shrink-0 w-8 h-8 bg-ink text-washi rounded-full flex items-center justify-center text-sm font-bold"
+                >
+                  {i + 1}
+                </span>
+                <span className="pt-1">{step}</span>
+              </li>
+            ))}
           </ol>
 
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-4 my-6 not-prose rounded-r-lg">
-            <h3 className="font-bold text-blue-800 mb-2">Tip</h3>
-            <p className="text-blue-700">
+          <div className="bg-washi-dark border-l-3 border-vermillion p-5 my-8 rounded-r-lg">
+            <h3
+              className="font-bold text-ink mb-2 tracking-tight"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
+              Tip
+            </h3>
+            <p className="text-ink/70">
               Pokud si nejste jistí, požádejte na tréninku zkušenějšího spolucvičence nebo
               instruktora – rádi vám pomohou.
             </p>

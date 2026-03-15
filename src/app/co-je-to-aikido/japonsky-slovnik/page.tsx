@@ -47,19 +47,23 @@ export default function JaponskySlovnik() {
     <>
       <PageHeader title="Japonský slovník" subtitle="Základní termíny používané v aikidu" />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="bg-white rounded-xl shadow overflow-hidden">
+        <div className="text-center mb-10">
+          <span className="text-6xl text-ink/5 select-none" style={{ fontFamily: "serif" }}>辞書</span>
+        </div>
+
+        <div className="overflow-hidden rounded-lg border border-tatami/30">
           <table className="w-full">
             <thead>
-              <tr className="bg-primary text-white">
-                <th className="text-left px-6 py-3 font-semibold">Japonsky</th>
-                <th className="text-left px-6 py-3 font-semibold">Význam</th>
+              <tr className="bg-ink text-washi">
+                <th className="text-left px-6 py-3 font-semibold tracking-widest text-sm uppercase" style={{ fontFamily: "Georgia, serif" }}>Japonsky</th>
+                <th className="text-left px-6 py-3 font-semibold tracking-widest text-sm uppercase" style={{ fontFamily: "Georgia, serif" }}>Význam</th>
               </tr>
             </thead>
             <tbody>
               {slovnik.map((item, i) => (
-                <tr key={item.term} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                  <td className="px-6 py-3 font-semibold text-primary">{item.term}</td>
-                  <td className="px-6 py-3 text-gray-700">{item.meaning}</td>
+                <tr key={item.term} className={i % 2 === 0 ? "bg-washi" : "bg-white"}>
+                  <td className="px-6 py-3 font-semibold text-ink">{item.term}</td>
+                  <td className="px-6 py-3 text-ink/70">{item.meaning}</td>
                 </tr>
               ))}
             </tbody>
