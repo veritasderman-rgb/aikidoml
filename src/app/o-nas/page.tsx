@@ -38,7 +38,7 @@ export default function ONas() {
         >
           Vedení klubu
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl">
           <div className="bg-white p-6 rounded-lg border border-tatami/30 text-center">
             <div className="w-20 h-20 bg-washi rounded-full mx-auto mb-4 flex items-center justify-center">
               <span className="text-2xl text-tatami" style={{ fontFamily: "serif" }}>武</span>
@@ -70,21 +70,6 @@ export default function ONas() {
             </a>
             <a href="tel:+420607517967" className="text-vermillion text-sm hover:text-vermillion-dark block mt-1">
               607 517 967
-            </a>
-          </div>
-          <div className="bg-white p-6 rounded-lg border border-tatami/30 text-center">
-            <div className="w-20 h-20 bg-washi rounded-full mx-auto mb-4 flex items-center justify-center">
-              <span className="text-2xl text-tatami" style={{ fontFamily: "serif" }}>武</span>
-            </div>
-            <h3
-              className="font-bold text-ink text-lg"
-              style={{ fontFamily: "Georgia, serif" }}
-            >
-              Petr Schlossar
-            </h3>
-            <p className="text-sm text-ink/50 mb-3">Trenér</p>
-            <a href="mailto:zubekml@seznam.cz" className="text-vermillion text-sm hover:text-vermillion-dark block">
-              zubekml@seznam.cz
             </a>
           </div>
         </div>

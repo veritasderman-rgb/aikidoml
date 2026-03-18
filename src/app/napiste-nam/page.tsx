@@ -65,18 +65,6 @@ export default function NapisteNam() {
                 </a>
               </div>
 
-              <div className="bg-white p-5 rounded-lg border border-tatami/30">
-                <h3 className="font-bold text-ink" style={{ fontFamily: "Georgia, serif" }}>
-                  Petr Schlossar
-                </h3>
-                <p className="text-xs text-ink/50">Trenér</p>
-                <a
-                  href="mailto:zubekml@seznam.cz"
-                  className="text-vermillion hover:text-vermillion-dark block mt-1 text-sm"
-                >
-                  zubekml@seznam.cz
-                </a>
-              </div>
             </div>
           </div>
 
