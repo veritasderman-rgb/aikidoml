@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Ceník aikida",
+  description:
+    "Ceník tréninků aikida v Mariánských Lázních. Dospělí 200 Kč/měsíc, studenti 160 Kč/měsíc. První tři tréninky jsou zcela zdarma.",
+};
 
 export default function Cenik() {
   return (

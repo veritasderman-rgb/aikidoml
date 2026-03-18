@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Napište nám",
+  description:
+    "Kontaktujte aikido klub BUDO CLUB Mariánské Lázně. E-maily a telefon na trenéry, kontaktní formulář pro dotazy ohledně tréninků a náboru.",
+};
 
 export default function NapisteNam() {
   return (
@@ -28,8 +35,22 @@ export default function NapisteNam() {
             <div className="space-y-4">
               <div className="bg-white p-5 rounded-lg border border-tatami/30">
                 <h3 className="font-bold text-ink" style={{ fontFamily: "Georgia, serif" }}>
+                  Alexander Tóth
+                </h3>
+                <p className="text-xs text-ink/50">Hlavní trenér</p>
+                <a
+                  href="mailto:alex.toth@tiscali.cz"
+                  className="text-vermillion hover:text-vermillion-dark block mt-1 text-sm"
+                >
+                  alex.toth@tiscali.cz
+                </a>
+              </div>
+
+              <div className="bg-white p-5 rounded-lg border border-tatami/30">
+                <h3 className="font-bold text-ink" style={{ fontFamily: "Georgia, serif" }}>
                   Josef Pavlovic
                 </h3>
+                <p className="text-xs text-ink/50">Trenér</p>
                 <a
                   href="mailto:mail@josefpavlovic.cz"
                   className="text-vermillion hover:text-vermillion-dark block mt-1 text-sm"
@@ -46,20 +67,9 @@ export default function NapisteNam() {
 
               <div className="bg-white p-5 rounded-lg border border-tatami/30">
                 <h3 className="font-bold text-ink" style={{ fontFamily: "Georgia, serif" }}>
-                  Alexander Tóth
-                </h3>
-                <a
-                  href="mailto:alex.toth@tiscali.cz"
-                  className="text-vermillion hover:text-vermillion-dark block mt-1 text-sm"
-                >
-                  alex.toth@tiscali.cz
-                </a>
-              </div>
-
-              <div className="bg-white p-5 rounded-lg border border-tatami/30">
-                <h3 className="font-bold text-ink" style={{ fontFamily: "Georgia, serif" }}>
                   Petr Schlossar
                 </h3>
+                <p className="text-xs text-ink/50">Trenér</p>
                 <a
                   href="mailto:zubekml@seznam.cz"
                   className="text-vermillion hover:text-vermillion-dark block mt-1 text-sm"

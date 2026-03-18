@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Zkoušky a stupně v aikidu",
+  description:
+    "Přehled zkouškových stupňů v aikidu od 6. kjú po 1. dan. Požadavky na počet tréninků, barvy pásků a popis dovedností pro každý stupeň.",
+};
 
 const zkousky = [
   { stupen: "6. kjú", barva: "Bílý pásek", cas: "cca 60 tréninků", popis: "Základní pády, úchopy, první techniky" },

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Japonský slovník aikida",
+  description:
+    "Slovník japonských výrazů používaných v aikidu. Překlady základních pojmů – techniky, pozice, zbraně, pozdravy a další termíny pro cvičence.",
+};
 
 const slovnik = [
   { term: "Ai", meaning: "Harmonie, sjednocení" },

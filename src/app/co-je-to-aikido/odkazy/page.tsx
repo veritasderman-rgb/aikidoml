@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Odkazy a soubory",
+  description:
+    "Užitečné odkazy a materiály pro cvičence aikida. Česká federace aikido, příručka pro začátečníky a další zdroje informací o aikidu.",
+};
 
 const odkazy = [
   { title: "Česká federace aikido (ČFAI)", url: "http://www.cfai.cz", desc: "Zastřešující organizace aikida v České republice" },

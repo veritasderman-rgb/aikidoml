@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Nábor nových členů",
+  description:
+    "Přidejte se k aikido klubu BUDO CLUB v Mariánských Lázních. První tři tréninky zdarma, žádné předchozí zkušenosti nejsou potřeba. Přijímáme děti i dospělé.",
+};
 
 export default function Nabor() {
   return (

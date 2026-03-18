@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Detaily tréninků",
+  description:
+    "Vše o trénincích aikida v Mariánských Lázních – rozvrh, ceník, místo konání a nábor nových členů. Přehled praktických informací pro cvičence.",
+};
 
 const subpages = [
   { href: "/detaily-treninku/cenik", title: "Ceník aikida", desc: "Ceny tréninků a členských příspěvků", kanji: "円" },
@@ -27,12 +34,12 @@ export default function DetailyTreninku() {
               >
                 {page.kanji}
               </span>
-              <h3
+              <h2
                 className="text-xl font-bold text-ink group-hover:text-vermillion transition-colors mb-2 tracking-tight relative"
                 style={{ fontFamily: "Georgia, serif" }}
               >
                 {page.title}
-              </h3>
+              </h2>
               <p className="text-ink/60 relative">{page.desc}</p>
             </Link>
           ))}

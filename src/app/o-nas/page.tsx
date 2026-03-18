@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "O nás a kontakty",
+  description:
+    "Seznamte se s aikido klubem BUDO CLUB v Mariánských Lázních. Kontakty na trenéry, informace o vedení klubu a adresa dódžó na Tyršově ulici.",
+};
 
 export default function ONas() {
   return (
@@ -40,9 +47,24 @@ export default function ONas() {
               className="font-bold text-ink text-lg"
               style={{ fontFamily: "Georgia, serif" }}
             >
+              Alexander Tóth
+            </h3>
+            <p className="text-sm text-ink/50 mb-3">Hlavní trenér</p>
+            <a href="mailto:alex.toth@tiscali.cz" className="text-vermillion text-sm hover:text-vermillion-dark block">
+              alex.toth@tiscali.cz
+            </a>
+          </div>
+          <div className="bg-white p-6 rounded-lg border border-tatami/30 text-center">
+            <div className="w-20 h-20 bg-washi rounded-full mx-auto mb-4 flex items-center justify-center">
+              <span className="text-2xl text-tatami" style={{ fontFamily: "serif" }}>武</span>
+            </div>
+            <h3
+              className="font-bold text-ink text-lg"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
               Josef Pavlovic
             </h3>
-            <p className="text-sm text-ink/50 mb-3">Hlavní instruktor</p>
+            <p className="text-sm text-ink/50 mb-3">Trenér</p>
             <a href="mailto:mail@josefpavlovic.cz" className="text-vermillion text-sm hover:text-vermillion-dark block">
               mail@josefpavlovic.cz
             </a>
@@ -58,24 +80,9 @@ export default function ONas() {
               className="font-bold text-ink text-lg"
               style={{ fontFamily: "Georgia, serif" }}
             >
-              Alexander Tóth
-            </h3>
-            <p className="text-sm text-ink/50 mb-3">Instruktor</p>
-            <a href="mailto:alex.toth@tiscali.cz" className="text-vermillion text-sm hover:text-vermillion-dark block">
-              alex.toth@tiscali.cz
-            </a>
-          </div>
-          <div className="bg-white p-6 rounded-lg border border-tatami/30 text-center">
-            <div className="w-20 h-20 bg-washi rounded-full mx-auto mb-4 flex items-center justify-center">
-              <span className="text-2xl text-tatami" style={{ fontFamily: "serif" }}>武</span>
-            </div>
-            <h3
-              className="font-bold text-ink text-lg"
-              style={{ fontFamily: "Georgia, serif" }}
-            >
               Petr Schlossar
             </h3>
-            <p className="text-sm text-ink/50 mb-3">Instruktor</p>
+            <p className="text-sm text-ink/50 mb-3">Trenér</p>
             <a href="mailto:zubekml@seznam.cz" className="text-vermillion text-sm hover:text-vermillion-dark block">
               zubekml@seznam.cz
             </a>

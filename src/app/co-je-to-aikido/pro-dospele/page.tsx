@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Aikido pro dospívající a dospělé",
+  description:
+    "Informace o aikidu pro dospívající a dospělé začátečníky. Oblečení, vybavení, etiketa na tatami, pády a bezpečnost při cvičení aikida.",
+};
 
 export default function ProDospele() {
   return (

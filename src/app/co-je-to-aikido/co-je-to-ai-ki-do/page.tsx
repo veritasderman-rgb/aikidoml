@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Co je to Ai Ki Do",
+  description:
+    "Význam japonských znaků Ai (harmonie), Ki (energie) a Do (cesta). Historie aikida, zakladatel Morihei Ueshiba a filozofie bojového umění.",
+};
 
 export default function CoJeToAiKiDo() {
   return (

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Kde nás najdete",
+  description:
+    "Adresa a mapa dódžó BUDO CLUB na Tyršově ulici v Mariánských Lázních. Návod jak se k nám dostat – za zimním stadiónem u Kauflandu.",
+};
 
 export default function Kde() {
   return (

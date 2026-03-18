@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Co očekávat na tréninku",
+  description:
+    "Co vás čeká na prvním tréninku aikida. Rozcvička, nácvik pádů, procvičování technik ve dvojicích. Průvodce pro úplné začátečníky aikida.",
+};
 
 export default function CoOcekavat() {
   return (

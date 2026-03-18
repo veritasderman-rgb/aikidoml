@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Aikido pro děti",
+  description:
+    "Aikido pro děti v Mariánských Lázních. Rozvoj koordinace, sebevědomí a disciplíny. Informace pro rodiče o dětských trénincích v BUDO CLUBu.",
+};
 
 export default function ProDeti() {
   return (

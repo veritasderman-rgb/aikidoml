@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Kdy mohu a nemohu cvičit",
+  description:
+    "Věkové a zdravotní podmínky pro cvičení aikida. Aikido je přístupné od 14 let bez ohledu na pohlaví či velikost. Informace o zdravotních omezeních.",
+};
 
 export default function KdyMohuCvicit() {
   return (

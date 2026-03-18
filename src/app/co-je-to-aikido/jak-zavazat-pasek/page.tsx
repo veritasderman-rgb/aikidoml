@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Jak si zavázat pásek",
+  description:
+    "Návod krok za krokem, jak si správně zavázat pásek (obi) ke kimonu pro aikido. Šest jednoduchých kroků pro začátečníky i pokročilé.",
+};
 
 export default function JakZavazatPasek() {
   return (

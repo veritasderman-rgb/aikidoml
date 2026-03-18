@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Co je to aikido",
+  description:
+    "Poznejte aikido – japonské bojové umění harmonie. Filozofie, techniky, etiketa, slovník pojmů a vše pro začátečníky i pokročilé cvičence.",
+};
 
 const subpages = [
   { href: "/co-je-to-aikido/co-je-to-ai-ki-do", title: "Co je to Ai Ki Do", desc: "Význam jednotlivých znaků a filozofie aikida" },

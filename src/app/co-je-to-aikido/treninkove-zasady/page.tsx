@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Tréninkové zásady",
+  description:
+    "Základní tréninkové zásady aikida stanovené zakladatelem Morihei Ueshibou. Principy cvičení, respektu a osobního rozvoje na cestě aikida.",
+};
 
 export default function TreninkoveZasady() {
   return (

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Sociální sítě",
+  description:
+    "Sledujte aikido klub BUDO CLUB Mariánské Lázně na Facebooku. Aktuální informace o trénincích, seminářích a akcích klubu na sociálních sítích.",
+};
 
 export default function SocialniSite() {
   return (
@@ -25,12 +32,12 @@ export default function SocialniSite() {
             >
               友
             </span>
-            <h3
+            <h2
               className="text-xl font-bold text-ink group-hover:text-vermillion transition-colors mb-2 tracking-tight"
               style={{ fontFamily: "Georgia, serif" }}
             >
               Facebook
-            </h3>
+            </h2>
             <p className="text-ink/60 mb-4">
               Sledujte naši stránku na Facebooku pro aktuální informace o trénincích,
               seminářích a akcích klubu.
@@ -47,12 +54,12 @@ export default function SocialniSite() {
             >
               信
             </span>
-            <h3
+            <h2
               className="text-xl font-bold text-ink mb-2 tracking-tight"
               style={{ fontFamily: "Georgia, serif" }}
             >
               Kontaktujte nás přímo
-            </h3>
+            </h2>
             <p className="text-ink/60 mb-4">
               Pro aktuální informace nás kontaktujte e-mailem nebo telefonicky.
               Rádi vás budeme informovat o novinkách v klubu.

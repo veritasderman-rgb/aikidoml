@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Časy a popis tréninků",
+  description:
+    "Rozvrh tréninků aikida v Mariánských Lázních. Úterý 18:30–20:00, pátek 17:30–19:00 v BUDO CLUBu. Průběh tréninku a co si vzít s sebou.",
+};
 
 export default function Casy() {
   return (

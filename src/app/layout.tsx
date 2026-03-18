@@ -4,9 +4,34 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aikido Mariánské Lázně – BUDO CLUB",
+  title: {
+    default: "Aikido Mariánské Lázně – BUDO CLUB",
+    template: "%s | Aikido Mariánské Lázně",
+  },
   description:
     "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu na Tyršově ulici.",
+  metadataBase: new URL("https://aikidoml.cz"),
+  openGraph: {
+    type: "website",
+    locale: "cs_CZ",
+    siteName: "Aikido Mariánské Lázně – BUDO CLUB",
+    title: "Aikido Mariánské Lázně – BUDO CLUB",
+    description:
+      "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu na Tyršově ulici.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Aikido Mariánské Lázně – BUDO CLUB",
+    description:
+      "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé.",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

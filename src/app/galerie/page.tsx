@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Galerie",
+  description:
+    "Fotografie a videa z tréninků aikida, seminářů a ukázkových cvičení klubu BUDO CLUB Mariánské Lázně. Záznamy ze seminářů a kompilace fotek.",
+};
 
 const galerie = [
   { title: "Fotografie z posledního tréninku 2014", date: "Pátek 19.12.2014", type: "foto" },

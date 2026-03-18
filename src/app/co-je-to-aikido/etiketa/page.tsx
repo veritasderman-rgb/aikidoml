@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+  title: "Etiketa v aikidu",
+  description:
+    "Pravidla chování v dódžó a na tatami. Etické zásady aikida – pozdravy, úklony, správný sed, bezpečnostní pravidla a hygiena při cvičení.",
+};
 
 export default function Etiketa() {
   return (

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Aikido Mariánské Lázně – BUDO CLUB",
+  description:
+    "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu. První 3 tréninky zdarma.",
+};
 
 export default function Home() {
   return (
@@ -16,7 +23,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 py-24 lg:py-36 relative">
           <div className="flex flex-col items-center text-center">
             {/* Ensō circle SVG */}
-            <svg viewBox="0 0 200 200" className="w-32 h-32 mb-8 opacity-20">
+            <svg viewBox="0 0 200 200" className="w-32 h-32 mb-8 opacity-20" role="img" aria-label="Ensó kruh – symbol harmonie">
               <circle
                 cx="100"
                 cy="100"
