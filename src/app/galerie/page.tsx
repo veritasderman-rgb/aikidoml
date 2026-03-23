@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 const photos = [
-  { src: "/photos/ukazka-hod-1.jpg", alt: "Ukázkové cvičení – hod na tatami" },
-  { src: "/photos/ukazka-hod-2.jpg", alt: "Ukázkové cvičení – technika pádu" },
-  { src: "/photos/ukazka-hod-3.jpg", alt: "Ukázkové cvičení – letový pád" },
-  { src: "/photos/ukazka-hod-4.jpg", alt: "Ukázkové cvičení – koshi nage" },
-  { src: "/photos/ukazka-pokrocili.jpg", alt: "Ukázkové cvičení – pokročilí aikidisté" },
-  { src: "/photos/vanocni-trenink.jpg", alt: "Vánoční trénink – skupinové foto" },
-  { src: "/photos/dospeli-skupina.jpg", alt: "Skupina dospělých aikidistů" },
-  { src: "/photos/seminar-skupina.jpg", alt: "Skupinové foto ze semináře" },
+  { src: "/photos/IMG_4070.jpg", alt: "Ukázkové cvičení – hod na tatami" },
+  { src: "/photos/IMG_4099.jpg", alt: "Ukázkové cvičení – technika pádu" },
+  { src: "/photos/IMG_4105.jpg", alt: "Ukázkové cvičení – letový pád" },
+  { src: "/photos/IMG_4128.jpg", alt: "Ukázkové cvičení – koshi nage" },
+  { src: "/photos/IMG_4508.jpg", alt: "Ukázkové cvičení – pokročilí aikidisté" },
+  { src: "/photos/IMG_8630.jpg", alt: "Vánoční trénink – skupinové foto" },
+  { src: "/photos/IMG_8643.jpg", alt: "Skupina dospělých aikidistů" },
+  { src: "/photos/IMG_9601.jpg", alt: "Skupinové foto ze semináře" },
 ];
 
 export default function Galerie() {
