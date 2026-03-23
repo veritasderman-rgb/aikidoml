@@ -31,6 +31,7 @@ const navItems = [
       { label: "Kde?", href: "/detaily-treninku/kde" },
     ],
   },
+  { label: "Semináře", href: "/#seminare" },
   { label: "Galerie", href: "/galerie" },
   { label: "Napište nám", href: "/napiste-nam" },
   { label: "O nás", href: "/o-nas" },

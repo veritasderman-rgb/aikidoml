@@ -104,6 +104,101 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Aktuality */}
+      <section className="max-w-5xl mx-auto px-4 py-16" id="aktuality">
+        <div className="text-center mb-10">
+          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>新</span>
+          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>
+            Aktuality
+          </h2>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border border-tatami/30 rounded-lg p-6 shadow-md">
+            <div className="flex items-start gap-4">
+              <div className="hidden sm:block text-vermillion text-2xl mt-1" style={{ fontFamily: "serif" }}>休</div>
+              <div>
+                <h3 className="font-semibold text-ink mb-2">Velikonoční prázdniny</h3>
+                <p className="text-ink-soft leading-relaxed">
+                  Během velikonočních prázdnin <strong className="text-ink">ve čtvrtek 3. dubna</strong> tréninky nebudou.
+                  Na všechny se těšíme zase <strong className="text-ink">v pondělí 7. dubna 2026</strong>!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Semináře a pozvánky */}
+      <section className="max-w-5xl mx-auto px-4 pb-16" id="seminare">
+        <div className="text-center mb-10">
+          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>研</span>
+          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>
+            Semináře a pozvánky
+          </h2>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md">
+            <div className="bg-ink px-6 py-4">
+              <h3 className="text-washi font-bold text-lg tracking-wide" style={{ fontFamily: "Georgia, serif" }}>
+                Aikido seminář
+              </h3>
+              <p className="text-tatami/70 text-sm">
+                Aikido pro každého &amp; Aikido Mariánské Lázně
+              </p>
+            </div>
+            <div className="p-6 space-y-4">
+              <div>
+                <p className="text-ink font-semibold mb-1">
+                  Pod vedením Richarda Wasserbauera
+                </p>
+                <p className="text-vermillion text-sm font-medium">5. DAN AIKIKAI</p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">Kdy</p>
+                  <p className="text-ink font-medium">22. – 23. května 2026</p>
+                </div>
+                <div>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">Kde</p>
+                  <p className="text-ink font-medium">Budo club Mariánské Lázně</p>
+                  <p className="text-ink-soft">Tyršova ulice, Mariánské Lázně</p>
+                </div>
+              </div>
+
+              <div>
+                <p className="text-ink-soft uppercase tracking-widest text-xs mb-2 font-semibold">Tréninky</p>
+                <div className="text-sm text-ink space-y-1">
+                  <p>Pátek 18:00 – 20:00</p>
+                  <p>Sobota 10:00 – 12:00</p>
+                  <p>Sobota 14:00 – 16:00</p>
+                </div>
+              </div>
+
+              <div className="h-px bg-gradient-to-r from-transparent via-tatami to-transparent" />
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">Cena</p>
+                  <p className="text-ink">Celá stáž <strong>500 Kč</strong></p>
+                  <p className="text-ink">Jeden trénink <strong>250 Kč</strong></p>
+                </div>
+                <div>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">Info</p>
+                  <p className="text-ink-soft">Přespání na tatami možné.</p>
+                  <p className="text-ink-soft">Zbraně sebou!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="h-px bg-gradient-to-r from-transparent via-tatami to-transparent" />
+      </div>
+
       {/* About section */}
       <section className="max-w-3xl mx-auto px-4 py-20">
         <div className="text-center mb-10">
