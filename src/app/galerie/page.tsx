@@ -1,32 +1,29 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Galerie",
   description:
-    "Fotografie a videa z tréninků aikida, seminářů a ukázkových cvičení klubu BUDO CLUB Mariánské Lázně. Záznamy ze seminářů a kompilace fotek.",
+    "Fotografie z tréninků aikida, seminářů a ukázkových cvičení klubu BUDO CLUB Mariánské Lázně.",
 };
 
-const galerie = [
-  { title: "Fotografie z posledního tréninku 2014", date: "Pátek 19.12.2014", type: "foto" },
-  { title: "Fotografie před zkouškami – 5. kjú", date: "16.12.2014", type: "foto" },
-  { title: "Začátek sezóny 2014/2015 – s dětmi", date: "2014", type: "foto" },
-  { title: "Konec roku 2014", date: "17.6.2014", type: "foto" },
-  { title: "Fotografie před zkouškami", date: "1.11.2013", type: "foto" },
-  { title: "Fotografie z tréninku", date: "18.12.2012", type: "foto" },
-  { title: "Seminář Richard Wasserbauer", date: "2015", type: "video" },
-  { title: "Seminář Pavel Bolf", date: "22.–23.11.2014", type: "video" },
-  { title: "Video z tréninku", date: "10.1.2014", type: "video" },
-  { title: "Ukázkové cvičení na kolonádě – Mariánské Lázně", date: "2012", type: "video" },
-  { title: "Aikido – kompilace fotografií (od roku 1997)", date: "1997–současnost", type: "video" },
-  { title: "Ukázkové video – Christian Tissier Shihan", date: "", type: "video" },
+const photos = [
+  { src: "/photos/IMG_4070.jpg", alt: "Ukázkové cvičení – hod na tatami" },
+  { src: "/photos/IMG_4099.jpg", alt: "Ukázkové cvičení – technika pádu" },
+  { src: "/photos/IMG_4105.jpg", alt: "Ukázkové cvičení – letový pád" },
+  { src: "/photos/IMG_4128.jpg", alt: "Ukázkové cvičení – koshi nage" },
+  { src: "/photos/IMG_4508.jpg", alt: "Ukázkové cvičení – pokročilí aikidisté" },
+  { src: "/photos/IMG_8630.jpg", alt: "Vánoční trénink – skupinové foto" },
+  { src: "/photos/IMG_8643.jpg", alt: "Skupina dospělých aikidistů" },
+  { src: "/photos/IMG_9601.jpg", alt: "Skupinové foto ze semináře" },
 ];
 
 export default function Galerie() {
   return (
     <>
-      <PageHeader title="Galerie" subtitle="Fotografie a videa z tréninků a akcí" />
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <PageHeader title="Galerie" subtitle="Fotografie z tréninků a akcí" />
+      <div className="max-w-5xl mx-auto px-4 py-12">
         {/* Decorative kanji */}
         <div className="text-center mb-10">
           <span className="text-6xl text-ink/5 select-none" style={{ fontFamily: "serif" }}>
@@ -34,72 +31,22 @@ export default function Galerie() {
           </span>
         </div>
 
-        <p className="text-ink/60 text-lg mb-10">
-          Přehled fotografií a videí z tréninků, seminářů a ukázkových cvičení našeho klubu.
-        </p>
-
-        <h2
-          className="text-2xl font-bold text-ink mb-6 tracking-tight"
-          style={{ fontFamily: "Georgia, serif" }}
-        >
-          Fotogalerie
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          {galerie
-            .filter((g) => g.type === "foto")
-            .map((item) => (
-              <div
-                key={item.title}
-                className="bg-white p-5 rounded-lg border border-tatami/30 hover:border-vermillion/40 transition-all"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="text-2xl text-tatami" style={{ fontFamily: "serif" }}>
-                    写
-                  </div>
-                  <div>
-                    <h3
-                      className="font-semibold text-ink"
-                      style={{ fontFamily: "Georgia, serif" }}
-                    >
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-ink/50">{item.date}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
-
-        <h2
-          className="text-2xl font-bold text-ink mb-6 tracking-tight"
-          style={{ fontFamily: "Georgia, serif" }}
-        >
-          Videa
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {galerie
-            .filter((g) => g.type === "video")
-            .map((item) => (
-              <div
-                key={item.title}
-                className="bg-white p-5 rounded-lg border border-tatami/30 hover:border-vermillion/40 transition-all"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="text-2xl text-tatami" style={{ fontFamily: "serif" }}>
-                    映
-                  </div>
-                  <div>
-                    <h3
-                      className="font-semibold text-ink"
-                      style={{ fontFamily: "Georgia, serif" }}
-                    >
-                      {item.title}
-                    </h3>
-                    {item.date && <p className="text-sm text-ink/50">{item.date}</p>}
-                  </div>
-                </div>
-              </div>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {photos.map((photo) => (
+            <div
+              key={photo.src}
+              className="overflow-hidden rounded-lg border border-tatami/30 bg-white"
+            >
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={800}
+                height={533}
+                unoptimized
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          ))}
         </div>
 
         <div className="mt-12 text-center">
