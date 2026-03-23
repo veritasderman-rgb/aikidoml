@@ -104,6 +104,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="py-20">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>始</span>
+          <h2
+            className="text-2xl font-bold text-ink mb-4 tracking-tight"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Přijďte si zkusit trénink
+          </h2>
+          <p className="text-ink-soft mb-8 leading-relaxed">
+            Stačí tepláky a tričko s dlouhým rukávem. Cvičí se na boso. Žádné předchozí zkušenosti
+            nejsou potřeba.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/napiste-nam"
+              className="bg-ink text-washi font-medium px-8 py-3.5 rounded hover:bg-ink-light transition-colors text-sm tracking-widest uppercase"
+            >
+              Napište nám
+            </Link>
+            <a
+              href="tel:+420607517967"
+              className="border border-ink/20 text-ink font-medium px-8 py-3.5 rounded hover:border-vermillion hover:text-vermillion transition-colors text-sm tracking-widest uppercase"
+            >
+              607 517 967
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Aktuality */}
       <section className="max-w-5xl mx-auto px-4 py-16" id="aktuality">
         <div className="text-center mb-10">
@@ -245,41 +276,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="h-px bg-gradient-to-r from-transparent via-tatami to-transparent" />
-      </div>
-
-      {/* CTA */}
-      <section className="py-20">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>始</span>
-          <h2
-            className="text-2xl font-bold text-ink mb-4 tracking-tight"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
-            Přijďte si zkusit trénink
-          </h2>
-          <p className="text-ink-soft mb-8 leading-relaxed">
-            Stačí tepláky a tričko s dlouhým rukávem. Cvičí se na boso. Žádné předchozí zkušenosti
-            nejsou potřeba.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/napiste-nam"
-              className="bg-ink text-washi font-medium px-8 py-3.5 rounded hover:bg-ink-light transition-colors text-sm tracking-widest uppercase"
-            >
-              Napište nám
-            </Link>
-            <a
-              href="tel:+420607517967"
-              className="border border-ink/20 text-ink font-medium px-8 py-3.5 rounded hover:border-vermillion hover:text-vermillion transition-colors text-sm tracking-widest uppercase"
-            >
-              607 517 967
-            </a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
