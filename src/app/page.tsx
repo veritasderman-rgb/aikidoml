@@ -189,6 +189,21 @@ export default function Home() {
                   <p className="text-ink-soft">Zbraně sebou!</p>
                 </div>
               </div>
+
+              <div className="pt-2">
+                <a
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aikido+semin%C3%A1%C5%99+%E2%80%93+Richard+Wasserbauer&dates=20260522T160000Z/20260523T140000Z&location=Budo+club+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B%2C+Tyr%C5%A1ova+ulice%2C+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B&details=Aikido+semin%C3%A1%C5%99+pod+veden%C3%ADm+Richarda+Wasserbauera+(5.+DAN+AIKIKAI).%0AP%C3%A1tek+18%3A00%E2%80%9320%3A00%2C+Sobota+10%3A00%E2%80%9312%3A00+a+14%3A00%E2%80%9316%3A00.%0ACel%C3%A1+st%C3%A1%C5%BE+500+K%C4%8D%2C+jeden+tr%C3%A9nink+250+K%C4%8D."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-vermillion text-washi font-medium px-6 py-2.5 rounded hover:bg-vermillion-light transition-colors text-sm tracking-widest uppercase"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                  </svg>
+                  Přidat do kalendáře
+                </a>
+              </div>
             </div>
           </div>
         </div>
