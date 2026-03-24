@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Trainingszeiten und Beschreibung",
+    "description": "Trainingsplan für Aikido in Mariánské Lázně. Dienstag 18:30–20:00, Freitag 17:30–19:00 im BUDO CLUB."
+  },
+  "header": { "title": "Trainingszeiten und Beschreibung" },
+  "tuesday": "Dienstag",
+  "tuesdayTime": "18:30 – 20:00",
+  "friday": "Freitag",
+  "fridayTime": "17:30 – 19:00",
+  "placeTitle": "Ort",
+  "placeName": "BUDO CLUB",
+  "placeAddress": "Tyršova ulice, Mariánské Lázně (hinter dem Eisstadion)",
+  "bringTitle": "Was Sie mitbringen sollten",
+  "bringItems": [
+    "Jogginghose und langärmliges T-Shirt",
+    "Eine Flasche Wasser",
+    "Socken sind nicht nötig – es wird barfuß trainiert"
+  ],
+  "scheduleTitle": "Trainingsablauf",
+  "scheduleItems": [
+    "Begrüßung und Meditation",
+    "Aufwärmen und Dehnen",
+    "Fallübungen (Ukemi)",
+    "Vorführung und Üben der Techniken in Paaren",
+    "Abschlussgruß"
+  ]
+}

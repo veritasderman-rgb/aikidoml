@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Nábor nových členů",
+    "description": "Přidejte se k aikido klubu BUDO CLUB v Mariánských Lázních. První tři tréninky zdarma."
+  },
+  "header": { "title": "Nábor nových členů", "subtitle": "Přidejte se k nám!" },
+  "intro": "Hledáme nové členy do našeho aikido klubu v Mariánských Lázních! Přijímáme začátečníky bez jakýchkoliv předchozích zkušeností s bojovými uměními.",
+  "offerTitle": "Co nabízíme",
+  "offers": [
+    "První tři tréninky zcela zdarma",
+    "Přátelské a bezpečné prostředí",
+    "Zkušené instruktory",
+    "Možnost cvičit pro děti, dospívající i dospělé",
+    "Pravidelné semináře a workshopy"
+  ],
+  "howTitle": "Jak začít",
+  "howSteps": [
+    "Přijďte na trénink v úterý (18:30) nebo v pátek (17:30)",
+    "Vezměte si tepláky a tričko s dlouhým rukávem",
+    "Představte se instruktorovi – postaráme se o vás!"
+  ],
+  "encouragement": "Nemáte se čeho bát. Každý na tréninku byl jednou úplný začátečník. Atmosféra je přátelská a každý vám rád pomůže s prvními kroky.",
+  "ctaWrite": "Napište nám",
+  "ctaCall": "Zavolat: 607 517 967"
+}

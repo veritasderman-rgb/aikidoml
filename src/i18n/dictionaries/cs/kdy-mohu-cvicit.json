@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Kdy mohu a nemohu cvičit",
+    "description": "Věkové a zdravotní podmínky pro cvičení aikida. Aikido je přístupné od 14 let bez ohledu na pohlaví či velikost."
+  },
+  "header": { "title": "Kdy mohu a nemohu cvičit aikido" },
+  "ageTitle": "Věkové hranice",
+  "ageText": "Obecně se považuje za rozumnou hranici minimální věk 14 let a maximální věk do 115 let.",
+  "accessTitle": "Přístupnost",
+  "accessText": "Aikido je přizpůsobivé pro osoby různých charakteristik – bez ohledu na velikost či pohlaví. Aikido se přizpůsobuje každému jedinci individuálně, nikoliv naopak.",
+  "healthTitle": "Zdravotní omezení",
+  "healthText": "Jedinou závažnou překážkou je závažná srdeční vada, nemoci kostí, a případné vážné problémy s tlakem.",
+  "safetyTitle": "Bezpečnostní pokyny",
+  "safetyItems": [
+    "Oznamte trenérovi jakékoliv fyzické překážky",
+    "Ihned hlaste zdravotní problémy během tréninku",
+    "Dodržujte rozcvičku na začátku",
+    "Sledujte pokyny vedoucího a nebojte se ptát"
+  ]
+}

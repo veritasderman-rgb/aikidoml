@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "coJeToAikido": "Co je to aikidó",
+    "aiKiDo": "Co je to Ai Ki Dó",
+    "proDospele": "Aikido pro dospívající a dospělé",
+    "proDeti": "Aikido pro děti",
+    "kdyMohuCvicit": "Kdy mohu cvičit",
+    "coOcekavat": "Co očekávat",
+    "japonskySlovnik": "Japonský slovník",
+    "etiketa": "Etiketa",
+    "treninkoveZasady": "Tréninkové zásady",
+    "jakZavazatPasek": "Jak zavázat pásek",
+    "odkazy": "Odkazy a soubory",
+    "zkousky": "Zkoušky",
+    "detailyTreninku": "Detaily tréninků",
+    "cenik": "Ceník aikida",
+    "casy": "Časy a popis tréninků",
+    "nabor": "Nábor nových členů",
+    "kde": "Kde?",
+    "seminare": "Semináře",
+    "galerie": "Galerie",
+    "napisteNam": "Napište nám",
+    "oNas": "O nás",
+    "socialniSite": "Sociální sítě"
+  },
+  "footer": {
+    "motto": "Myšlenkou cvičení aikida je rozvoj těla i ducha a dokázat se ubránit.",
+    "treninky": "Tréninky",
+    "uteryTime": "Úterý 18:30 – 20:00",
+    "patekTime": "Pátek 17:30 – 19:00",
+    "address": "Tyršova ulice, Mariánské Lázně",
+    "behindStadium": "(za zimním stadiónem)",
+    "kontakt": "Kontakt",
+    "copyright": "Aikido Mariánské Lázně – BUDO CLUB"
+  },
+  "meta": {
+    "siteTitle": "Aikido Mariánské Lázně – BUDO CLUB",
+    "siteDescription": "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu na Tyršově ulici."
+  }
+}

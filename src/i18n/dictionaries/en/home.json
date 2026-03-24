@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Aikido Mariánské Lázně – BUDO CLUB",
+    "description": "Aikido club in Mariánské Lázně. Aikido training for children, teens and adults. Tuesdays and Fridays at BUDO CLUB. First 3 training sessions free."
+  },
+  "hero": {
+    "subtitle": "AIKIDO MARIÁNSKÉ LÁZNĚ",
+    "motto": "The idea behind practicing aikido is to develop both body and mind and to be able to defend yourself.",
+    "ctaPrimary": "Come train with us",
+    "ctaSecondary": "What is aikido?"
+  },
+  "cards": {
+    "treninky": "Training sessions",
+    "uteryTime": "Tuesday 18:30 – 20:00",
+    "patekTime": "Friday 17:30 – 19:00",
+    "dodzo": "Dódžó",
+    "tyrsovaUl": "Tyršova street",
+    "ml": "Mariánské Lázně",
+    "freeTrainings": "3 free training sessions",
+    "priceAdult": "Then 200 CZK / month",
+    "priceStudent": "Student 160 CZK / month"
+  },
+  "cta": {
+    "title": "Come try a training session",
+    "text": "All you need is sweatpants and a long-sleeve shirt. Training is done barefoot. No previous experience is required.",
+    "napisteNam": "Contact us"
+  },
+  "aktuality": {
+    "title": "News",
+    "easterTitle": "Easter holidays",
+    "easterText1": "During the Easter holidays",
+    "easterDate": "on Thursday, April 3",
+    "easterText2": "there will be no training sessions. We look forward to seeing everyone again",
+    "easterReturn": "on Monday, April 7, 2026"
+  },
+  "seminar": {
+    "title": "Seminars and invitations",
+    "seminarTitle": "Aikido seminar",
+    "seminarOrg": "Aikido pro každého & Aikido Mariánské Lázně",
+    "leader": "Led by Richard Wasserbauer",
+    "rank": "5th DAN AIKIKAI",
+    "when": "When",
+    "whenDate": "May 22 – 23, 2026",
+    "where": "Where",
+    "wherePlace": "Budo club Mariánské Lázně",
+    "whereAddress": "Tyršova street, Mariánské Lázně",
+    "trainings": "Training sessions",
+    "fri": "Friday 18:00 – 20:00",
+    "sat1": "Saturday 10:00 – 12:00",
+    "sat2": "Saturday 14:00 – 16:00",
+    "price": "Price",
+    "priceFull": "Full seminar",
+    "priceFullAmount": "500 CZK",
+    "priceSingle": "Single session",
+    "priceSingleAmount": "250 CZK",
+    "info": "Info",
+    "infoSleep": "Sleeping on tatami is possible.",
+    "infoWeapons": "Bring your weapons!",
+    "addToCalendar": "Add to calendar"
+  },
+  "about": {
+    "title": "The path of harmony",
+    "p1": "Aikido is one of the youngest martial arts in the world. Its philosophy emphasizes harmony rather than destruction. It is a system of non-resistance that enables effective self-defense without destructive techniques.",
+    "p2": "Aikido is a martial system that allows you to control an opponent without causing harm. It is one of the most humane martial arts, while also requiring great control of one's own ego and psyche.",
+    "learnMore": "Learn more"
+  }
+}

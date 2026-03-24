@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Training principles",
+    "description": "Fundamental aikido training principles established by the founder Morihei Ueshiba."
+  },
+  "header": { "title": "Training principles by Morihei Ueshiba" },
+  "intro": "Morihei Ueshiba, the founder of aikido, established fundamental principles for training that remain valid to this day.",
+  "principles": [
+    { "strong": "Aikido decides between life and death with a single strike.", "text": "During practice, follow the instructor's guidance and do not try to force techniques." },
+    { "strong": "Aikido is the way by which one defeats a thousand enemies.", "text": "Even when practicing with a single partner, be prepared for an attack from any direction." },
+    { "strong": "Training should always be joyful.", "text": "Practice in a spirit of mutual respect and joy of movement." },
+    { "strong": "The teacher can only teach you a small part.", "text": "You must acquire most of the art through your own diligent practice and reflection." },
+    { "strong": "Daily practice begins with a warm-up", "text": "and gradually increase the intensity. Do not overexert yourself. Even older people can practice with joy and without injury." },
+    { "strong": "The purpose of aikido is to train both body and mind", "text": "and to develop sincere, honorable people. The techniques are sacred and must not be shown to the uninitiated." }
+  ]
+}

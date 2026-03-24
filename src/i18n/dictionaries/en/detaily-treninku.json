@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Training details",
+    "description": "Everything about aikido training in Mariánské Lázně – schedule, pricing, location, and new member enrollment."
+  },
+  "header": {
+    "title": "Training details",
+    "subtitle": "Everything you need to know"
+  },
+  "subpages": {
+    "cenik": { "title": "Aikido pricing", "desc": "Training and membership fee prices" },
+    "casy": { "title": "Training times and descriptions", "desc": "Schedule and description of individual training sessions" },
+    "nabor": { "title": "New member enrollment", "desc": "Information for new applicants" },
+    "kde": { "title": "Where?", "desc": "How to find us" }
+  }
+}

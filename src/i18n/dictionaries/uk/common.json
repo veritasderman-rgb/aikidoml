@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "coJeToAikido": "Що таке айкідо",
+    "aiKiDo": "Що таке Ai Ki Do",
+    "proDospele": "Айкідо для підлітків та дорослих",
+    "proDeti": "Айкідо для дітей",
+    "kdyMohuCvicit": "Коли можна тренуватися",
+    "coOcekavat": "Чого очікувати",
+    "japonskySlovnik": "Японський словник",
+    "etiketa": "Етикет",
+    "treninkoveZasady": "Тренувальні принципи",
+    "jakZavazatPasek": "Як зав'язати пояс",
+    "odkazy": "Посилання та файли",
+    "zkousky": "Іспити",
+    "detailyTreninku": "Деталі тренувань",
+    "cenik": "Вартість айкідо",
+    "casy": "Розклад та опис тренувань",
+    "nabor": "Набір нових членів",
+    "kde": "Де?",
+    "seminare": "Семінари",
+    "galerie": "Галерея",
+    "napisteNam": "Напишіть нам",
+    "oNas": "Про нас",
+    "socialniSite": "Соціальні мережі"
+  },
+  "footer": {
+    "motto": "Ідея тренувань айкідо — розвиток тіла і духу та вміння захистити себе.",
+    "treninky": "Тренування",
+    "uteryTime": "Вівторок 18:30 – 20:00",
+    "patekTime": "П'ятниця 17:30 – 19:00",
+    "address": "Tyršova ulice, Mariánské Lázně",
+    "behindStadium": "(за зимовим стадіоном)",
+    "kontakt": "Контакт",
+    "copyright": "Aikido Mariánské Lázně – BUDO CLUB"
+  },
+  "meta": {
+    "siteTitle": "Aikido Mariánské Lázně – BUDO CLUB",
+    "siteDescription": "Клуб айкідо в Mariánské Lázně. Тренування айкідо для дітей, підлітків та дорослих. Вівторок та п'ятниця в BUDO CLUB на вулиці Tyršova."
+  }
+}

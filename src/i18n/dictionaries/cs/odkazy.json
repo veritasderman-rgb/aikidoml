@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Odkazy a soubory",
+    "description": "Užitečné odkazy a materiály pro cvičence aikida. Česká federace aikido, příručka pro začátečníky."
+  },
+  "header": { "title": "Odkazy a soubory", "subtitle": "Užitečné zdroje a materiály" },
+  "links": [
+    { "title": "Česká federace aikido (ČFAI)", "desc": "Zastřešující organizace aikida v České republice" },
+    { "title": "Příručka aikido – ČFAI", "desc": "Podrobná příručka pro začátečníky" },
+    { "title": "Aikido Mariánské Lázně – Facebook", "desc": "Naše stránka na Facebooku" }
+  ]
+}

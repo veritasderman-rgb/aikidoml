@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Links and files",
+    "description": "Useful links and materials for aikido practitioners. Czech Aikido Federation, beginner's handbook."
+  },
+  "header": { "title": "Links and files", "subtitle": "Useful resources and materials" },
+  "links": [
+    { "title": "Czech Aikido Federation (ČFAI)", "desc": "The umbrella organization for aikido in the Czech Republic" },
+    { "title": "Aikido handbook – ČFAI", "desc": "Detailed handbook for beginners" },
+    { "title": "Aikido Mariánské Lázně – Facebook", "desc": "Our Facebook page" }
+  ]
+}

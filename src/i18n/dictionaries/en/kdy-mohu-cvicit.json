@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "When can and can't I train",
+    "description": "Age and health requirements for practicing aikido. Aikido is accessible from age 14 regardless of gender or size."
+  },
+  "header": { "title": "When can and can't I train aikido" },
+  "ageTitle": "Age limits",
+  "ageText": "Generally, the reasonable minimum age is considered to be 14 years and the maximum age is up to 115 years.",
+  "accessTitle": "Accessibility",
+  "accessText": "Aikido is adaptable for people of different characteristics – regardless of size or gender. Aikido adapts to each individual, not the other way around.",
+  "healthTitle": "Health restrictions",
+  "healthText": "The only serious obstacles are a severe heart condition, bone diseases, and potentially serious blood pressure problems.",
+  "safetyTitle": "Safety guidelines",
+  "safetyItems": [
+    "Inform the instructor of any physical limitations",
+    "Immediately report any health issues during training",
+    "Follow the warm-up at the beginning",
+    "Follow the instructor's directions and don't be afraid to ask questions"
+  ]
+}

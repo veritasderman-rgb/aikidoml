@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Aikido Mariánské Lázně – BUDO CLUB",
+    "description": "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu. První 3 tréninky zdarma."
+  },
+  "hero": {
+    "subtitle": "AIKIDO MARIÁNSKÉ LÁZNĚ",
+    "motto": "Myšlenkou cvičení aikida je rozvoj těla i ducha a dokázat se ubránit.",
+    "ctaPrimary": "Přijďte cvičit",
+    "ctaSecondary": "Co je aikido?"
+  },
+  "cards": {
+    "treninky": "Tréninky",
+    "uteryTime": "Úterý 18:30 – 20:00",
+    "patekTime": "Pátek 17:30 – 19:00",
+    "dodzo": "Dódžó",
+    "tyrsovaUl": "Tyršova ulice",
+    "ml": "Mariánské Lázně",
+    "freeTrainings": "3 tréninky zdarma",
+    "priceAdult": "Poté 200 Kč / měsíc",
+    "priceStudent": "Student 160 Kč / měsíc"
+  },
+  "cta": {
+    "title": "Přijďte si zkusit trénink",
+    "text": "Stačí tepláky a tričko s dlouhým rukávem. Cvičí se na boso. Žádné předchozí zkušenosti nejsou potřeba.",
+    "napisteNam": "Napište nám"
+  },
+  "aktuality": {
+    "title": "Aktuality",
+    "easterTitle": "Velikonoční prázdniny",
+    "easterText1": "Během velikonočních prázdnin",
+    "easterDate": "ve čtvrtek 3. dubna",
+    "easterText2": "tréninky nebudou. Na všechny se těšíme zase",
+    "easterReturn": "v pondělí 7. dubna 2026"
+  },
+  "seminar": {
+    "title": "Semináře a pozvánky",
+    "seminarTitle": "Aikido seminář",
+    "seminarOrg": "Aikido pro každého & Aikido Mariánské Lázně",
+    "leader": "Pod vedením Richarda Wasserbauera",
+    "rank": "5. DAN AIKIKAI",
+    "when": "Kdy",
+    "whenDate": "22. – 23. května 2026",
+    "where": "Kde",
+    "wherePlace": "Budo club Mariánské Lázně",
+    "whereAddress": "Tyršova ulice, Mariánské Lázně",
+    "trainings": "Tréninky",
+    "fri": "Pátek 18:00 – 20:00",
+    "sat1": "Sobota 10:00 – 12:00",
+    "sat2": "Sobota 14:00 – 16:00",
+    "price": "Cena",
+    "priceFull": "Celá stáž",
+    "priceFullAmount": "500 Kč",
+    "priceSingle": "Jeden trénink",
+    "priceSingleAmount": "250 Kč",
+    "info": "Info",
+    "infoSleep": "Přespání na tatami možné.",
+    "infoWeapons": "Zbraně sebou!",
+    "addToCalendar": "Přidat do kalendáře"
+  },
+  "about": {
+    "title": "Cesta harmonie",
+    "p1": "Aikido je jedno z nejmladších bojových umění na světě. Jeho filozofie zdůrazňuje harmonii namísto destrukce. Jedná se o systém neodporování, který umožňuje efektivní sebeobranu bez destruktivních technik.",
+    "p2": "Aikido je bojový systém umožňující kontrolovat oponenta bez újmy. Jedná se o jedno z nejhumánnějších bojových umění, které zároveň vyžaduje velkou kontrolu vlastního ega a psychiky.",
+    "learnMore": "Zjistit více"
+  }
+}

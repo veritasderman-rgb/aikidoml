@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Trainingsgrundsätze",
+    "description": "Grundlegende Trainingsgrundsätze des Aikido, festgelegt vom Gründer Morihei Ueshiba."
+  },
+  "header": { "title": "Trainingsgrundsätze von Morihei Ueshiba" },
+  "intro": "Morihei Ueshiba, der Gründer des Aikido, legte grundlegende Trainingsprinzipien fest, die bis heute gelten.",
+  "principles": [
+    { "strong": "Aikido entscheidet über Leben und Tod mit einem einzigen Schlag.", "text": "Befolgen Sie beim Training die Anweisungen des Instruktors und versuchen Sie nicht, Techniken mit Gewalt zu lösen." },
+    { "strong": "Aikido ist der Weg, auf dem einer tausend Feinde besiegt.", "text": "Auch beim Üben mit einem einzigen Partner sollten Sie auf einen Angriff aus jeder Richtung vorbereitet sein." },
+    { "strong": "Das Training sollte stets freudvoll sein.", "text": "Üben Sie im Geiste des gegenseitigen Respekts und der Freude an der Bewegung." },
+    { "strong": "Der Lehrer kann Ihnen nur einen kleinen Teil beibringen.", "text": "Den größten Teil der Kunst müssen Sie sich durch eigenes fleißiges Üben und Nachdenken aneignen." },
+    { "strong": "Das tägliche Training beginnt mit dem Aufwärmen", "text": "und steigern Sie die Intensität schrittweise. Überanstrengen Sie sich nicht. Auch ältere Menschen können mit Freude und ohne Verletzungen trainieren." },
+    { "strong": "Der Zweck des Aikido ist es, Körper und Geist zu trainieren", "text": "und aufrichtige, ehrliche Menschen hervorzubringen. Die Techniken sind geheim und dürfen Uneingeweihten nicht gezeigt werden." }
+  ]
+}

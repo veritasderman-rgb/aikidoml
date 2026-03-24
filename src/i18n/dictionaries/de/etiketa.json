@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Etikette im Aikido",
+    "description": "Verhaltensregeln im Dódžó und auf der Tatami. Ethische Grundsätze des Aikido – Begrüßungen, Verbeugungen, korrektes Sitzen, Sicherheitsregeln."
+  },
+  "header": { "title": "Etikette", "subtitle": "Verhaltensregeln im Dódžó" },
+  "ethicsTitle": "Grundlegende ethische Prinzipien",
+  "ethics": [
+    "Beim Betreten des Dódžó und beim Betreten der Tatami verbeugen wir uns in Richtung des Bildes des Aikido-Gründers.",
+    "Die Meditation zu Beginn und am Ende des Trainings dient der Vorbereitung und Integration.",
+    "Beim Eintreten wird der Gruß \"Onegaišimas(u)\" verwendet und am Ende \"Dómo arigatou gozaimaš(i)ta\".",
+    "Zu Beginn und am Ende des Übens mit einem Partner verbeugen wir uns gegenseitig."
+  ],
+  "rulesTitle": "Praktische Regeln",
+  "rules": [
+    "Verspätetes Erscheinen erfordert das Warten am Rand der Tatami und die Einladung durch den Lehrer.",
+    "Vorzeitiges Verlassen oder Unterbrechung muss dem Instruktor gemeldet werden.",
+    "Korrektes Sitzen: Seiza oder Schneidersitz mit aufrechtem Rücken.",
+    "Es ist nicht erlaubt, mit dem Rücken zur Kamiza oder mit ausgestreckten Beinen zu sitzen.",
+    "Ältere Schüler sollen Anfängern helfen."
+  ],
+  "tatamiTitle": "Auf der Tatami",
+  "tatami": [
+    "Tragen Sie keinen Schmuck (Ringe, Ohrringe, Ketten) aus Sicherheitsgründen.",
+    "Auf die Tatami dürfen keine Speisen, Getränke oder Mobiltelefone mitgebracht werden.",
+    "Achten Sie auf Sauberkeit – sauberer Gi, geschnittene Nägel."
+  ],
+  "quote": "All diese Regeln haben ihren Sinn und helfen uns, auf der Tatami eine Atmosphäre der Konzentration und Entwicklung zu schaffen."
+}

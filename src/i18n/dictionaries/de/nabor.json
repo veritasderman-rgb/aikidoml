@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Aufnahme neuer Mitglieder",
+    "description": "Treten Sie dem Aikido-Verein BUDO CLUB in Mariánské Lázně bei. Die ersten drei Trainingseinheiten kostenlos."
+  },
+  "header": { "title": "Aufnahme neuer Mitglieder", "subtitle": "Machen Sie mit!" },
+  "intro": "Wir suchen neue Mitglieder für unseren Aikido-Verein in Mariánské Lázně! Wir nehmen Anfänger ohne jegliche Vorerfahrung in Kampfkünsten auf.",
+  "offerTitle": "Was wir bieten",
+  "offers": [
+    "Die ersten drei Trainingseinheiten völlig kostenlos",
+    "Freundliche und sichere Umgebung",
+    "Erfahrene Trainer",
+    "Trainingsmöglichkeiten für Kinder, Jugendliche und Erwachsene",
+    "Regelmäßige Seminare und Workshops"
+  ],
+  "howTitle": "Wie Sie anfangen",
+  "howSteps": [
+    "Kommen Sie zum Training am Dienstag (18:30) oder Freitag (17:30)",
+    "Bringen Sie Jogginghose und ein langärmliges T-Shirt mit",
+    "Stellen Sie sich dem Trainer vor – wir kümmern uns um Sie!"
+  ],
+  "encouragement": "Sie brauchen keine Angst zu haben. Jeder im Training war einmal ein absoluter Anfänger. Die Atmosphäre ist freundlich und alle helfen Ihnen gerne bei den ersten Schritten.",
+  "ctaWrite": "Schreiben Sie uns",
+  "ctaCall": "Anrufen: 607 517 967"
+}

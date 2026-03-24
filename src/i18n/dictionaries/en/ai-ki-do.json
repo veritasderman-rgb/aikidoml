@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "What is Ai Ki Do",
+    "description": "The meaning of the Japanese characters Ai (harmony), Ki (energy), and Do (path). The history of aikido, founder Morihei Ueshiba, and the philosophy of this martial art."
+  },
+  "header": { "title": "What is Ai Ki Do", "subtitle": "The meaning of each character" },
+  "ai": { "name": "AI", "meaning": "Harmony, unification, coming together. It signifies being in accord with the world around you and with your partner." },
+  "ki": { "name": "KI", "meaning": "Energy, spirit, inner strength. The life energy that flows through all living things." },
+  "do": { "name": "DO", "meaning": "Path, way. A lifelong path of personal growth and self-improvement." },
+  "p1": "Aikido therefore means \"The way of harmony with inner energy\". It is a Japanese martial art based on the principle of non-resistance and redirection of the attacker's force.",
+  "p2": "Aikido was created by Morihei Ueshiba (1883–1969), known as O-sensei (Great Teacher). He drew from traditional Japanese martial arts, primarily Daito-ryu Aiki-jujutsu, and combined them with his spiritual philosophy.",
+  "p3": "Unlike many other martial arts, aikido does not seek to destroy the opponent. The goal is to control the situation so that no one is harmed – neither the defender nor the attacker."
+}

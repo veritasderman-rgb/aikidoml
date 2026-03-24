@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Co očekávat na tréninku",
+    "description": "Co vás čeká na prvním tréninku aikida. Rozcvička, nácvik pádů, procvičování technik ve dvojicích."
+  },
+  "header": { "title": "Co očekávat", "subtitle": "Co vás čeká na prvním tréninku" },
+  "intro": "Pokud vás zajímá co vlastně očekávat na tréninku aikida, doporučuji navštívit následující stránku a vše si důkladně přečíst. Osobní zkušenosti se to ovšem nevyrovná.",
+  "sourceTitle": "Doporučený zdroj",
+  "sourceText": "Podrobný průvodce pro začátečníky najdete na:",
+  "expectTitle": "Obecně na tréninku očekávejte",
+  "expectItems": [
+    "Rozcvičku a protažení na začátku",
+    "Nácvik pádů (ukemi) – základní dovednost v aikidu",
+    "Ukázku techniky učitelem a následné procvičování ve dvojicích",
+    "Závěrečný pozdrav a uklidnění"
+  ],
+  "encouragement": "Nebojte se přijít – každý začínal jako úplný nováček. Atmosféra na tréninku je přátelská a každý vám rád pomůže."
+}

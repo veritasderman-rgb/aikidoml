@@ -1,11 +1,12 @@
 import Link from "next/link";
+import type { Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/getDictionary";
 
-export default function Footer() {
+export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+  const f = dict.common.footer;
   return (
     <footer className="bg-ink text-tatami/80">
-      {/* Vermillion accent line */}
       <div className="h-0.5 bg-gradient-to-r from-transparent via-vermillion to-transparent" />
-
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -13,24 +14,22 @@ export default function Footer() {
               <span className="text-vermillion text-xl" style={{ fontFamily: "serif" }}>合氣道</span>
               <span className="text-sm text-tatami/50">Mariánské Lázně</span>
             </div>
-            <p className="text-sm text-tatami/60 leading-relaxed">
-              Myšlenkou cvičení aikida je rozvoj těla i ducha a dokázat se ubránit.
-            </p>
+            <p className="text-sm text-tatami/60 leading-relaxed">{f.motto}</p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-vermillion/80 mb-4">Tréninky</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-vermillion/80 mb-4">{f.treninky}</h3>
             <ul className="text-sm space-y-2 text-tatami/60">
-              <li>Úterý 18:30 – 20:00</li>
-              <li>Pátek 17:30 – 19:00</li>
+              <li>{f.uteryTime}</li>
+              <li>{f.patekTime}</li>
               <li className="pt-2 border-t border-ink-soft/30">
-                Tyršova ulice, Mariánské Lázně
+                {f.address}
                 <br />
-                <span className="text-tatami/40">(za zimním stadiónem)</span>
+                <span className="text-tatami/40">{f.behindStadium}</span>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-vermillion/80 mb-4">Kontakt</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-vermillion/80 mb-4">{f.kontakt}</h3>
             <ul className="text-sm space-y-2 text-tatami/60">
               <li>Josef Pavlovic – 607 517 967</li>
               <li>
@@ -52,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-ink-soft/20 mt-10 pt-6 text-center text-tatami/30 text-xs tracking-wide">
-          <p>© {new Date().getFullYear()} Aikido Mariánské Lázně – BUDO CLUB</p>
+          <p>© {new Date().getFullYear()} {f.copyright}</p>
         </div>
       </div>
     </footer>

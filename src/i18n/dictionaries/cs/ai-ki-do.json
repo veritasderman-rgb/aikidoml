@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Co je to Ai Ki Do",
+    "description": "Význam japonských znaků Ai (harmonie), Ki (energie) a Do (cesta). Historie aikida, zakladatel Morihei Ueshiba a filozofie bojového umění."
+  },
+  "header": { "title": "Co je to Ai Ki Do", "subtitle": "Význam jednotlivých znaků" },
+  "ai": { "name": "AI", "meaning": "Harmonie, sjednocení, setkání. Znamená soulad s okolním světem a s partnerem." },
+  "ki": { "name": "KI", "meaning": "Energie, duch, vnitřní síla. Životní energie, která proudí vším živým." },
+  "do": { "name": "DO", "meaning": "Cesta, způsob. Celoživotní cesta osobního rozvoje a zdokonalování." },
+  "p1": "Aikido tedy znamená \"Cesta harmonie s vnitřní energií\". Je to japonské bojové umění založené na principu neodporování a přesměrování útočníkovy síly.",
+  "p2": "Aikido vytvořil Morihei Ueshiba (1883–1969), známý jako O-sensei (Velký učitel). Vycházel z tradičních japonských bojových umění, především z Daito-ryu Aiki-džudžucu, a propojil je se svou duchovní filozofií.",
+  "p3": "Na rozdíl od mnoha jiných bojových umění, aikido neusiluje o zničení protivníka. Cílem je kontrolovat situaci tak, aby nebyl nikdo zraněn – ani obránce, ani útočník."
+}
