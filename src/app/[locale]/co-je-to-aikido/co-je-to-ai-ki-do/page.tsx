@@ -61,9 +61,7 @@ export default async function CoJeToAiKiDo({ params }: { params: Promise<{ local
         </div>
 
         <div className="prose prose-lg text-ink-soft max-w-none">
-          <p>
-            <strong>Aikido</strong> {t.p1}
-          </p>
+          <p>{t.p1}</p>
           <p>{t.p2}</p>
           <p>{t.p3}</p>
         </div>
