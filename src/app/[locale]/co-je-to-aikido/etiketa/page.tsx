@@ -22,7 +22,7 @@ export default async function Etiketa({ params }: { params: Promise<{ locale: st
           <h2 style={{ fontFamily: "Georgia, serif" }} className="text-ink tracking-tight">{t.ethicsTitle}</h2>
           <ul>
             {t.ethics.map((item: string, i: number) => (
-              <li key={i} dangerouslySetInnerHTML={{ __html: item.replace(/"onegaišimas\(u\)"/, '<strong>&quot;onegaišimas(u)&quot;</strong>').replace(/"dómo arigatou gozaimaš\(i\)ta"/, '<strong>&quot;dómo arigatou gozaimaš(i)ta&quot;</strong>') }} />
+              <li key={i}>{item}</li>
             ))}
           </ul>
 
