@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Links und Dateien",
+    "description": "Nützliche Links und Materialien für Aikido-Übende. Tschechischer Aikido-Verband, Anfängerleitfaden."
+  },
+  "header": { "title": "Links und Dateien", "subtitle": "Nützliche Quellen und Materialien" },
+  "links": [
+    { "title": "Tschechischer Aikido-Verband (ČFAI)", "desc": "Dachorganisation des Aikido in der Tschechischen Republik" },
+    { "title": "Aikido-Handbuch – ČFAI", "desc": "Ausführliches Handbuch für Anfänger" },
+    { "title": "Aikido Mariánské Lázně – Facebook", "desc": "Unsere Seite auf Facebook" }
+  ]
+}

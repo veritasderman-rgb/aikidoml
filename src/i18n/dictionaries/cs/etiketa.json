@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Etiketa v aikidu",
+    "description": "Pravidla chování v dódžó a na tatami. Etické zásady aikida – pozdravy, úklony, správný sed, bezpečnostní pravidla."
+  },
+  "header": { "title": "Etiketa", "subtitle": "Pravidla chování v dódžó" },
+  "ethicsTitle": "Základní etické zásady",
+  "ethics": [
+    "Při vstupu do dódžó a při vstupu na tatami se ukláníme směrem k obrazu zakladatele aikidó.",
+    "Meditace na začátku a konci tréninku slouží k přípravě a integraci.",
+    "Při vstupu se používá pozdrav \"onegaišimas(u)\" a na konci \"dómo arigatou gozaimaš(i)ta\".",
+    "Na začátku i na konci cvičení s partnerem se navzájem ukláníme."
+  ],
+  "rulesTitle": "Praktická pravidla",
+  "rules": [
+    "Pozdní příchod vyžaduje čekání na okraji tatami a pozvání učitele.",
+    "Předčasný odchod či přerušení musí být hlášeno instruktorovi.",
+    "Správný sed: seiza nebo zkřížené nohy se vzpřímenými zády.",
+    "Není dovoleno sedět zády ke kamize nebo s nataženýma nohama.",
+    "Starší studenti mají pomáhat nováčkům."
+  ],
+  "tatamiTitle": "Na tatami",
+  "tatami": [
+    "Nenoste šperky (prstýnky, náušnice, řetízky) z důvodu bezpečnosti.",
+    "Na tatami se nesmí nosit jídlo, pití nebo mobilní telefony.",
+    "Udržujte čistotu – čistý gi, ostříhané nehty."
+  ],
+  "quote": "Všechna tato pravidla mají svůj smysl a pomáhají nám na tatami vytvářet ducha soustředění a rozvoje."
+}

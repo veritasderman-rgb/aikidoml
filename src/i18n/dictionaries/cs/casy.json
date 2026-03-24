@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Časy a popis tréninků",
+    "description": "Rozvrh tréninků aikida v Mariánských Lázních. Úterý 18:30–20:00, pátek 17:30–19:00 v BUDO CLUBu."
+  },
+  "header": { "title": "Časy a popis tréninků" },
+  "tuesday": "Úterý",
+  "tuesdayTime": "18:30 – 20:00",
+  "friday": "Pátek",
+  "fridayTime": "17:30 – 19:00",
+  "placeTitle": "Místo",
+  "placeName": "BUDO CLUB",
+  "placeAddress": "Tyršova ulice, Mariánské Lázně (za zimním stadiónem)",
+  "bringTitle": "Co si vzít s sebou",
+  "bringItems": [
+    "Tepláky a tričko s dlouhým rukávem",
+    "Láhev s vodou",
+    "Ponožky nejsou potřeba – cvičí se na boso"
+  ],
+  "scheduleTitle": "Průběh tréninku",
+  "scheduleItems": [
+    "Úvodní pozdrav a meditace",
+    "Rozcvička a protažení",
+    "Nácvik padů (ukemi)",
+    "Ukázka a procvičování technik ve dvojicích",
+    "Závěrečný pozdrav"
+  ]
+}

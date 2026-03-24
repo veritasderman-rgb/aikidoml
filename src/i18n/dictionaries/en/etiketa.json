@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Aikido etiquette",
+    "description": "Rules of conduct in the dojo and on the tatami. Ethical principles of aikido – greetings, bows, proper sitting, safety rules."
+  },
+  "header": { "title": "Etiquette", "subtitle": "Rules of conduct in the dojo" },
+  "ethicsTitle": "Fundamental ethical principles",
+  "ethics": [
+    "When entering the dojo and stepping onto the tatami, bow toward the portrait of the founder of aikido.",
+    "Meditation at the beginning and end of training serves for preparation and integration.",
+    "When entering, use the greeting \"onegaishimas(u)\" and at the end \"domo arigatou gozaimash(i)ta\".",
+    "At the beginning and end of practice with a partner, bow to each other."
+  ],
+  "rulesTitle": "Practical rules",
+  "rules": [
+    "Late arrival requires waiting at the edge of the tatami and an invitation from the instructor.",
+    "Early departure or interruption must be reported to the instructor.",
+    "Proper sitting: seiza or cross-legged with a straight back.",
+    "It is not allowed to sit with your back to the kamiza or with legs stretched out.",
+    "Senior students should help beginners."
+  ],
+  "tatamiTitle": "On the tatami",
+  "tatami": [
+    "Do not wear jewelry (rings, earrings, necklaces) for safety reasons.",
+    "Food, drinks, or mobile phones are not allowed on the tatami.",
+    "Maintain cleanliness – clean gi, trimmed nails."
+  ],
+  "quote": "All of these rules have their purpose and help us create an atmosphere of concentration and growth on the tatami."
+}

@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Aikido pro děti",
+    "description": "Aikido pro děti v Mariánských Lázních. Rozvoj koordinace, sebevědomí a disciplíny. Informace pro rodiče o dětských trénincích v BUDO CLUBu."
+  },
+  "header": { "title": "Aikido pro děti", "subtitle": "Informace pro rodiče" },
+  "intro": "Aikido je ideální bojové umění pro děti. Rozvíjí koordinaci, rovnováhu, disciplínu a respekt k ostatním. Na rozdíl od jiných bojových sportů se v aikidu nesoutěží – děti se učí spolupracovat a pomáhat si navzájem.",
+  "benefitsTitle": "Co aikido dětem přináší",
+  "benefits": [
+    "Rozvoj pohybových dovedností a koordinace",
+    "Zvýšení sebevědomí a sebeúcty",
+    "Učení disciplíny a respektu",
+    "Schopnost řešit konflikty bez násilí",
+    "Zlepšení koncentrace a pozornosti"
+  ],
+  "practicalTitle": "Praktické informace",
+  "practicalText": "Děti cvičí v pohodlném oblečení – tepláky a tričko s dlouhým rukávem. Cvičí se na boso. Kimono není nutné hned na začátku. Nezapomeňte na láhev s vodou.",
+  "parentsTitle": "Pro rodiče",
+  "parentsText": "Rodiče jsou vítáni na tréninku jako pozorovatelé. Pokud máte jakékoliv dotazy ohledně zdravotního stavu vašeho dítěte ve vztahu k cvičení, neváhejte se na nás obrátit.",
+  "cta": "Máte dotaz? Napište nám"
+}

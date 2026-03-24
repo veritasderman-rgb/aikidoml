@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "What is aikido",
+    "description": "Discover aikido – the Japanese martial art of harmony. Philosophy, techniques, etiquette, glossary of terms, and everything for beginners and advanced practitioners."
+  },
+  "header": {
+    "title": "What is aikido",
+    "subtitle": "Discover the martial art of harmony"
+  },
+  "intro": {
+    "p1": "Aikido is one of the youngest martial arts in the world. Its philosophy emphasizes harmony rather than destruction. It is a system of non-resistance that enables effective self-defense without destructive techniques.",
+    "p2": "Aikido is a martial system that allows you to control an opponent without causing harm. It is one of the most humane martial arts, while also requiring great control of one's own ego and psyche."
+  },
+  "learnMore": "Learn more",
+  "subpages": {
+    "aiKiDo": { "title": "What is Ai Ki Do", "desc": "The meaning of each character and the philosophy of aikido" },
+    "proDospele": { "title": "Aikido for teens and adults", "desc": "Information for adult beginners" },
+    "proDeti": { "title": "Aikido for children", "desc": "Information for parents of young practitioners" },
+    "kdyMohuCvicit": { "title": "When can and can't I train", "desc": "Age and health requirements" },
+    "coOcekavat": { "title": "What to expect", "desc": "What awaits you at your first training session" },
+    "japonskySlovnik": { "title": "Japanese dictionary", "desc": "Basic Japanese terms used in aikido" },
+    "etiketa": { "title": "Etiquette", "desc": "Rules of conduct on the tatami" },
+    "treninkoveZasady": { "title": "Training principles", "desc": "Principles from the founder Morihei Ueshiba" },
+    "jakZavazatPasek": { "title": "How to tie a belt", "desc": "Illustrated guide to tying the obi" },
+    "odkazy": { "title": "Links and files", "desc": "Useful links and downloadable materials" },
+    "zkousky": { "title": "Examinations", "desc": "Information about examinations and ranks" }
+  }
+}

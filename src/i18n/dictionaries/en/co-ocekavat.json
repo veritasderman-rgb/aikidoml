@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "What to expect at training",
+    "description": "What to expect at your first aikido training. Warm-up, breakfall practice, drilling techniques in pairs."
+  },
+  "header": { "title": "What to expect", "subtitle": "What awaits you at your first training" },
+  "intro": "If you are curious about what to expect at an aikido training session, we recommend visiting the following page and reading through everything carefully. Of course, nothing compares to personal experience.",
+  "sourceTitle": "Recommended resource",
+  "sourceText": "A detailed guide for beginners can be found at:",
+  "expectTitle": "In general, expect the following at training",
+  "expectItems": [
+    "Warm-up and stretching at the beginning",
+    "Breakfall practice (ukemi) – a fundamental skill in aikido",
+    "Demonstration of a technique by the instructor followed by paired practice",
+    "Closing bow and cool-down"
+  ],
+  "encouragement": "Don't be afraid to come – everyone started as a complete beginner. The atmosphere at training is friendly and everyone is happy to help."
+}

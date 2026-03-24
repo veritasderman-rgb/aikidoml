@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Aikido pro dospívající a dospělé",
+    "description": "Informace o aikidu pro dospívající a dospělé začátečníky. Oblečení, vybavení, etiketa na tatami, pády a bezpečnost při cvičení aikida."
+  },
+  "header": { "title": "Aikido pro dospívající a dospělé" },
+  "intro": "Aikido je bojový systém umožňující kontrolovat oponenta bez újmy. Jedná se o jedno z nejhumánnějších bojových umění, zároveň vyžaduje velkou kontrolu vlastního ega a psychiky.",
+  "clothingTitle": "Oblečení a vybavení",
+  "clothingText": "Cvičení probíhá na boso. Doporučuje se triko s dlouhým rukávem a dlouhé tepláky. Kimono není povinné pro prvních 3 měsíce. Vezměte si s sebou láhev s vodou.",
+  "importantTitle": "Důležité",
+  "importantText": "Na tatami není dovoleno nosit šperky (prstýnky, náušnice, řetízky a tak podobně) z důvodu bezpečnosti. Na tatami se nesmí nosit jídlo, pití nebo mobilní telefony.",
+  "etiketaTitle": "Etiketa a základní pravidla",
+  "etiketaP1": "Při vstupu do dódžó a při vstupu na tatami se ukláníme směrem k obrazu zakladatele aikidó. Na začátku a konci cvičení se používají japonské výrazy vděčnosti a proseb.",
+  "etiketaP2": "Pokud někdo odchází z tatami dříve, musí informovat učitele z bezpečnostních důvodů – učitel je zodpovědný za dění na tatami.",
+  "etiketaP3": "Není dovoleno sedět zády ke kamize (obrazu zakladatele) nebo s nataženýma nohama.",
+  "fallsTitle": "Pády a bezpečnost",
+  "fallsText": "Cvičení zahrnuje učení padů na měkkých žíněnkách, přičemž nebezpečí úrazu téměř nehrozí. Pády jsou základem aikida a postupně se naučíte padat bezpečně a přirozeně."
+}

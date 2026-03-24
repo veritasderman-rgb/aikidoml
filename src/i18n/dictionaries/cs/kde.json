@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Kde nás najdete",
+    "description": "Adresa a mapa dódžó BUDO CLUB na Tyršově ulici v Mariánských Lázních."
+  },
+  "header": { "title": "Kde nás najdete" },
+  "clubName": "BUDO CLUB",
+  "address": "Tyršova ulice, Mariánské Lázně",
+  "behindStadium": "(za zimním stadiónem)",
+  "directionsTitle": "Jak se k nám dostanete",
+  "directionsP1": "Budova se nachází na Tyršově ulici za zimním stadiónem. Orientačními body jsou plavecký stadión a obchod Kaufland. Od Kauflandu pokračujte směrem k zimnímu stadiónu, za ním najdete naši tělocvičnu.",
+  "directionsP2": "Pokud budete mít problém s nalezením, zavolejte na 607 517 967 a navedeme vás."
+}

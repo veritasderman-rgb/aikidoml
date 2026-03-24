@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Aikido pricing",
+    "description": "Aikido training prices in Mariánské Lázně. Adults 200 CZK/month, students 160 CZK/month. First three training sessions are free."
+  },
+  "header": { "title": "Aikido pricing" },
+  "freeNote": "The first three training sessions are free!",
+  "freeSubnote": "Come try aikido with no commitment whatsoever.",
+  "adults": "Adults",
+  "adultPrice": "200 CZK",
+  "students": "Students",
+  "studentPrice": "160 CZK",
+  "perMonth": "/ month",
+  "note": "Fees are used to cover the cost of gym rental and equipment maintenance. We are a non-profit club and all contributions go back into the club's activities.",
+  "cta": "Have a question about pricing? Contact us"
+}

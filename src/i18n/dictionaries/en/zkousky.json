@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Exams and ranks in aikido",
+    "description": "Overview of examination ranks in aikido from 6th kyu to 1st dan."
+  },
+  "header": { "title": "Exams", "subtitle": "Overview of ranks and requirements" },
+  "intro": "In aikido, students progress through a system of kyu (student) and dan (master) ranks. Exams are taken before a panel and include a demonstration of the required techniques.",
+  "colRank": "Rank",
+  "colBelt": "Belt",
+  "colReq": "Requirement",
+  "colDesc": "Description",
+  "ranks": [
+    { "rank": "6th kyu", "belt": "White belt", "req": "approx. 60 training sessions", "desc": "Basic breakfalls, grabs, first techniques" },
+    { "rank": "5th kyu", "belt": "Yellow belt", "req": "approx. 80 sessions after 6th kyu", "desc": "Expanded techniques, better ukemi" },
+    { "rank": "4th kyu", "belt": "Orange belt", "req": "approx. 100 sessions after 5th kyu", "desc": "Smoother techniques, weapons training" },
+    { "rank": "3rd kyu", "belt": "Green belt", "req": "approx. 120 sessions after 4th kyu", "desc": "Advanced techniques and variations" },
+    { "rank": "2nd kyu", "belt": "Blue belt", "req": "approx. 150 sessions after 3rd kyu", "desc": "High-level techniques, randori" },
+    { "rank": "1st kyu", "belt": "Brown belt", "req": "approx. 200 sessions after 2nd kyu", "desc": "Preparation for the black belt" },
+    { "rank": "1st dan", "belt": "Black belt (hakama)", "req": "approx. 300 sessions after 1st kyu", "desc": "The beginning of the true study of aikido" }
+  ]
+}

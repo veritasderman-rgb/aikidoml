@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Prüfungen und Grade im Aikido",
+    "description": "Übersicht der Prüfungsgrade im Aikido vom 6. Kyū bis zum 1. Dan."
+  },
+  "header": { "title": "Prüfungen", "subtitle": "Übersicht der Grade und Anforderungen" },
+  "intro": "Im Aikido schreitet man durch ein System von Kyū- (Schüler-) und Dan- (Meister-) Graden voran. Die Prüfungen werden vor einer Kommission abgelegt und umfassen die Vorführung der geforderten Techniken.",
+  "colRank": "Grad",
+  "colBelt": "Gürtel",
+  "colReq": "Voraussetzung",
+  "colDesc": "Beschreibung",
+  "ranks": [
+    { "rank": "6. Kyū", "belt": "Weißer Gürtel", "req": "ca. 60 Trainingseinheiten", "desc": "Grundlegende Falltechniken, Griffe, erste Techniken" },
+    { "rank": "5. Kyū", "belt": "Gelber Gürtel", "req": "ca. 80 Trainingseinheiten nach 6. Kyū", "desc": "Erweiterung der Techniken, besseres Ukemi" },
+    { "rank": "4. Kyū", "belt": "Orangener Gürtel", "req": "ca. 100 Trainingseinheiten nach 5. Kyū", "desc": "Fließendere Techniken, Arbeit mit Waffen" },
+    { "rank": "3. Kyū", "belt": "Grüner Gürtel", "req": "ca. 120 Trainingseinheiten nach 4. Kyū", "desc": "Fortgeschrittene Techniken und Variationen" },
+    { "rank": "2. Kyū", "belt": "Blauer Gürtel", "req": "ca. 150 Trainingseinheiten nach 3. Kyū", "desc": "Hohes technisches Niveau, Randori" },
+    { "rank": "1. Kyū", "belt": "Brauner Gürtel", "req": "ca. 200 Trainingseinheiten nach 2. Kyū", "desc": "Vorbereitung auf den schwarzen Gürtel" },
+    { "rank": "1. Dan", "belt": "Schwarzer Gürtel (Hakama)", "req": "ca. 300 Trainingseinheiten nach 1. Kyū", "desc": "Beginn des wahren Aikido-Studiums" }
+  ]
+}

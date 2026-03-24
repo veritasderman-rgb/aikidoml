@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Aikido for children",
+    "description": "Aikido for children in Mariánské Lázně. Development of coordination, confidence, and discipline. Information for parents about children's training sessions at BUDO CLUB."
+  },
+  "header": { "title": "Aikido for children", "subtitle": "Information for parents" },
+  "intro": "Aikido is an ideal martial art for children. It develops coordination, balance, discipline, and respect for others. Unlike other martial arts, there is no competition in aikido – children learn to cooperate and help each other.",
+  "benefitsTitle": "What aikido offers children",
+  "benefits": [
+    "Development of motor skills and coordination",
+    "Increased self-confidence and self-esteem",
+    "Learning discipline and respect",
+    "Ability to resolve conflicts without violence",
+    "Improved concentration and focus"
+  ],
+  "practicalTitle": "Practical information",
+  "practicalText": "Children train in comfortable clothing – sweatpants and a long-sleeve shirt. Training is done barefoot. A kimono is not required right away. Don't forget a bottle of water.",
+  "parentsTitle": "For parents",
+  "parentsText": "Parents are welcome to observe the training sessions. If you have any questions about your child's health in relation to training, please do not hesitate to contact us.",
+  "cta": "Have a question? Contact us"
+}

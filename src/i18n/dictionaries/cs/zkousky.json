@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Zkoušky a stupně v aikidu",
+    "description": "Přehled zkouškových stupňů v aikidu od 6. kjú po 1. dan."
+  },
+  "header": { "title": "Zkoušky", "subtitle": "Přehled stupňů a požadavků" },
+  "intro": "V aikidu se postupuje systémem kjú (žákovských) a dan (mistrovských) stupňů. Zkoušky se skládají před komisí a zahrnují předvedení požadovaných technik.",
+  "colRank": "Stupeň",
+  "colBelt": "Pásek",
+  "colReq": "Požadavek",
+  "colDesc": "Popis",
+  "ranks": [
+    { "rank": "6. kjú", "belt": "Bílý pásek", "req": "cca 60 tréninků", "desc": "Základní pády, úchopy, první techniky" },
+    { "rank": "5. kjú", "belt": "Žlutý pásek", "req": "cca 80 tréninků po 6. kjú", "desc": "Rozšíření technik, lepší ukemi" },
+    { "rank": "4. kjú", "belt": "Oranžový pásek", "req": "cca 100 tréninků po 5. kjú", "desc": "Plynulejší techniky, práce se zbraněmi" },
+    { "rank": "3. kjú", "belt": "Zelený pásek", "req": "cca 120 tréninků po 4. kjú", "desc": "Pokročilé techniky a variace" },
+    { "rank": "2. kjú", "belt": "Modrý pásek", "req": "cca 150 tréninků po 3. kjú", "desc": "Vysoká úroveň technik, randori" },
+    { "rank": "1. kjú", "belt": "Hnědý pásek", "req": "cca 200 tréninků po 2. kjú", "desc": "Příprava na černý pásek" },
+    { "rank": "1. dan", "belt": "Černý pásek (hakama)", "req": "cca 300 tréninků po 1. kjú", "desc": "Začátek skutečného studia aikida" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Gallery",
+    "description": "Photos from aikido training sessions, seminars, and demonstrations by BUDO CLUB Mariánské Lázně."
+  },
+  "header": { "title": "Gallery", "subtitle": "Photos from training sessions and events" },
+  "photos": [
+    { "alt": "Demonstration – throw on tatami" },
+    { "alt": "Demonstration – falling technique" },
+    { "alt": "Demonstration – flying fall" },
+    { "alt": "Demonstration – koshi nage" },
+    { "alt": "Demonstration – advanced aikido practitioners" },
+    { "alt": "Christmas training – group photo" },
+    { "alt": "Group of adult aikido practitioners" },
+    { "alt": "Group photo from a seminar" }
+  ],
+  "moreOnFacebook": "More photos on Facebook"
+}

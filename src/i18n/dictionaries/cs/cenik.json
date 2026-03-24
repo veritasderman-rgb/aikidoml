@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Ceník aikida",
+    "description": "Ceník tréninků aikida v Mariánských Lázních. Dospělí 200 Kč/měsíc, studenti 160 Kč/měsíc. První tři tréninky zdarma."
+  },
+  "header": { "title": "Ceník aikida" },
+  "freeNote": "První tři tréninky jsou zdarma!",
+  "freeSubnote": "Přijďte si aikido vyzkoušet bez jakéhokoliv závazku.",
+  "adults": "Dospělí",
+  "adultPrice": "200 Kč",
+  "students": "Studenti",
+  "studentPrice": "160 Kč",
+  "perMonth": "/ měsíc",
+  "note": "Příspěvky slouží k pokrytí nákladů na pronájem tělocvičny a údržbu vybavení. Jsme neziskový klub a veškeré příspěvky jdou zpět do činnosti klubu.",
+  "cta": "Máte dotaz k ceníku? Napište nám"
+}

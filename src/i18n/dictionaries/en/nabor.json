@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "New member recruitment",
+    "description": "Join the BUDO CLUB aikido club in Mariánské Lázně. First three training sessions are free."
+  },
+  "header": { "title": "New member recruitment", "subtitle": "Join us!" },
+  "intro": "We are looking for new members for our aikido club in Mariánské Lázně! We welcome complete beginners with no prior martial arts experience.",
+  "offerTitle": "What we offer",
+  "offers": [
+    "First three training sessions completely free",
+    "Friendly and safe environment",
+    "Experienced instructors",
+    "Training available for children, teenagers, and adults",
+    "Regular seminars and workshops"
+  ],
+  "howTitle": "How to get started",
+  "howSteps": [
+    "Come to a training session on Tuesday (18:30) or Friday (17:30)",
+    "Bring sweatpants and a long-sleeved shirt",
+    "Introduce yourself to the instructor – we will take care of you!"
+  ],
+  "encouragement": "There is nothing to be afraid of. Everyone at training was once a complete beginner. The atmosphere is friendly and everyone is happy to help you with your first steps.",
+  "ctaWrite": "Write to us",
+  "ctaCall": "Call: 607 517 967"
+}

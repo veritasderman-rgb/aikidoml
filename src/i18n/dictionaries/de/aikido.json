@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Was ist Aikido",
+    "description": "Entdecken Sie Aikido – die japanische Kampfkunst der Harmonie. Philosophie, Techniken, Etikette, Begriffswörterbuch und alles für Anfänger und Fortgeschrittene."
+  },
+  "header": {
+    "title": "Was ist Aikido",
+    "subtitle": "Entdecken Sie die Kampfkunst der Harmonie"
+  },
+  "intro": {
+    "p1": "Aikido ist eine der jüngsten Kampfkünste der Welt. Seine Philosophie betont Harmonie statt Zerstörung. Es handelt sich um ein System des Nicht-Widerstands, das eine effektive Selbstverteidigung ohne destruktive Techniken ermöglicht.",
+    "p2": "Aikido ist ein Kampfsystem, das es ermöglicht, den Gegner ohne Schaden zu kontrollieren. Es ist eine der humansten Kampfkünste, die gleichzeitig eine große Kontrolle des eigenen Egos und der Psyche erfordert."
+  },
+  "learnMore": "Mehr erfahren",
+  "subpages": {
+    "aiKiDo": { "title": "Was ist Ai Ki Do", "desc": "Bedeutung der einzelnen Zeichen und Philosophie des Aikido" },
+    "proDospele": { "title": "Aikido für Jugendliche und Erwachsene", "desc": "Informationen für erwachsene Anfänger" },
+    "proDeti": { "title": "Aikido für Kinder", "desc": "Informationen für Eltern von jungen Übenden" },
+    "kdyMohuCvicit": { "title": "Wann kann und darf ich trainieren", "desc": "Alters- und gesundheitliche Voraussetzungen" },
+    "coOcekavat": { "title": "Was Sie erwartet", "desc": "Was Sie beim ersten Training erwartet" },
+    "japonskySlovnik": { "title": "Japanisches Wörterbuch", "desc": "Grundlegende japanische Begriffe im Aikido" },
+    "etiketa": { "title": "Etikette", "desc": "Verhaltensregeln auf der Tatami" },
+    "treninkoveZasady": { "title": "Trainingsgrundsätze", "desc": "Grundsätze des Gründers Morihei Ueshiba" },
+    "jakZavazatPasek": { "title": "Wie man den Gürtel bindet", "desc": "Bildanleitung zum Binden des Obi" },
+    "odkazy": { "title": "Links und Dateien", "desc": "Nützliche Links und Materialien zum Herunterladen" },
+    "zkousky": { "title": "Prüfungen", "desc": "Informationen zu Prüfungen und Graduierungen" }
+  }
+}

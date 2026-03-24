@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Was ist Ai Ki Do",
+    "description": "Bedeutung der japanischen Zeichen Ai (Harmonie), Ki (Energie) und Do (Weg). Geschichte des Aikido, Gründer Morihei Ueshiba und Philosophie der Kampfkunst."
+  },
+  "header": { "title": "Was ist Ai Ki Do", "subtitle": "Bedeutung der einzelnen Zeichen" },
+  "ai": { "name": "AI", "meaning": "Harmonie, Vereinigung, Begegnung. Bedeutet Einklang mit der Umwelt und mit dem Partner." },
+  "ki": { "name": "KI", "meaning": "Energie, Geist, innere Kraft. Lebensenergie, die durch alles Lebendige fließt." },
+  "do": { "name": "DO", "meaning": "Weg, Art und Weise. Ein lebenslanger Weg der persönlichen Entwicklung und Vervollkommnung." },
+  "p1": "Aikido bedeutet also \"Der Weg der Harmonie mit der inneren Energie\". Es ist eine japanische Kampfkunst, die auf dem Prinzip des Nicht-Widerstands und der Umleitung der Angriffskraft basiert.",
+  "p2": "Aikido wurde von Morihei Ueshiba (1883–1969) entwickelt, bekannt als O-sensei (Großer Lehrer). Er schöpfte aus traditionellen japanischen Kampfkünsten, insbesondere aus Daito-ryu Aiki-Jujutsu, und verband sie mit seiner spirituellen Philosophie.",
+  "p3": "Im Gegensatz zu vielen anderen Kampfkünsten strebt Aikido nicht danach, den Gegner zu vernichten. Das Ziel ist es, die Situation so zu kontrollieren, dass niemand verletzt wird – weder der Verteidiger noch der Angreifer."
+}

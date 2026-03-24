@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Galerie",
+    "description": "Fotografie z tréninků aikida, seminářů a ukázkových cvičení klubu BUDO CLUB Mariánské Lázně."
+  },
+  "header": { "title": "Galerie", "subtitle": "Fotografie z tréninků a akcí" },
+  "photos": [
+    { "alt": "Ukázkové cvičení – hod na tatami" },
+    { "alt": "Ukázkové cvičení – technika pádu" },
+    { "alt": "Ukázkové cvičení – letový pád" },
+    { "alt": "Ukázkové cvičení – koshi nage" },
+    { "alt": "Ukázkové cvičení – pokročilí aikidisté" },
+    { "alt": "Vánoční trénink – skupinové foto" },
+    { "alt": "Skupina dospělých aikidistů" },
+    { "alt": "Skupinové foto ze semináře" }
+  ],
+  "moreOnFacebook": "Více fotek na Facebooku"
+}

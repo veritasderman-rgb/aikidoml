@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Wann kann und darf ich trainieren",
+    "description": "Alters- und gesundheitliche Voraussetzungen für das Aikido-Training. Aikido ist ab 14 Jahren zugänglich, unabhängig von Geschlecht oder Körpergröße."
+  },
+  "header": { "title": "Wann kann und darf ich Aikido trainieren" },
+  "ageTitle": "Altersgrenzen",
+  "ageText": "Als sinnvolle Grenze gilt im Allgemeinen ein Mindestalter von 14 Jahren und ein Höchstalter von 115 Jahren.",
+  "accessTitle": "Zugänglichkeit",
+  "accessText": "Aikido ist für Personen mit unterschiedlichen Voraussetzungen geeignet – unabhängig von Körpergröße oder Geschlecht. Aikido passt sich jedem Einzelnen individuell an, nicht umgekehrt.",
+  "healthTitle": "Gesundheitliche Einschränkungen",
+  "healthText": "Die einzigen ernsthaften Hindernisse sind schwere Herzfehler, Knochenerkrankungen und eventuell ernsthafte Blutdruckprobleme.",
+  "safetyTitle": "Sicherheitshinweise",
+  "safetyItems": [
+    "Informieren Sie den Trainer über eventuelle körperliche Einschränkungen",
+    "Melden Sie sofort gesundheitliche Probleme während des Trainings",
+    "Halten Sie sich an das Aufwärmen zu Beginn",
+    "Befolgen Sie die Anweisungen des Leiters und scheuen Sie sich nicht zu fragen"
+  ]
+}

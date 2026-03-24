@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Galerie",
+    "description": "Fotos von Aikido-Trainings, Seminaren und Vorführungen des Vereins BUDO CLUB Mariánské Lázně."
+  },
+  "header": { "title": "Galerie", "subtitle": "Fotos von Trainings und Veranstaltungen" },
+  "photos": [
+    { "alt": "Vorführung – Wurf auf die Tatami" },
+    { "alt": "Vorführung – Falltechnik" },
+    { "alt": "Vorführung – Flugfall" },
+    { "alt": "Vorführung – Koshi Nage" },
+    { "alt": "Vorführung – fortgeschrittene Aikidoka" },
+    { "alt": "Weihnachtstraining – Gruppenfoto" },
+    { "alt": "Gruppe erwachsener Aikidoka" },
+    { "alt": "Gruppenfoto vom Seminar" }
+  ],
+  "moreOnFacebook": "Mehr Fotos auf Facebook"
+}

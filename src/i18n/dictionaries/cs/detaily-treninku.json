@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Detaily tréninků",
+    "description": "Vše o trénincích aikida v Mariánských Lázních – rozvrh, ceník, místo konání a nábor nových členů."
+  },
+  "header": {
+    "title": "Detaily tréninků",
+    "subtitle": "Vše, co potřebujete vědět"
+  },
+  "subpages": {
+    "cenik": { "title": "Ceník aikida", "desc": "Ceny tréninků a členských příspěvků" },
+    "casy": { "title": "Časy a popis tréninků", "desc": "Rozvrh a popis jednotlivých tréninků" },
+    "nabor": { "title": "Nábor nových členů", "desc": "Informace pro nové zájemce" },
+    "kde": { "title": "Kde?", "desc": "Jak se k nám dostanete" }
+  }
+}
