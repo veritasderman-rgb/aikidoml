@@ -42,6 +42,12 @@ export default async function NapisteNam({ params }: { params: Promise<{ locale:
               >
                 alex.toth@tiscali.cz
               </a>
+              <a
+                href="tel:+420602492903"
+                className="text-vermillion hover:text-vermillion-dark block mt-1 text-sm"
+              >
+                602 492 903
+              </a>
             </div>
 
             <div className="bg-white p-5 rounded-lg border border-tatami/30">

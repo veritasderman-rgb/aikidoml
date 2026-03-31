@@ -77,6 +77,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <Link href={`${p}/napiste-nam`} className="bg-ink text-washi font-medium px-8 py-3.5 rounded hover:bg-ink-light transition-colors text-sm tracking-widest uppercase">
               {t.cta.napisteNam}
             </Link>
+            <a href="tel:+420602492903" className="border border-ink/20 text-ink font-medium px-8 py-3.5 rounded hover:border-vermillion hover:text-vermillion transition-colors text-sm tracking-widest uppercase">
+              602 492 903
+            </a>
             <a href="tel:+420607517967" className="border border-ink/20 text-ink font-medium px-8 py-3.5 rounded hover:border-vermillion hover:text-vermillion transition-colors text-sm tracking-widest uppercase">
               607 517 967
             </a>
