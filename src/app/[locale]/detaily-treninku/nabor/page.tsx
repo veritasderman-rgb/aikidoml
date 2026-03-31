@@ -82,6 +82,12 @@ export default async function Nabor({ params }: { params: Promise<{ locale: stri
             {t.ctaWrite}
           </Link>
           <a
+            href="tel:+420602492903"
+            className="inline-block border-2 border-ink text-ink font-semibold px-6 py-3 rounded-lg hover:bg-ink hover:text-washi transition-colors text-center"
+          >
+            {t.ctaCall2}
+          </a>
+          <a
             href="tel:+420607517967"
             className="inline-block border-2 border-ink text-ink font-semibold px-6 py-3 rounded-lg hover:bg-ink hover:text-washi transition-colors text-center"
           >

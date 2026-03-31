@@ -56,6 +56,9 @@ export default async function ONas({ params }: { params: Promise<{ locale: strin
             <a href="mailto:alex.toth@tiscali.cz" className="text-vermillion text-sm hover:text-vermillion-dark block">
               alex.toth@tiscali.cz
             </a>
+            <a href="tel:+420602492903" className="text-vermillion text-sm hover:text-vermillion-dark block mt-1">
+              602 492 903
+            </a>
           </div>
           <div className="bg-white p-6 rounded-lg border border-tatami/30 text-center">
             <div className="w-20 h-20 bg-washi rounded-full mx-auto mb-4 flex items-center justify-center">

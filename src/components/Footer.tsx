@@ -31,6 +31,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-widest text-vermillion/80 mb-4">{f.kontakt}</h3>
             <ul className="text-sm space-y-2 text-tatami/60">
+              <li>Alexander Tóth – 602 492 903</li>
               <li>Josef Pavlovic – 607 517 967</li>
               <li>
                 <a href="mailto:mail@josefpavlovic.cz" className="hover:text-vermillion transition-colors">

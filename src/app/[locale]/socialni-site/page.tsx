@@ -76,6 +76,12 @@ export default async function SocialniSite({ params }: { params: Promise<{ local
                 mail@josefpavlovic.cz
               </a>
               <a
+                href="tel:+420602492903"
+                className="text-vermillion font-semibold hover:text-vermillion-dark block"
+              >
+                602 492 903
+              </a>
+              <a
                 href="tel:+420607517967"
                 className="text-vermillion font-semibold hover:text-vermillion-dark block"
               >
