@@ -87,27 +87,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* Aktuality */}
-      <section className="max-w-5xl mx-auto px-4 py-16" id="aktuality">
-        <div className="text-center mb-10">
-          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>新</span>
-          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>{t.aktuality.title}</h2>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-white border border-tatami/30 rounded-lg p-6 shadow-md">
-            <div className="flex items-start gap-4">
-              <div className="hidden sm:block text-vermillion text-2xl mt-1" style={{ fontFamily: "serif" }}>休</div>
-              <div>
-                <h3 className="font-semibold text-ink mb-2">{t.aktuality.easterTitle}</h3>
-                <p className="text-ink-soft leading-relaxed">
-                  {t.aktuality.easterText1} <strong className="text-ink">{t.aktuality.easterDate}</strong> {t.aktuality.easterText2} <strong className="text-ink">{t.aktuality.easterReturn}</strong>!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Semináře */}
       <section className="max-w-5xl mx-auto px-4 pb-16" id="seminare">
         <div className="text-center mb-10">
