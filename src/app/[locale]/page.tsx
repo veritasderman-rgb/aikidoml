@@ -87,58 +87,42 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* Semináře */}
-      <section className="max-w-5xl mx-auto px-4 pb-16" id="seminare">
+      {/* Pozvánka */}
+      <section className="max-w-5xl mx-auto px-4 pb-16" id="pozvanka">
         <div className="text-center mb-10">
-          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>研</span>
-          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>{t.seminar.title}</h2>
+          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>始</span>
+          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>{t.event.title}</h2>
         </div>
         <div className="max-w-3xl mx-auto">
           <div className="bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md">
             <div className="bg-ink px-6 py-4">
-              <h3 className="text-washi font-bold text-lg tracking-wide" style={{ fontFamily: "Georgia, serif" }}>{t.seminar.seminarTitle}</h3>
-              <p className="text-tatami/70 text-sm">{t.seminar.seminarOrg}</p>
+              <h3 className="text-washi font-bold text-lg tracking-wide" style={{ fontFamily: "Georgia, serif" }}>{t.event.eventTitle}</h3>
+              <p className="text-tatami/70 text-sm">{t.event.eventOrg}</p>
             </div>
             <div className="p-6 space-y-4">
               <div>
-                <p className="text-ink font-semibold mb-1">{t.seminar.leader}</p>
-                <p className="text-vermillion text-sm font-medium">{t.seminar.rank}</p>
+                <p className="text-ink font-semibold mb-1">{t.event.tagline}</p>
+                <p className="text-vermillion text-sm font-medium">{t.event.subTagline}</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.seminar.when}</p>
-                  <p className="text-ink font-medium">{t.seminar.whenDate}</p>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.event.when}</p>
+                  <p className="text-ink font-medium">{t.event.whenDate}</p>
                 </div>
                 <div>
-                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.seminar.where}</p>
-                  <p className="text-ink font-medium">{t.seminar.wherePlace}</p>
-                  <p className="text-ink-soft">{t.seminar.whereAddress}</p>
-                </div>
-              </div>
-              <div>
-                <p className="text-ink-soft uppercase tracking-widest text-xs mb-2 font-semibold">{t.seminar.trainings}</p>
-                <div className="text-sm text-ink space-y-1">
-                  <p>{t.seminar.fri}</p>
-                  <p>{t.seminar.sat1}</p>
-                  <p>{t.seminar.sat2}</p>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.event.where}</p>
+                  <p className="text-ink font-medium">{t.event.wherePlace}</p>
+                  <p className="text-ink-soft">{t.event.whereAddress}</p>
                 </div>
               </div>
               <div className="h-px bg-gradient-to-r from-transparent via-tatami to-transparent" />
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                <div>
-                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.seminar.price}</p>
-                  <p className="text-ink">{t.seminar.priceFull} <strong>{t.seminar.priceFullAmount}</strong></p>
-                  <p className="text-ink">{t.seminar.priceSingle} <strong>{t.seminar.priceSingleAmount}</strong></p>
-                </div>
-                <div>
-                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.seminar.info}</p>
-                  <p className="text-ink-soft">{t.seminar.infoSleep}</p>
-                  <p className="text-ink-soft">{t.seminar.infoWeapons}</p>
-                </div>
+              <div className="space-y-3 text-sm text-ink-soft leading-relaxed">
+                <p>{t.event.intro}</p>
+                <p>{t.event.outro}</p>
               </div>
               <div className="pt-2">
                 <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aikido+semin%C3%A1%C5%99+%E2%80%93+Richard+Wasserbauer&dates=20260522T160000Z/20260523T140000Z&location=Budo+club+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B%2C+Tyr%C5%A1ova+ulice%2C+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B&details=Aikido+semin%C3%A1%C5%99+pod+veden%C3%ADm+Richarda+Wasserbauera+(5.+DAN+AIKIKAI).%0AP%C3%A1tek+18%3A00%E2%80%9320%3A00%2C+Sobota+10%3A00%E2%80%9312%3A00+a+14%3A00%E2%80%9316%3A00.%0ACel%C3%A1+st%C3%A1%C5%BE+500+K%C4%8D%2C+jeden+tr%C3%A9nink+250+K%C4%8D."
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Prvn%C3%AD+z%C3%A1%C5%99ijov%C3%BD+tr%C3%A9nink+%E2%80%93+Aikido+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B&dates=20260904T153000Z/20260904T170000Z&location=Budo+club+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B%2C+Tyr%C5%A1ova+ulice%2C+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B&details=Prvn%C3%AD+tr%C3%A9nink+po+pr%C3%A1zdnin%C3%A1ch.+Skv%C4%9Bl%C3%A1+p%C5%99%C3%ADle%C5%BEitost+za%C4%8D%C3%ADt+s+aikidem+%E2%80%93+prvn%C3%AD+3+tr%C3%A9ninky+zdarma.+Sta%C4%8D%C3%AD+tepl%C3%A1ky+a+tri%C4%8Dko+s+dlouh%C3%BDm+ruk%C3%A1vem%2C+cvi%C4%8D%C3%AD+se+naboso."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-vermillion text-washi font-medium px-6 py-2.5 rounded hover:bg-vermillion-light transition-colors text-sm tracking-widest uppercase"
@@ -147,7 +131,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     <rect x="3" y="4" width="18" height="18" rx="2" />
                     <path d="M16 2v4M8 2v4M3 10h18" />
                   </svg>
-                  {t.seminar.addToCalendar}
+                  {t.event.addToCalendar}
                 </a>
               </div>
             </div>
