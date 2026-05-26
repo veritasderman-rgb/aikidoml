@@ -36,7 +36,7 @@ function buildNavItems(locale: Locale, nav: Dictionary["common"]["nav"]) {
         { label: nav.kde, href: `${p}/detaily-treninku/kde` },
       ],
     },
-    { label: nav.seminare, href: `${p}/#seminare` },
+    { label: nav.seminare, href: `${p}/#pozvanka` },
     { label: nav.galerie, href: `${p}/galerie` },
     { label: nav.napisteNam, href: `${p}/napiste-nam` },
     { label: nav.oNas, href: `${p}/o-nas` },
