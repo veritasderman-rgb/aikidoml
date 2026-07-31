@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": {
+      "claude/rebuild-aikido-website-6Ytjd": true,
+      "claude/**": false,
+      "dependabot/**": false
+    }
+  }
+}
