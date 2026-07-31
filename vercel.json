@@ -3,8 +3,8 @@
   "git": {
     "deploymentEnabled": {
       "claude/rebuild-aikido-website-6Ytjd": true,
-      "claude/*": false,
-      "dependabot/*": false
+      "claude/**": false,
+      "dependabot/**": false
     }
   }
 }
