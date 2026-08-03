@@ -37,3 +37,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# lokální nástroje pro kampaňové kreativy
+marketing/creatives/src/node_modules/

@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Zahájení sezóny",
+  "title": "První zářijový trénink",
+  "date": "Pátek 4. září 2026 · 17:30",
+  "place": "BUDO CLUB, Tyršova ulice, Mariánské Lázně",
+  "lead": "Po prázdninách se znovu otevírá tatami. Ideální chvíle začít s aikidem – i když jste nikdy nic podobného nezkoušeli.",
+  "bullets": [
+    "První 3 tréninky zdarma, bez závazku",
+    "Stačí tepláky a tričko s dlouhým rukávem",
+    "Pro děti, dospívající i dospělé"
+  ],
+  "countdownPrefix": "Zbývá",
+  "countdownDays": ["dní", "den", "dny"],
+  "today": "Dnes je ten den!",
+  "ctaPrimary": "Přijdu v pátek",
+  "ctaSecondary": "Přidat do kalendáře",
+  "ctaCall": "Zavolat",
+  "close": "Zavřít",
+  "dismiss": "Teď ne, díky"
+}

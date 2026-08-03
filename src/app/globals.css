@@ -116,6 +116,28 @@ body {
   border-left-color: var(--color-vermillion);
 }
 
+/* Kampaňový popup */
+@keyframes popup-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popup-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.popup-fade {
+  animation: popup-fade 0.25s ease-out;
+}
+.popup-in {
+  animation: popup-in 0.3s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .popup-fade,
+  .popup-in {
+    animation: none;
+  }
+}
+
 /* Prose overrides for Japanese theme */
 .prose h2 {
   color: var(--color-ink);
