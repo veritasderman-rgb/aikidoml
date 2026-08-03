@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Season opening",
+  "title": "First training of September",
+  "date": "Friday 4 September 2026 · 17:30",
+  "place": "BUDO CLUB, Tyršova street, Mariánské Lázně",
+  "lead": "The tatami opens again after the summer break. It is the ideal moment to start aikido – even if you have never tried anything like it.",
+  "bullets": [
+    "First 3 trainings free, no commitment",
+    "Just bring sweatpants and a long-sleeved t-shirt",
+    "For children, teenagers and adults"
+  ],
+  "countdownPrefix": "In",
+  "countdownDays": ["days", "day", "days"],
+  "today": "It is happening today!",
+  "ctaPrimary": "I'm coming on Friday",
+  "ctaSecondary": "Add to calendar",
+  "ctaCall": "Call us",
+  "close": "Close",
+  "dismiss": "Not now, thanks"
+}

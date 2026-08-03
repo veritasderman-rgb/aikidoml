@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8" />
+<title>Aikido ML – kampaňové vizuály 4. 9. 2026</title>
+<style>
+  /* Barvy jsou převzaté 1:1 z src/app/globals.css, aby vizuály seděly na web. */
+  :root {
+    --ink: #1a1a1a;
+    --ink-light: #2d2d2d;
+    --ink-soft: #4a4a4a;
+    --vermillion: #c23b22;
+    --washi: #f5f0e8;
+    --washi-dark: #ebe4d4;
+    --tatami: #d4c9a8;
+    --serif: "Liberation Serif", "Georgia", "Times New Roman", serif;
+    --sans: "Liberation Sans", "Segoe UI", system-ui, sans-serif;
+    --jp: "IPAGothic", "Noto Sans CJK JP", serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #333; font-family: var(--sans); }
+
+  /* Každý .canvas se renderuje do samostatného PNG podle data-name / data-w / data-h. */
+  .canvas { position: relative; overflow: hidden; background: var(--ink); margin: 24px auto; }
+
+  .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .scrim-bottom { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,.94) 0%, rgba(10,10,10,.82) 26%, rgba(10,10,10,.35) 50%, rgba(10,10,10,.15) 70%, rgba(10,10,10,.45) 100%); }
+  .scrim-left { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,10,10,.92) 0%, rgba(10,10,10,.75) 38%, rgba(10,10,10,.2) 65%, rgba(10,10,10,0) 100%); }
+
+  .kanji-ghost { position: absolute; font-family: var(--jp); color: rgba(255,255,255,.05); line-height: 1; user-select: none; }
+
+  .content { position: absolute; left: 0; right: 0; bottom: 0; color: var(--washi); }
+
+  .eyebrow { color: #efe7d8; text-transform: uppercase; font-weight: 700; text-shadow: 0 2px 12px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.9); }
+  .headline { font-family: var(--serif); font-weight: 700; letter-spacing: -.01em; line-height: 1.02; text-shadow: 0 4px 26px rgba(0,0,0,.7); }
+  .rule { background: var(--vermillion); }
+  .meta { color: rgba(245,240,232,.92); text-shadow: 0 2px 14px rgba(0,0,0,.8); }
+  .meta strong { color: #fff; }
+
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 3px solid var(--vermillion); color: #fff; background: rgba(194,59,34,.92);
+    font-weight: 800; text-transform: uppercase; transform: rotate(-4deg);
+    text-align: center; line-height: 1.15;
+  }
+
+  .cta {
+    display: inline-flex; align-items: center; gap: .5em;
+    background: var(--vermillion); color: #fff; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .18em;
+  }
+  .url { color: rgba(245,240,232,.55); letter-spacing: .22em; text-transform: uppercase; }
+
+  /* ---------- 4:5 feed (1080 × 1350) ---------- */
+  .c-4x5 { width: 1080px; height: 1350px; }
+  .c-4x5 .kanji-ghost { font-size: 620px; top: -110px; right: -120px; }
+  .c-4x5 .badge { position: absolute; top: 64px; left: 64px; width: 250px; height: 250px; border-radius: 50%; font-size: 34px; letter-spacing: .04em; padding: 0 22px; }
+  .c-4x5 .content { padding: 0 64px 64px; }
+  .c-4x5 .eyebrow { font-size: 25px; letter-spacing: .3em; margin-bottom: 20px; }
+  .c-4x5 .headline { font-size: 104px; }
+  .c-4x5 .rule { width: 96px; height: 5px; margin: 34px 0 30px; }
+  .c-4x5 .meta { font-size: 33px; line-height: 1.5; }
+  .c-4x5 .cta { margin-top: 40px; font-size: 27px; padding: 24px 44px; border-radius: 4px; }
+  .c-4x5 .url { font-size: 22px; margin-top: 26px; }
+
+  /* ---------- 1:1 feed (1080 × 1080) ---------- */
+  .c-1x1 { width: 1080px; height: 1080px; }
+  .c-1x1 .kanji-ghost { font-size: 560px; top: -90px; right: -110px; }
+  .c-1x1 .badge { position: absolute; top: 56px; left: 56px; width: 224px; height: 224px; border-radius: 50%; font-size: 31px; letter-spacing: .04em; padding: 0 20px; }
+  .c-1x1 .content { padding: 0 60px 58px; }
+  .c-1x1 .eyebrow { font-size: 23px; letter-spacing: .3em; margin-bottom: 18px; }
+  .c-1x1 .headline { font-size: 92px; }
+  .c-1x1 .rule { width: 88px; height: 5px; margin: 28px 0 26px; }
+  .c-1x1 .meta { font-size: 31px; line-height: 1.5; }
+  .c-1x1 .cta { margin-top: 34px; font-size: 25px; padding: 22px 40px; border-radius: 4px; }
+  .c-1x1 .url { font-size: 21px; margin-top: 22px; }
+
+  /* ---------- 9:16 story (1080 × 1920) ---------- */
+  .c-9x16 { width: 1080px; height: 1920px; }
+  .c-9x16 .scrim-bottom { background: linear-gradient(to top, rgba(10,10,10,.96) 0%, rgba(10,10,10,.92) 30%, rgba(10,10,10,.7) 46%, rgba(10,10,10,.25) 62%, rgba(10,10,10,.1) 78%, rgba(10,10,10,.5) 100%); }
+  .c-9x16 .kanji-ghost { font-size: 760px; top: 120px; right: -180px; }
+  .c-9x16 .badge { position: absolute; top: 300px; left: 72px; width: 280px; height: 280px; border-radius: 50%; font-size: 38px; letter-spacing: .04em; padding: 0 24px; }
+  .c-9x16 .content { padding: 0 72px 260px; }
+  .c-9x16 .eyebrow { font-size: 28px; letter-spacing: .3em; margin-bottom: 22px; }
+  .c-9x16 .headline { font-size: 116px; }
+  .c-9x16 .rule { width: 104px; height: 6px; margin: 38px 0 32px; }
+  .c-9x16 .meta { font-size: 37px; line-height: 1.5; }
+  .c-9x16 .cta { margin-top: 46px; font-size: 30px; padding: 28px 50px; border-radius: 4px; }
+  .c-9x16 .url { font-size: 25px; margin-top: 30px; }
+
+  /* ---------- FB event cover (1920 × 1005) ---------- */
+  .c-cover { width: 1920px; height: 1005px; }
+  .c-cover .kanji-ghost { font-size: 700px; top: -140px; right: 40px; }
+  .c-cover .content { position: absolute; top: 50%; transform: translateY(-50%); bottom: auto; padding: 0 96px; max-width: 1180px; }
+  .c-cover .eyebrow { font-size: 26px; letter-spacing: .32em; margin-bottom: 22px; }
+  .c-cover .headline { font-size: 112px; }
+  .c-cover .rule { width: 100px; height: 5px; margin: 32px 0 28px; }
+  .c-cover .meta { font-size: 34px; line-height: 1.5; }
+  .c-cover .badge { position: absolute; top: 80px; right: 120px; width: 250px; height: 250px; border-radius: 50%; font-size: 34px; padding: 0 22px; }
+
+  /* ---------- Plakát A4 na nástěnku (1240 × 1754 @150 dpi) ---------- */
+  .c-poster { width: 1240px; height: 1754px; background: var(--washi); color: var(--ink); }
+  .c-poster .p-title, .c-poster .p-eyebrow { text-shadow: none; }
+  .c-poster .paper { position: absolute; inset: 0;
+    background-image: radial-gradient(ellipse at 20% 40%, rgba(210,200,170,.35) 0%, transparent 55%),
+                      radial-gradient(ellipse at 82% 12%, rgba(210,200,170,.28) 0%, transparent 50%); }
+  .c-poster .p-inner { position: absolute; inset: 56px; border: 2px solid rgba(26,26,26,.14); padding: 68px 62px; display: flex; flex-direction: column; }
+  .c-poster .p-kanji { font-family: var(--jp); font-size: 82px; color: var(--vermillion); line-height: 1; }
+  .c-poster .p-eyebrow { font-size: 22px; letter-spacing: .34em; text-transform: uppercase; color: var(--ink-soft); margin-top: 26px; }
+  .c-poster .p-title { font-family: var(--serif); font-size: 106px; font-weight: 700; line-height: 1.03; margin-top: 20px; }
+  .c-poster .p-rule { width: 92px; height: 5px; background: var(--vermillion); margin: 34px 0; }
+  .c-poster .p-photo { width: 100%; height: 430px; object-fit: cover; object-position: 50% 26%; filter: grayscale(.15); }
+  .c-poster .p-when { font-family: var(--serif); font-size: 56px; font-weight: 700; margin-top: 40px; }
+  .c-poster .p-where { font-size: 30px; color: var(--ink-soft); margin-top: 12px; line-height: 1.5; }
+  .c-poster .p-list { margin-top: 34px; font-size: 29px; color: var(--ink-soft); line-height: 1.9; list-style: none; }
+  .c-poster .p-list li::before { content: "✓"; color: var(--vermillion); font-weight: 700; margin-right: 14px; }
+  .c-poster .p-foot { margin-top: auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
+  .c-poster .p-contact { font-size: 27px; color: var(--ink-soft); line-height: 1.6; }
+  .c-poster .p-url { font-family: var(--serif); font-size: 44px; font-weight: 700; color: var(--vermillion); }
+  .c-poster .p-badge { border: 3px solid var(--vermillion); color: var(--vermillion); background: transparent;
+    width: 230px; height: 230px; border-radius: 50%; font-size: 26px; padding: 0 26px; letter-spacing: .02em; }
+
+  /* ---------- Reels: textové vrstvy (průhledné pozadí) ---------- */
+  .c-overlay { width: 1080px; height: 1920px; background: transparent; }
+  /* Jemný závoj pod textem – bez něj text mizí ve světlé tatami. */
+  .c-overlay .veil { position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(8,8,8,.88) 0%, rgba(8,8,8,.72) 22%, rgba(8,8,8,.35) 40%, rgba(8,8,8,0) 58%); }
+  .c-overlay.top .veil {
+    background: linear-gradient(to bottom, rgba(8,8,8,.85) 0%, rgba(8,8,8,.6) 26%, rgba(8,8,8,.25) 42%, rgba(8,8,8,0) 58%); }
+  .c-overlay .ov {
+    position: absolute; left: 76px; right: 76px; bottom: 470px; color: #fff; text-align: left;
+    text-shadow: 0 4px 30px rgba(0,0,0,.75), 0 2px 8px rgba(0,0,0,.6);
+  }
+  .c-overlay .ov-top { bottom: auto; top: 300px; }
+  .c-overlay .ov h2 { font-family: var(--serif); font-size: 96px; font-weight: 700; line-height: 1.06; }
+  .c-overlay .ov p { font-size: 44px; margin-top: 26px; color: rgba(255,255,255,.92); line-height: 1.35; }
+  .c-overlay .ov .tag { display: inline-block; background: var(--vermillion); color: #fff; font-weight: 700;
+    font-size: 34px; letter-spacing: .16em; text-transform: uppercase; padding: 16px 28px; margin-bottom: 30px; text-shadow: none; }
+
+  /* ---------- Reels: koncová karta ---------- */
+  .c-endcard { width: 1080px; height: 1920px; background: var(--washi); color: var(--ink); }
+  .c-endcard .e-inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 90px; }
+  .c-endcard .e-kanji { font-family: var(--jp); font-size: 120px; color: var(--vermillion); line-height: 1; }
+  .c-endcard .e-title { font-family: var(--serif); font-size: 92px; font-weight: 700; line-height: 1.06; margin-top: 34px; }
+  .c-endcard .e-rule { width: 100px; height: 6px; background: var(--vermillion); margin: 44px 0; }
+  .c-endcard .e-when { font-family: var(--serif); font-size: 62px; font-weight: 700; }
+  .c-endcard .e-where { font-size: 34px; color: var(--ink-soft); margin-top: 16px; line-height: 1.5; }
+  .c-endcard .e-free { margin-top: 52px; background: var(--vermillion); color: #fff; font-size: 36px; font-weight: 700;
+    letter-spacing: .14em; text-transform: uppercase; padding: 22px 44px; }
+  .c-endcard .e-url { margin-top: 60px; font-size: 40px; letter-spacing: .24em; text-transform: uppercase; color: var(--ink-soft); }
+  .c-endcard .e-phone { margin-top: 18px; font-size: 32px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<!-- ============ 1) HLAVNÍ REKLAMA 4:5 ============ -->
+<div class="canvas c-4x5" data-name="ad-hlavni-4x5">
+  <img class="photo" src="../build/bg/bg_dojo_4x5.jpg" alt="" />
+  <div class="scrim-bottom"></div>
+  <div class="kanji-ghost">始</div>
+  <div class="badge">3 tréninky<br />zdarma</div>
+  <div class="content">
+    <p class="eyebrow">Aikido Mariánské Lázně</p>
+    <h1 class="headline">První trénink<br />po prázdninách</h1>
+    <div class="rule"></div>
+    <p class="meta"><strong>Pátek 4. září · 17:30</strong><br />BUDO CLUB, Tyršova ul. (za zimním stadionem)</p>
+    <div class="cta">Přijď si to zkusit</div>
+    <p class="url">aikidoml.cz</p>
+  </div>
+</div>
+
+<!-- ============ 2) REKLAMA 4:5 – ZAČÁTEČNÍK ============ -->
+<div class="canvas c-4x5" data-name="ad-zacatecnik-4x5">
+  <img class="photo" src="../build/bg/bg_beginner_4x5.jpg" alt="" />
+  <div class="scrim-bottom"></div>
+  <div class="kanji-ghost">道</div>
+  <div class="badge">Bez<br />zkušeností</div>
+  <div class="content">
+    <p class="eyebrow">Nikdy jsi nic podobného nezkoušel?</p>
+    <h1 class="headline">Tak přesně<br />pro tebe je<br />pátek 4. 9.</h1>
+    <div class="rule"></div>
+    <p class="meta"><strong>17:30 · BUDO CLUB, Tyršova ul.</strong><br />Stačí tepláky a tričko s dlouhým rukávem. Cvičí se naboso.</p>
+    <div class="cta">První 3 tréninky zdarma</div>
+    <p class="url">aikidoml.cz</p>
+  </div>
+</div>
+
+<!-- ============ 3) REKLAMA 4:5 – RODIČE / DĚTI ============ -->
+<div class="canvas c-4x5" data-name="ad-deti-4x5">
+  <img class="photo" src="../build/bg/bg_teens_4x5.jpg" alt="" />
+  <div class="scrim-bottom"></div>
+  <div class="kanji-ghost">育</div>
+  <div class="badge">Pro děti<br />i dospělé</div>
+  <div class="content">
+    <p class="eyebrow">Kroužek, který učí i respekt</p>
+    <h1 class="headline">Aikido<br />pro děti</h1>
+    <div class="rule"></div>
+    <p class="meta"><strong>První trénink v pátek 4. 9. v 17:30</strong><br />BUDO CLUB, Tyršova ul., Mariánské Lázně<br />200 Kč/měsíc · studenti 160 Kč</p>
+    <div class="cta">Přijďte se podívat</div>
+    <p class="url">aikidoml.cz</p>
+  </div>
+</div>
+
+<!-- ============ 4) REKLAMA 1:1 ============ -->
+<div class="canvas c-1x1" data-name="ad-hlavni-1x1">
+  <img class="photo" src="../build/bg/bg_hands_1x1.jpg" alt="" />
+  <div class="scrim-bottom"></div>
+  <div class="kanji-ghost">合</div>
+  <div class="badge">3 tréninky<br />zdarma</div>
+  <div class="content">
+    <p class="eyebrow">Aikido Mariánské Lázně</p>
+    <h1 class="headline">Zahajujeme<br />sezónu</h1>
+    <div class="rule"></div>
+    <p class="meta"><strong>Pátek 4. září · 17:30</strong><br />BUDO CLUB, Tyršova ul., Mariánské Lázně</p>
+    <div class="cta">Přijď si to zkusit</div>
+    <p class="url">aikidoml.cz</p>
+  </div>
+</div>
+
+<!-- ============ 5) STORY / REELS COVER 9:16 ============ -->
+<div class="canvas c-9x16" data-name="ad-story-9x16">
+  <img class="photo" src="../build/bg/bg_dojo_9x16.jpg" alt="" />
+  <div class="scrim-bottom"></div>
+  <div class="kanji-ghost">始</div>
+  <div class="badge">3 tréninky<br />zdarma</div>
+  <div class="content">
+    <p class="eyebrow">Aikido Mariánské Lázně</p>
+    <h1 class="headline">První trénink<br />po prázdninách</h1>
+    <div class="rule"></div>
+    <p class="meta"><strong>Pátek 4. září · 17:30</strong><br />BUDO CLUB, Tyršova ul.<br />(za zimním stadionem)</p>
+    <div class="cta">Přijď si to zkusit</div>
+    <p class="url">aikidoml.cz</p>
+  </div>
+</div>
+
+<!-- ============ 6) COVER FACEBOOKOVÉ UDÁLOSTI ============ -->
+<div class="canvas c-cover" data-name="fb-event-cover">
+  <img class="photo" src="../build/bg/bg_wide_16x9.jpg" alt="" />
+  <div class="scrim-left"></div>
+  <div class="kanji-ghost">始</div>
+  <div class="badge">3 tréninky<br />zdarma</div>
+  <div class="content">
+    <p class="eyebrow">Aikido Mariánské Lázně · BUDO CLUB</p>
+    <h1 class="headline">První zářijový<br />trénink</h1>
+    <div class="rule"></div>
+    <p class="meta"><strong>Pátek 4. 9. 2026 · 17:30–19:00</strong><br />Tyršova ulice, Mariánské Lázně (za zimním stadionem)</p>
+  </div>
+</div>
+
+<!-- ============ 7) PLAKÁT A4 NA NÁSTĚNKU ============ -->
+<div class="canvas c-poster" data-name="plakat-a4">
+  <div class="paper"></div>
+  <div class="p-inner">
+    <div class="p-kanji">合氣道</div>
+    <p class="p-eyebrow">Aikido Mariánské Lázně · BUDO CLUB</p>
+    <h1 class="p-title">První trénink<br />po prázdninách</h1>
+    <div class="p-rule"></div>
+    <img class="p-photo" src="../build/bg/bg_dojo_4x5.jpg" alt="" />
+    <p class="p-when">Pátek 4. září · 17:30</p>
+    <p class="p-where">BUDO CLUB, Tyršova ulice, Mariánské Lázně<br />(za zimním stadionem, u plaveckého bazénu)</p>
+    <ul class="p-list">
+      <li>První 3 tréninky zdarma, bez závazku</li>
+      <li>Stačí tepláky a tričko s dlouhým rukávem</li>
+      <li>Pro děti, dospívající i dospělé</li>
+    </ul>
+    <div class="p-foot">
+      <div class="p-contact">
+        602 492 903 · 607 517 967<br />
+        <span class="p-url">aikidoml.cz</span>
+      </div>
+      <div class="badge p-badge">3 tréninky<br />zdarma</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 8) TEXTOVÉ VRSTVY DO REELS ============ -->
+<div class="canvas c-overlay top" data-name="ov-1-hook" data-transparent="1">
+  <div class="veil"></div>
+  <div class="ov ov-top">
+    <h2>Léto skončilo.<br />Tatami se otevírá.</h2>
+  </div>
+</div>
+
+<div class="canvas c-overlay" data-name="ov-2-kdy" data-transparent="1">
+  <div class="veil"></div>
+  <div class="ov">
+    <span class="tag">Pátek 4. září</span>
+    <h2>17:30<br />BUDO CLUB</h2>
+    <p>Tyršova ulice, Mariánské Lázně<br />(za zimním stadionem)</p>
+  </div>
+</div>
+
+<div class="canvas c-overlay" data-name="ov-3-zdarma" data-transparent="1">
+  <div class="veil"></div>
+  <div class="ov">
+    <h2>První 3 tréninky<br />zdarma</h2>
+    <p>Stačí tepláky a tričko s dlouhým rukávem.<br />Cvičí se naboso. Zkušenosti nepotřebuješ.</p>
+  </div>
+</div>
+
+<div class="canvas c-overlay top" data-name="ov-4-zacatecnik" data-transparent="1">
+  <div class="veil"></div>
+  <div class="ov ov-top">
+    <h2>Každý na tatami<br />byl jednou<br />úplný začátečník.</h2>
+  </div>
+</div>
+
+<div class="canvas c-overlay" data-name="ov-5-prijd" data-transparent="1">
+  <div class="veil"></div>
+  <div class="ov">
+    <span class="tag">Přijď se podívat</span>
+    <h2>Není co<br />pokazit.</h2>
+    <p>Postaráme se o tebe od prvního kroku na tatami.</p>
+  </div>
+</div>
+
+<!-- ============ 9) KONCOVÁ KARTA DO REELS ============ -->
+<div class="canvas c-endcard" data-name="endcard-9x16">
+  <div class="paper" style="position:absolute;inset:0;background-image:radial-gradient(ellipse at 25% 35%, rgba(210,200,170,.4) 0%, transparent 55%),radial-gradient(ellipse at 80% 75%, rgba(210,200,170,.3) 0%, transparent 50%)"></div>
+  <div class="e-inner">
+    <div class="e-kanji">始</div>
+    <h2 class="e-title">První trénink<br />po prázdninách</h2>
+    <div class="e-rule"></div>
+    <p class="e-when">Pátek 4. 9. · 17:30</p>
+    <p class="e-where">BUDO CLUB, Tyršova ulice<br />Mariánské Lázně</p>
+    <div class="e-free">První 3 tréninky zdarma</div>
+    <p class="e-url">aikidoml.cz</p>
+    <p class="e-phone">602 492 903 · 607 517 967</p>
+  </div>
+</div>
+
+</body>
+</html>

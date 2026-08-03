@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Saisonstart",
+  "title": "Erstes Training im September",
+  "date": "Freitag, 4. September 2026 · 17:30",
+  "place": "BUDO CLUB, Tyršova-Straße, Marienbad",
+  "lead": "Nach den Ferien öffnet sich das Tatami wieder. Der ideale Moment, um mit Aikido zu beginnen – auch wenn Sie so etwas noch nie ausprobiert haben.",
+  "bullets": [
+    "Die ersten 3 Trainings gratis, unverbindlich",
+    "Es genügen Jogginghose und ein langärmeliges T-Shirt",
+    "Für Kinder, Jugendliche und Erwachsene"
+  ],
+  "countdownPrefix": "Noch",
+  "countdownDays": ["Tage", "Tag", "Tage"],
+  "today": "Heute ist es soweit!",
+  "ctaPrimary": "Ich komme am Freitag",
+  "ctaSecondary": "Zum Kalender hinzufügen",
+  "ctaCall": "Anrufen",
+  "close": "Schließen",
+  "dismiss": "Jetzt nicht, danke"
+}
