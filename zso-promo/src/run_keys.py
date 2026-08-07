@@ -10,5 +10,6 @@ def run(s):
     except Exception as e:
         print("SELHALO", sid, type(e).__name__, str(e)[:120], flush=True)
         return False
-with ThreadPoolExecutor(max_workers=4) as ex:
-    list(ex.map(run, SHOTS))
+if __name__ == "__main__":
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        list(ex.map(run, SHOTS))

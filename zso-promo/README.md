@@ -59,7 +59,18 @@ Potřebné balíčky: `Pillow` (jen pro `chars.py`/zmenšování), jinak vystač
 | Vrstva | Model |
 |---|---|
 | Charakterové listy a keyframy | Gemini `gemini-3-pro-image` (Nano Banana Pro), 2K |
-| Video | Gemini `veo-3.1-fast-generate-preview`, 8 s, 720p, image-to-video |
+| Video | Gemini Veo 3.1, 8 s, 720p, image-to-video |
+
+`run_clips.py` používá ve výchozím stavu `veo-3.1-generate-preview` (standard). Přepnout jde
+proměnnou `VEO_MODEL` — když na standardu dojde kvóta (`429 RESOURCE_EXHAUSTED`), zkuste
+`veo-3.1-fast-generate-preview` a pak `veo-3.1-lite-generate-preview`:
+
+```bash
+VEO_MODEL=veo-3.1-fast-generate-preview python3 zso-promo/src/run_clips.py
+```
+
+Hotové klipy vznikly zčásti na fast (záběry 1–7) a zčásti na standardu (8–17), jak během
+generování docházely kvóty. Rozdíl v obraze není znát — look drží keyframe, ze kterého video startuje.
 
 ## Co je potřeba vědět před použitím
 
