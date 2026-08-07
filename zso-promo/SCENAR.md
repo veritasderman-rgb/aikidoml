@@ -6,13 +6,21 @@ Promo spot ZSO Mariánské Lázně · mockumentary · stopáž 90–110 s · bez
 
 ## Stav generování
 
-**16 z 22 klipů hotových.** Zbývajících šest čeká na reset kvóty Gemini API — chybí
-`11-chodba-sbihani`, `18-hladina-kapka`, `19-dvere-vychod-noc`, `20-babicka-reditel`,
-`21-babicka-otoceni`, `22-hladina-final`. Keyframy k nim hotové jsou, takže dogenerování je
-jedno spuštění `src/run_clips.py` — hotové klipy přeskočí a dodělá jen ty chybějící.
+**Všech 22 klipů hotových.**
 
-Klipy 1–7 vznikly modelem `veo-3.1-fast`, 8–17 modelem `veo-3.1` (standard). Rozdíl v obraze
-není znát — paleta, zrno i charakter objektivu sedí, protože look drží keyframe.
+| Záběry | Model | Rozlišení | Délka |
+|---|---|---|---|
+| 1–7 | Veo 3.1 fast | 1280×720 | 8 s |
+| 8–10, 12–17 | Veo 3.1 standard | 1280×720 | 8 s |
+| 11, 18–22 | Kling v2.1 (image-to-video) | 1928×1076 | 5 s (20 má 10 s) |
+
+Šest posledních vzniklo na Klingu, protože kvóta Gemini na video byla vyčerpaná.
+Obraz drží pohromadě, protože všechny klipy startují ze stejných keyframů — mění se
+jen kdo dopočítal pohyb.
+
+**Ve střižně:** klipy z Klingu jsou větší a kratší než ty z Vea. Sekvenci nastavte na
+1920×1080 a menší klipy se dotáhnou. Podle stopáže v shot listu z nich stejně použijete
+4–5 s, takže kratší délka nevadí.
 
 ## Shot list
 
