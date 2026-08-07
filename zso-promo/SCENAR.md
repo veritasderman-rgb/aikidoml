@@ -51,6 +51,13 @@ Sloupec „stopáž" je návrh, kolik z klipu použít ve střihu — proto je s
 | 20 | `20-babicka-reditel` | 10 | Babička zastaví ředitele Smutného | 8 s |
 | 21 | `21-babicka-otoceni` | 10 | Zůstane stát, otočí se zpátky k fontáně | 4 s |
 | 22 | `22-hladina-final` | 11 | Hladina, tři tóny zezdola, sotva znatelné zavlnění | 5 s |
+| 23 | `23-hraji-pod-kolonadou` | — | **Bonus:** orchestr hraje v tunelu pod fontánou | 10 s |
+
+> **K záběru 23:** není součástí scénáře a do hlavní linky nepatří. Spot stojí na tom, že orchestr
+> hrát **nevidíme** — zavřou se dveře, nahoře tryská fontána a na konci projdou tři tóny zpod hladiny.
+> Divák si to složí sám a v tom je pointa. Když záběr nasadíte doprostřed, závěrečné tóny přestanou být
+> překvapením. Funguje bez ztráty jako samostatný teaser na sociální sítě nebo jako úplně poslední
+> záběr po závěrečném titulku.
 
 **Titulek (7)** a **závěrečný titulek (11)** nejsou generované — vysadíte je ve střihu:
 
