@@ -4,6 +4,16 @@ Promo spot ZSO Mariánské Lázně · mockumentary · stopáž 90–110 s · bez
 
 ---
 
+## Stav generování
+
+**16 z 22 klipů hotových.** Zbývajících šest čeká na reset kvóty Gemini API — chybí
+`11-chodba-sbihani`, `18-hladina-kapka`, `19-dvere-vychod-noc`, `20-babicka-reditel`,
+`21-babicka-otoceni`, `22-hladina-final`. Keyframy k nim hotové jsou, takže dogenerování je
+jedno spuštění `src/run_clips.py` — hotové klipy přeskočí a dodělá jen ty chybějící.
+
+Klipy 1–7 vznikly modelem `veo-3.1-fast`, 8–17 modelem `veo-3.1` (standard). Rozdíl v obraze
+není znát — paleta, zrno i charakter objektivu sedí, protože look drží keyframe.
+
 ## Shot list
 
 Každý řádek = jeden vygenerovaný klip 8 s, 16:9, 720p. Soubory v `clips/`, výchozí snímek v `key/`.
