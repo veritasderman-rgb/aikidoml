@@ -6,13 +6,14 @@ Promo spot ZSO Mariánské Lázně · mockumentary · stopáž 90–110 s · bez
 
 ## Stav generování
 
-**Všech 22 klipů hotových.**
+**Všech 22 klipů hotových**, plus bonusový záběr 23.
 
 | Záběry | Model | Rozlišení | Délka |
 |---|---|---|---|
 | 1–7 | Veo 3.1 fast | 1280×720 | 8 s |
 | 8–10, 12–17 | Veo 3.1 standard | 1280×720 | 8 s |
 | 11, 18–22 | Kling v2.1 (image-to-video) | 1928×1076 | 5 s (20 má 10 s) |
+| 23 (bonus) | Kling v2.1 z keyframu mimo pipeline | 1928×1072 | 10 s |
 
 Šest posledních vzniklo na Klingu, protože kvóta Gemini na video byla vyčerpaná.
 Obraz drží pohromadě, protože všechny klipy startují ze stejných keyframů — mění se
