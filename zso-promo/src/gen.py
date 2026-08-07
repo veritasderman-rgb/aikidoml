@@ -1,4 +1,24 @@
 import base64, json, os, sys, time, urllib.error, urllib.request
+from pathlib import Path
+
+# Kořen projektu (zso-promo/), ne aktuální adresář – skripty tak fungují,
+# ať je pustíte odkudkoli.
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def rp(*parts):
+    """Cesta relativní ke kořeni projektu."""
+    return str(ROOT.joinpath(*parts))
+
+
+def asset(subdir, stem):
+    """Najde soubor bez ohledu na příponu – v repu jsou keyframy a postavy
+    uložené jako .jpg, čerstvě vygenerované jsou .png."""
+    for ext in ("png", "jpg", "jpeg"):
+        cand = ROOT / subdir / f"{stem}.{ext}"
+        if cand.exists():
+            return str(cand)
+    return str(ROOT / subdir / f"{stem}.png")
 
 KEY = os.environ["GKEY"]
 BASE = "https://generativelanguage.googleapis.com/v1beta"
@@ -53,7 +73,8 @@ def video(prompt, out, first_frame=None, seconds=8, aspect="16:9",
         print("skip", out); return True
     inst = {"prompt": prompt}
     if first_frame:
-        inst["image"] = {"bytesBase64Encoded": b64(first_frame), "mimeType": "image/png"}
+        mime = "image/png" if str(first_frame).lower().endswith(".png") else "image/jpeg"
+        inst["image"] = {"bytesBase64Encoded": b64(first_frame), "mimeType": mime}
     params = {"aspectRatio": aspect, "durationSeconds": seconds, "resolution": "720p"}
     if negative:
         params["negativePrompt"] = negative

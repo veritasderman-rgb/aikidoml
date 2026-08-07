@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-from gen import LOOK, NOTEXT
+from gen import LOOK, NOTEXT, asset, rp
 
-M   = "char/hudebnik.png"        # hudebník v civilu
-MF  = "char/hudebnik-frak.png"   # hudebník ve fraku
-D   = "char/reditel.png"
-B   = "char/babicka.png"
-KOL = "ref/kolonada-fontana-celek.jpg"
-KW  = "ref/kolonada-wide-den.jpg"
-KP  = "ref/kolonada-perspektiva.jpg"
-F1  = "ref/fontana-den-1.jpg"
-FM  = "ref/fontana-mísa.jpg"
-CAS = "ref/casino-fasada.jpg"
+M   = asset("char", "hudebnik")        # hudebník v civilu
+MF  = asset("char", "hudebnik-frak")   # hudebník ve fraku
+D   = asset("char", "reditel")
+B   = asset("char", "babicka")
+KOL  = rp("ref", "kolonada-fontana-celek.jpg")
+KW  = rp("ref", "kolonada-wide-den.jpg")
+KP  = rp("ref", "kolonada-perspektiva.jpg")
+F1  = rp("ref", "fontana-den-1.jpg")
+FM  = rp("ref", "fontana-mísa.jpg")
+CAS  = rp("ref", "casino-fasada.jpg")
 
 SAME_M  = ("The man is EXACTLY the same person as in the character reference image — identical face, "
            "identical grey-flecked hair, identical navy zip-up jacket and black violin case. ")

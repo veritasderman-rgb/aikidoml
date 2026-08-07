@@ -37,15 +37,22 @@ Díky kroku 3 klipy nedriftují: tvář, kostým, architektura i barevnost jsou 
 ## Přegenerování
 
 ```bash
-cd zso-promo/src
 export GKEY='<váš Gemini API klíč>'
-python3 chars.py       # charakterové listy (jen když měníte casting)
-python3 run_keys.py    # keyframy — hotové soubory přeskočí
-python3 run_clips.py   # klipy z keyframů
+python3 zso-promo/src/chars.py       # charakterové listy (jen když měníte casting)
+python3 zso-promo/src/run_keys.py    # keyframy — hotové soubory přeskočí
+python3 zso-promo/src/run_clips.py   # klipy z keyframů
 ```
+
+Skripty si cesty odvozují od kořene projektu, ne od adresáře, ze kterého je pustíte — je jedno,
+odkud je voláte, reference i výstupy vždy sedí do `zso-promo/`.
+
+Keyframy jsou v repu uložené jako `.jpg` (kvůli velikosti), čerstvě vygenerované jsou `.png`.
+Skripty berou obojí, takže klipy jde generovat rovnou z čerstvého klonu bez přegenerovávání keyframů.
 
 Když chcete přegenerovat jeden záběr, smažte jeho soubor a skript ho vyrobí znovu; ostatní nechá být.
 Texty promptů jsou v `src/shots.py` — `SHOTS` drží popis obrazu pro keyframe, `MOTION` popis pohybu pro video.
+
+Potřebné balíčky: `Pillow` (jen pro `chars.py`/zmenšování), jinak vystačí standardní knihovna.
 
 ## Čím to bylo vygenerováno
 
