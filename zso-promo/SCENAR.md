@@ -6,13 +6,14 @@ Promo spot ZSO Mariánské Lázně · mockumentary · stopáž 90–110 s · bez
 
 ## Stav generování
 
-**Všech 22 klipů hotových.**
+**Všech 22 klipů hotových**, plus bonusový záběr 23.
 
 | Záběry | Model | Rozlišení | Délka |
 |---|---|---|---|
 | 1–7 | Veo 3.1 fast | 1280×720 | 8 s |
 | 8–10, 12–17 | Veo 3.1 standard | 1280×720 | 8 s |
 | 11, 18–22 | Kling v2.1 (image-to-video) | 1928×1076 | 5 s (20 má 10 s) |
+| 23 (bonus) | Kling v2.1 z keyframu mimo pipeline | 1928×1072 | 10 s |
 
 Šest posledních vzniklo na Klingu, protože kvóta Gemini na video byla vyčerpaná.
 Obraz drží pohromadě, protože všechny klipy startují ze stejných keyframů — mění se
@@ -51,6 +52,13 @@ Sloupec „stopáž" je návrh, kolik z klipu použít ve střihu — proto je s
 | 20 | `20-babicka-reditel` | 10 | Babička zastaví ředitele Smutného | 8 s |
 | 21 | `21-babicka-otoceni` | 10 | Zůstane stát, otočí se zpátky k fontáně | 4 s |
 | 22 | `22-hladina-final` | 11 | Hladina, tři tóny zezdola, sotva znatelné zavlnění | 5 s |
+| 23 | `23-hraji-pod-kolonadou` | — | **Bonus:** orchestr hraje v tunelu pod fontánou | 10 s |
+
+> **K záběru 23:** není součástí scénáře a do hlavní linky nepatří. Spot stojí na tom, že orchestr
+> hrát **nevidíme** — zavřou se dveře, nahoře tryská fontána a na konci projdou tři tóny zpod hladiny.
+> Divák si to složí sám a v tom je pointa. Když záběr nasadíte doprostřed, závěrečné tóny přestanou být
+> překvapením. Funguje bez ztráty jako samostatný teaser na sociální sítě nebo jako úplně poslední
+> záběr po závěrečném titulku.
 
 **Titulek (7)** a **závěrečný titulek (11)** nejsou generované — vysadíte je ve střihu:
 
