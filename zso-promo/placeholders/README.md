@@ -9,4 +9,5 @@ Veo. Obraz i barevnost sedí, protože jde o tytéž keyframy, ze kterých se ge
 **K čemu to není:** do finálu. V záběrech se nikdo nehýbe — babička se neotočí, orchestr
 neprojde chodbou, kapka nedopadne. Až budou hotové klipy v `../clips/`, tyhle soubory smažte.
 
-Přegenerování: `bash ../src/kenburns.sh` (spouštět ze složky `zso-promo/`).
+Přegenerování: `bash zso-promo/src/kenburns.sh` — je jedno, odkud se spustí,
+cesty si odvozuje od umístění skriptu a keyframe najde jako `.jpg` i `.png`.
