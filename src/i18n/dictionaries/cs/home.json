@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Aikido Mariánské Lázně – BUDO CLUB",
-    "description": "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu. První 3 tréninky zdarma."
+    "description": "Aikido klub v Mariánských Lázních. Září je měsíc náborů – přijďte kdykoliv na kterýkoliv trénink, úterý a pátek v BUDO CLUBu. První 3 tréninky zdarma."
   },
   "hero": {
     "subtitle": "AIKIDO MARIÁNSKÉ LÁZNĚ",
@@ -26,19 +26,19 @@
     "napisteNam": "Napište nám"
   },
   "event": {
-    "title": "Pozvánka",
-    "eventTitle": "První zářijový trénink",
+    "title": "Měsíc náborů",
+    "eventTitle": "Září – měsíc náborů",
     "eventOrg": "Aikido Mariánské Lázně",
-    "tagline": "Nový začátek na tatami",
+    "tagline": "Přijďte kdykoliv, na kterýkoliv trénink",
     "subTagline": "První 3 tréninky zdarma",
     "when": "Kdy",
-    "whenDate": "Pátek 4. září 2026, 17:30 – 19:00",
+    "whenDate": "Celé září · úterý 18:30 – 20:00 a pátek 17:30 – 19:00",
     "where": "Kde",
     "wherePlace": "Budo club Mariánské Lázně",
     "whereAddress": "Tyršova ulice, Mariánské Lázně",
-    "intro": "Léto skončilo, prázdninové sandály jdou stranou a tatami se znovu otevírá. První zářijový trénink je tradičně tím okamžikem, kdy se po pauze potkáme zpátky v dódžó – a zároveň ideální chvílí pro každého, kdo s aikidem chce začít.",
-    "outro": "Žádné předchozí zkušenosti nepotřebujete. Stačí tepláky, tričko s dlouhým rukávem a chuť vyzkoušet něco nového. Cvičí se naboso. Přijďte v pátek 4. září v 17:30 – budeme se na vás těšit.",
-    "addToCalendar": "Přidat do kalendáře"
+    "intro": "Tatami je po prázdninách zase otevřené a celé září u nás běží měsíc náborů. Nemusíte čekat na jeden konkrétní termín ani se nikam hlásit předem – vyberte si trénink, který se vám hodí, přijďte a rovnou se zapojte.",
+    "outro": "Žádné předchozí zkušenosti nepotřebujete. Stačí tepláky, tričko s dlouhým rukávem a chuť zkusit něco nového; cvičí se naboso a kimono zatím není potřeba. První tři tréninky máte zdarma, potom je příspěvek 200 Kč měsíčně (studenti 160 Kč). Cvičíme s dětmi zhruba od osmi let, s dospívajícími i s dospělými.",
+    "ctaTimes": "Časy tréninků"
   },
   "about": {
     "title": "Cesta harmonie",

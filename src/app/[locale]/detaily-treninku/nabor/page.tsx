@@ -19,6 +19,12 @@ export default async function Nabor({ params }: { params: Promise<{ locale: stri
     <>
       <PageHeader title={t.header.title} subtitle={t.header.subtitle} />
       <div className="max-w-4xl mx-auto px-4 py-12">
+        {/* Zářijový nábor – hlavní sdělení hned nad ohybem, sem míří i reklamy */}
+        <div className="bg-ink text-washi rounded-lg px-6 py-5 mb-10 shadow-md">
+          <p className="text-vermillion text-xs uppercase tracking-[0.2em] font-semibold mb-2">{t.banner.badge}</p>
+          <p className="text-tatami/90 leading-relaxed">{t.banner.text}</p>
+        </div>
+
         {/* Decorative kanji */}
         <div className="text-center mb-10">
           <span className="text-6xl text-ink/5 select-none" style={{ fontFamily: "serif" }}>

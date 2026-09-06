@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Aikido Mariánské Lázně – BUDO CLUB",
-    "description": "Aikido club in Mariánské Lázně. Aikido training for children, teens and adults. Tuesdays and Fridays at BUDO CLUB. First 3 training sessions free."
+    "description": "Aikido club in Mariánské Lázně. September is our open month – come to any training, Tuesdays and Fridays at BUDO CLUB. First 3 trainings free."
   },
   "hero": {
     "subtitle": "AIKIDO MARIÁNSKÉ LÁZNĚ",
@@ -26,19 +26,19 @@
     "napisteNam": "Contact us"
   },
   "event": {
-    "title": "Invitation",
-    "eventTitle": "The first training in September",
+    "title": "Open month",
+    "eventTitle": "September is our open month",
     "eventOrg": "Aikido Mariánské Lázně",
-    "tagline": "A fresh start on the tatami",
-    "subTagline": "First 3 sessions free",
+    "tagline": "Come any time, to any training",
+    "subTagline": "First 3 trainings free",
     "when": "When",
-    "whenDate": "Friday, September 4, 2026, 17:30 – 19:00",
+    "whenDate": "All September · Tuesdays 18:30 – 20:00 and Fridays 17:30 – 19:00",
     "where": "Where",
     "wherePlace": "Budo club Mariánské Lázně",
     "whereAddress": "Tyršova street, Mariánské Lázně",
-    "intro": "Summer is over, the holiday sandals are tucked away and the tatami opens again. The first September training is traditionally the moment we meet back in the dojo after the break – and it is also the perfect time for anyone who wants to start with aikido.",
-    "outro": "No previous experience is required. All you need is sweatpants, a long-sleeve shirt and the willingness to try something new. We train barefoot. Come on Friday, September 4 at 17:30 – we will be looking forward to meeting you.",
-    "addToCalendar": "Add to calendar"
+    "intro": "The tatami is open again after the summer and all September long we welcome newcomers. There is no single date to wait for and nothing to sign up for in advance – pick a training that suits you, come along and join in.",
+    "outro": "No previous experience is needed. All you need is sweatpants, a long-sleeved shirt and the willingness to try something new; we train barefoot and you do not need a kimono yet. The first three trainings are free, after that the fee is CZK 200 a month (CZK 160 for students). We train with children from about eight, with teenagers and with adults.",
+    "ctaTimes": "Training times"
   },
   "about": {
     "title": "The path of harmony",

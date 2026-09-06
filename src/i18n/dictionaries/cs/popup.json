@@ -1,19 +1,23 @@
 {
-  "eyebrow": "Zahájení sezóny",
-  "title": "První zářijový trénink",
-  "date": "Pátek 4. září 2026 · 17:30",
+  "eyebrow": "Září – měsíc náborů",
+  "title": "Přijďte kdykoliv během září",
+  "date": "Každé úterý 18:30 · pátek 17:30",
   "place": "BUDO CLUB, Tyršova ulice, Mariánské Lázně",
-  "lead": "Po prázdninách se znovu otevírá tatami. Ideální chvíle začít s aikidem – i když jste nikdy nic podobného nezkoušeli.",
+  "lead": "Celé září u nás běží nábor. Nemusíte čekat na jeden konkrétní termín ani se hlásit předem – přijďte na kterýkoliv trénink, který se vám hodí, a rovnou začněte cvičit.",
   "bullets": [
+    "Přijďte na jakýkoliv trénink – úterý 18:30, pátek 17:30",
     "První 3 tréninky zdarma, bez závazku",
-    "Stačí tepláky a tričko s dlouhým rukávem",
-    "Pro děti, dospívající i dospělé"
+    "Stačí tepláky a tričko s dlouhým rukávem, cvičí se naboso",
+    "Pro děti (zhruba od 8 let), dospívající i dospělé"
   ],
-  "countdownPrefix": "Zbývá",
-  "countdownDays": ["dní", "den", "dny"],
-  "today": "Dnes je ten den!",
-  "ctaPrimary": "Přijdu v pátek",
-  "ctaSecondary": "Přidat do kalendáře",
+  "countdown": [
+    "Do konce náborového měsíce zbývá {n} dní",
+    "Do konce náborového měsíce zbývá {n} den",
+    "Do konce náborového měsíce zbývají {n} dny"
+  ],
+  "lastDay": "Poslední den náborového měsíce!",
+  "ctaPrimary": "Chci přijít",
+  "ctaSecondary": "Časy tréninků",
   "ctaCall": "Zavolat",
   "close": "Zavřít",
   "dismiss": "Teď ne, díky"

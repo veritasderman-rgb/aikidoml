@@ -1,19 +1,23 @@
 {
-  "eyebrow": "Season opening",
-  "title": "First training of September",
-  "date": "Friday 4 September 2026 · 17:30",
+  "eyebrow": "September – open month",
+  "title": "Come any time in September",
+  "date": "Every Tuesday 18:30 · Friday 17:30",
   "place": "BUDO CLUB, Tyršova street, Mariánské Lázně",
-  "lead": "The tatami opens again after the summer break. It is the ideal moment to start aikido – even if you have never tried anything like it.",
+  "lead": "We welcome newcomers all September long. There is no single date to wait for and no need to sign up in advance – come to any training that suits you and start right away.",
   "bullets": [
+    "Join any training – Tuesday 18:30, Friday 17:30",
     "First 3 trainings free, no commitment",
-    "Just bring sweatpants and a long-sleeved t-shirt",
-    "For children, teenagers and adults"
+    "Just sweatpants and a long-sleeved t-shirt, we train barefoot",
+    "For children (from about 8), teenagers and adults"
   ],
-  "countdownPrefix": "In",
-  "countdownDays": ["days", "day", "days"],
-  "today": "It is happening today!",
-  "ctaPrimary": "I'm coming on Friday",
-  "ctaSecondary": "Add to calendar",
+  "countdown": [
+    "{n} days left of the open month",
+    "{n} day left of the open month",
+    "{n} days left of the open month"
+  ],
+  "lastDay": "Last day of the open month!",
+  "ctaPrimary": "I want to come",
+  "ctaSecondary": "Training times",
   "ctaCall": "Call us",
   "close": "Close",
   "dismiss": "Not now, thanks"

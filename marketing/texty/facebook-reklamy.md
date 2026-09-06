@@ -8,6 +8,111 @@ Formát polí v Meta Ads: **Hlavní text** (nad obrázkem) · **Nadpis** (pod ob
 
 ---
 
+# Aktuální: Září – měsíc náborů (2026)
+
+Náborový měsíc nemá jeden termín, na který by šlo tlačit. Urgenci proto nese počet zbývajících
+tréninků, ne datum – a hlavní sdělení je, že se nemusí čekat na start kurzu.
+
+Zbývající zářijové tréninky: **8., 11., 15., 18., 22., 25. a 29. 9.**
+Cíl reklam: `aikidoml.cz/cs/detaily-treninku/nabor` (má nahoře zářijový banner).
+
+Fotky ve vizuálech jsou generované – u kreativ je nastavené AI disclosure a v textech se nikde
+netvrdí, že jde o záběry z BUDO CLUBu.
+
+## Sada A – dospělí a dospívající
+
+### Varianta A1 – žádný start kurzu
+> **Hlavní text:**
+> Většina kroužků má jeden večer, kdy se dá naskočit. U nás celé září žádný takový není.
+>
+> Aikido není o tom, kdo je silnější. Je to systém neodporování – učí využít pohyb útočníka místo toho, abyste se do něj opírali silou. Proto ho zvládne dvanáctiletý i padesátiletý.
+>
+> Přijďte na kterýkoliv trénink, který se vám hodí. První tři jsou zdarma a bez závazku, stačí tepláky a tričko s dlouhým rukávem. Cvičí se naboso, kimono zatím nepotřebujete.
+>
+> 📍 BUDO CLUB, Tyršova ulice, Mariánské Lázně (za zimním stadionem)
+> 🕠 Úterý 18:30–20:00 · pátek 17:30–19:00
+>
+> **Nadpis:** Přijďte kdykoliv během září
+> **Popis:** První 3 tréninky zdarma · bez zkušeností
+> **Tlačítko:** Mám zájem
+
+### Varianta A2 – přes obavu
+> **Hlavní text:**
+> „Já jsem na to starý.“ „Nikdy jsem nic takového nedělal.“ „Nejsem dost ohebný.“
+>
+> Tohle slyšíme na začátku každé sezóny. A pak ti samí lidé stojí na tatami a diví se, že to jde.
+>
+> Každý, kdo u nás cvičí, začínal od nuly. Nikdo nikoho nehodnotí ani nepřetlačuje – aikido se dělá s partnerem, ne proti němu.
+>
+> Celé září se dá přijít na kterýkoliv trénink: úterý 18:30, pátek 17:30, BUDO CLUB v Tyršově ulici. První tři tréninky zdarma, potom 200 Kč měsíčně (studenti 160 Kč).
+>
+> **Nadpis:** Začít se dá i v padesáti
+> **Popis:** Úterý 18:30 · pátek 17:30 · Mariánské Lázně
+> **Tlačítko:** Mám zájem
+
+### Varianta A3 – krátká
+> **Hlavní text:**
+> Září je u nás měsíc náborů. Žádné přihlašování, žádný jeden termín – prostě přijďte.
+>
+> Úterý 18:30 nebo pátek 17:30, BUDO CLUB, Tyršova ulice. První tři tréninky zdarma, zkušenosti nepotřebujete. 🥋
+>
+> **Nadpis:** Aikido Mariánské Lázně
+> **Popis:** Měsíc náborů · první 3 tréninky zdarma
+> **Tlačítko:** Mám zájem
+
+## Sada B – rodiče (děti zhruba od 8 let)
+
+### Varianta B1 – dá se naskočit i později
+> **Hlavní text:**
+> Rozmysleli jste si kroužek až v půlce září? U nás to nevadí.
+>
+> Nábor u nás není jeden večer – celé září můžete dítě přivést na kterýkoliv trénink. Učí se tu padat bez zranění, soustředit se a zvládat kontakt s druhými, aniž by z toho byla rvačka.
+>
+> Cvičíme s dětmi zhruba od osmi let. První tři tréninky jsou zdarma, potom 200 Kč měsíčně (studenti 160 Kč). Stačí tepláky a tričko s dlouhým rukávem, cvičí se naboso.
+>
+> 📍 BUDO CLUB, Tyršova ulice (za zimním stadionem) · úterý 18:30, pátek 17:30
+>
+> **Nadpis:** Aikido pro děti od 8 let
+> **Popis:** Přijďte kdykoliv během září
+> **Tlačítko:** Mám zájem
+
+### Varianta B2 – co si dítě odnese
+> **Hlavní text:**
+> Bojové umění, které nezačíná úderem.
+>
+> Aikido děti neučí, jak někoho složit. Učí je udržet rovnováhu, bezpečně padat a nenechat se vyvést z míry – a patří k tomu i pozdrav na tatami a respekt k tomu, s kým cvičí.
+>
+> Celé září můžete přijít na kterýkoliv trénink a nechat dítě zkusit, jestli ho to chytne. První tři tréninky zdarma.
+>
+> Úterý 18:30 · pátek 17:30 · BUDO CLUB, Tyršova ulice, Mariánské Lázně
+>
+> **Nadpis:** Kroužek, který učí i respekt
+> **Popis:** Děti zhruba od 8 let · 3 tréninky zdarma
+> **Tlačítko:** Mám zájem
+
+### Varianta B3 – krátká
+> **Hlavní text:**
+> Hledáte pro dítě kroužek, kde se nezačíná tím, kdo je nejsilnější?
+>
+> Celé září u nás běží nábor – přijďte na kterýkoliv trénink. Děti zhruba od osmi let, první tři tréninky zdarma.
+>
+> Úterý 18:30, pátek 17:30, BUDO CLUB, Tyršova ulice.
+>
+> **Nadpis:** Aikido pro děti
+> **Popis:** Měsíc náborů · 3 tréninky zdarma
+> **Tlačítko:** Mám zájem
+
+## Uvítací zpráva pro kampaň na konverzace
+
+> Dobrý den, díky za zprávu! Celé září se dá přijít na kterýkoliv trénink – úterý 18:30–20:00
+> nebo pátek 17:30–19:00, BUDO CLUB v Tyršově ulici (za zimním stadionem). První tři tréninky
+> jsou zdarma, stačí tepláky a tričko s dlouhým rukávem, cvičí se naboso. Napište, který termín
+> by vám seděl, nebo prostě dorazte. Kdyby cokoliv: 602 492 903.
+
+---
+
+# Archiv – akce „První zářijový trénink“ (pátek 4. 9. 2026, proběhlo)
+
 ## Kampaň 1 – Událost „První zářijový trénink“
 
 ### Varianta 1A – přímá
