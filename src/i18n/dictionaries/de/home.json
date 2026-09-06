@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Aikido Mariánské Lázně – BUDO CLUB",
-    "description": "Aikido-Verein in Mariánské Lázně. Aikido-Training für Kinder, Jugendliche und Erwachsene. Dienstag und Freitag im BUDO CLUB. Die ersten 3 Trainings kostenlos."
+    "description": "Aikido-Verein in Mariánské Lázně. Der September ist unser Einsteigermonat – kommen Sie zu einem beliebigen Training, dienstags und freitags im BUDO CLUB. Die ersten 3 Trainings kostenlos."
   },
   "hero": {
     "subtitle": "AIKIDO MARIÁNSKÉ LÁZNĚ",
@@ -26,19 +26,19 @@
     "napisteNam": "Schreiben Sie uns"
   },
   "event": {
-    "title": "Einladung",
-    "eventTitle": "Das erste Training im September",
+    "title": "Einsteigermonat",
+    "eventTitle": "September ist unser Einsteigermonat",
     "eventOrg": "Aikido Mariánské Lázně",
-    "tagline": "Ein neuer Anfang auf der Tatami",
+    "tagline": "Kommen Sie jederzeit, zu jedem Training",
     "subTagline": "Die ersten 3 Trainings kostenlos",
     "when": "Wann",
-    "whenDate": "Freitag, 4. September 2026, 17:30 – 19:00",
+    "whenDate": "Den ganzen September · dienstags 18:30 – 20:00 und freitags 17:30 – 19:00",
     "where": "Wo",
     "wherePlace": "Budo club Mariánské Lázně",
     "whereAddress": "Tyršova Straße, Mariánské Lázně",
-    "intro": "Der Sommer ist vorbei, die Ferien-Sandalen werden weggeräumt und die Tatami öffnet sich wieder. Das erste Septembertraining ist traditionell der Moment, in dem wir uns nach der Pause im Dojo wiedersehen – und gleichzeitig die ideale Gelegenheit für alle, die mit Aikido beginnen möchten.",
-    "outro": "Vorkenntnisse sind nicht nötig. Es reichen eine Jogginghose, ein langärmliges T-Shirt und die Lust, etwas Neues auszuprobieren. Trainiert wird barfuß. Kommen Sie am Freitag, den 4. September um 17:30 – wir freuen uns auf Sie.",
-    "addToCalendar": "Zum Kalender hinzufügen"
+    "intro": "Nach den Ferien ist die Tatami wieder offen, und den ganzen September über nehmen wir neue Mitglieder auf. Sie müssen auf keinen bestimmten Termin warten und sich nirgends vorher anmelden – suchen Sie sich ein Training aus, das Ihnen passt, kommen Sie vorbei und machen Sie einfach mit.",
+    "outro": "Vorkenntnisse sind nicht nötig. Es reichen eine Jogginghose, ein langärmliges T-Shirt und die Lust, etwas Neues auszuprobieren; trainiert wird barfuß, ein Kimono ist vorerst nicht nötig. Die ersten drei Trainings sind kostenlos, danach beträgt der Beitrag 200 CZK pro Monat (Studenten 160 CZK). Wir trainieren mit Kindern ab etwa acht Jahren, mit Jugendlichen und mit Erwachsenen.",
+    "ctaTimes": "Trainingszeiten"
   },
   "about": {
     "title": "Der Weg der Harmonie",

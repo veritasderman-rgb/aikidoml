@@ -121,18 +121,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <p>{t.event.outro}</p>
               </div>
               <div className="pt-2">
-                <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Prvn%C3%AD+z%C3%A1%C5%99ijov%C3%BD+tr%C3%A9nink+%E2%80%93+Aikido+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B&dates=20260904T153000Z/20260904T170000Z&location=Budo+club+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B%2C+Tyr%C5%A1ova+ulice%2C+Mari%C3%A1nsk%C3%A9+L%C3%A1zn%C4%9B&details=Prvn%C3%AD+tr%C3%A9nink+po+pr%C3%A1zdnin%C3%A1ch.+Skv%C4%9Bl%C3%A1+p%C5%99%C3%ADle%C5%BEitost+za%C4%8D%C3%ADt+s+aikidem+%E2%80%93+prvn%C3%AD+3+tr%C3%A9ninky+zdarma.+Sta%C4%8D%C3%AD+tepl%C3%A1ky+a+tri%C4%8Dko+s+dlouh%C3%BDm+ruk%C3%A1vem%2C+cvi%C4%8D%C3%AD+se+naboso."
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`${p}/detaily-treninku/casy`}
                   className="inline-flex items-center gap-2 bg-vermillion text-washi font-medium px-6 py-2.5 rounded hover:bg-vermillion-light transition-colors text-sm tracking-widest uppercase"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                    <path d="M16 2v4M8 2v4M3 10h18" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" strokeLinecap="round" />
                   </svg>
-                  {t.event.addToCalendar}
-                </a>
+                  {t.event.ctaTimes}
+                </Link>
               </div>
             </div>
           </div>

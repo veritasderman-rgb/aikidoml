@@ -1,19 +1,23 @@
 {
-  "eyebrow": "Saisonstart",
-  "title": "Erstes Training im September",
-  "date": "Freitag, 4. September 2026 · 17:30",
+  "eyebrow": "September – Monat für Einsteiger",
+  "title": "Kommen Sie im September jederzeit",
+  "date": "Jeden Dienstag 18:30 · Freitag 17:30",
   "place": "BUDO CLUB, Tyršova-Straße, Marienbad",
-  "lead": "Nach den Ferien öffnet sich das Tatami wieder. Der ideale Moment, um mit Aikido zu beginnen – auch wenn Sie so etwas noch nie ausprobiert haben.",
+  "lead": "Den ganzen September über nehmen wir neue Mitglieder auf. Sie müssen auf keinen bestimmten Termin warten und sich nicht vorher anmelden – kommen Sie zu einem beliebigen Training und fangen Sie gleich an.",
   "bullets": [
+    "Kommen Sie zu jedem Training – Dienstag 18:30, Freitag 17:30",
     "Die ersten 3 Trainings gratis, unverbindlich",
-    "Es genügen Jogginghose und ein langärmeliges T-Shirt",
-    "Für Kinder, Jugendliche und Erwachsene"
+    "Es genügen Jogginghose und ein langärmeliges T-Shirt, trainiert wird barfuß",
+    "Für Kinder (ab ca. 8 Jahren), Jugendliche und Erwachsene"
   ],
-  "countdownPrefix": "Noch",
-  "countdownDays": ["Tage", "Tag", "Tage"],
-  "today": "Heute ist es soweit!",
-  "ctaPrimary": "Ich komme am Freitag",
-  "ctaSecondary": "Zum Kalender hinzufügen",
+  "countdown": [
+    "Noch {n} Tage im Einsteigermonat",
+    "Noch {n} Tag im Einsteigermonat",
+    "Noch {n} Tage im Einsteigermonat"
+  ],
+  "lastDay": "Letzter Tag des Einsteigermonats!",
+  "ctaPrimary": "Ich komme vorbei",
+  "ctaSecondary": "Trainingszeiten",
   "ctaCall": "Anrufen",
   "close": "Schließen",
   "dismiss": "Jetzt nicht, danke"

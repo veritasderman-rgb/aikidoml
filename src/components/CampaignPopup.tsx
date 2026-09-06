@@ -13,9 +13,9 @@ type PopupDict = {
   place: string;
   lead: string;
   bullets: string[];
-  countdownPrefix: string;
-  countdownDays: [string, string, string] | string[];
-  today: string;
+  /** Tři tvary odpočtu s {n} – pořadí podle `pluralIndex`: many (5+), one, few (2–4). */
+  countdown: [string, string, string] | string[];
+  lastDay: string;
   ctaPrimary: string;
   ctaSecondary: string;
   ctaCall: string;
@@ -37,10 +37,10 @@ function pluralIndex(locale: Locale, n: number) {
   return 0;
 }
 
-/** Počet kalendářních dnů do akce – porovnáváme dny, ne hodiny, ať odpočet sedí na to, co lidem říká kalendář. */
-function daysUntilEvent() {
+/** Kolik kalendářních dnů zbývá do konce náborového měsíce – porovnáváme dny, ne hodiny, ať odpočet sedí na to, co lidem říká kalendář. */
+function daysLeft() {
   const midnight = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
-  const diff = midnight(new Date(campaign.startsAt)) - midnight(new Date());
+  const diff = midnight(new Date(campaign.endsAt)) - midnight(new Date());
   return Math.max(0, Math.round(diff / 86_400_000));
 }
 
@@ -75,7 +75,7 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
       done = true;
       cleanup();
       openerRef.current = document.activeElement;
-      setDays(daysUntilEvent());
+      setDays(daysLeft());
       setOpen(true);
       track("popup_view", { campaign: campaign.id });
     };
@@ -121,8 +121,8 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
   const p = `/${locale}`;
   const countdown =
     days === null || days === 0
-      ? dict.today
-      : `${dict.countdownPrefix} ${days} ${dict.countdownDays[pluralIndex(locale, days)]}`;
+      ? dict.lastDay
+      : dict.countdown[pluralIndex(locale, days)].replace("{n}", String(days));
 
   return (
     <div
@@ -205,19 +205,20 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
             </Link>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <a
-                href={campaign.calendarUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => track("popup_cta_calendar", { campaign: campaign.id })}
+              <Link
+                href={`${p}/detaily-treninku/casy`}
+                onClick={() => {
+                  track("popup_cta_times", { campaign: campaign.id });
+                  dismiss("cta");
+                }}
                 className="inline-flex items-center justify-center gap-2 border border-ink/20 text-ink font-medium px-4 py-3 rounded hover:border-vermillion hover:text-vermillion transition-colors text-xs tracking-widest uppercase"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <rect x="3" y="4" width="18" height="18" rx="2" />
-                  <path d="M16 2v4M8 2v4M3 10h18" />
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" strokeLinecap="round" />
                 </svg>
                 {dict.ctaSecondary}
-              </a>
+              </Link>
               <a
                 href={`tel:${campaign.phone}`}
                 onClick={() => track("popup_cta_call", { campaign: campaign.id })}
