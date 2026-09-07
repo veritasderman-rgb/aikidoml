@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CampaignPopup from "@/components/CampaignPopup";
 import CookieConsent from "@/components/CookieConsent";
+import { GA_ID } from "@/lib/consent";
 import { locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 
@@ -56,7 +57,8 @@ export default async function LocaleLayout({
       <main className="flex-1">{children}</main>
       <Footer locale={locale as Locale} dict={dict} />
       <CampaignPopup locale={locale as Locale} dict={dict.popup} />
-      <CookieConsent dict={dict.common.cookies} />
+      {/* Dokud není nastavené NEXT_PUBLIC_GA_ID, není k čemu souhlas dávat. */}
+      {GA_ID && <CookieConsent dict={dict.common.cookies} />}
     </>
   );
 }
