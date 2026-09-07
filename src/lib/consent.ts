@@ -2,10 +2,86 @@
 //
 // Sdílený klíč pro localStorage. Používá ho jak inline skript v root layoutu
 // (nastaví výchozí stav souhlasu ještě před načtením GA), tak banner
-// CookieConsent, který volbu ukládá a aktualizuje gtag.
+// CookieConsent, který volbu ukládá a aktualizuje gtag. Banner se na stav ptá
+// přes useSyncExternalStore, aby se překreslil po volbě i po znovuotevření
+// z patičky — proto tu vedle čtení a zápisu žije i drobná registrace
+// posluchačů.
 export const CONSENT_KEY = "aikidoml.cookieConsent.v1";
 
 export type ConsentChoice = "granted" | "denied";
 
 /** Měřicí kód GA4. Bez proměnné prostředí se analytika vůbec nenačte. */
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+
+let listeners: (() => void)[] = [];
+
+/** Banner otevřený z patičky, i když volba už padla (odvolání souhlasu). */
+let reopened = false;
+
+function notify(): void {
+  for (const l of listeners) l();
+}
+
+export function subscribeConsent(onChange: () => void): () => void {
+  listeners = [...listeners, onChange];
+  return () => {
+    listeners = listeners.filter((l) => l !== onChange);
+  };
+}
+
+/** Volba pro případ, že localStorage zápis odmítne (privátní režim,
+ *  sandbox). Bez ní by se banner po kliknutí nezavřel — přečetl by si
+ *  prázdné úložiště a otevřel se znovu. */
+let fallbackChoice: ConsentChoice | null = null;
+
+function readStored(): ConsentChoice | null {
+  try {
+    const stored = window.localStorage.getItem(CONSENT_KEY);
+    if (stored === "granted" || stored === "denied") return stored;
+  } catch {
+    // Privátní režim — spolehneme se na volbu drženou v paměti.
+  }
+  return fallbackChoice;
+}
+
+/** Má se banner vykreslit? */
+export function isConsentOpen(): boolean {
+  return reopened || readStored() === null;
+}
+
+/** Na serveru se banner nevykresluje, jinak by blikl při hydrataci. */
+export function isConsentOpenOnServer(): boolean {
+  return false;
+}
+
+/** Odkaz „Nastavení cookies" v patičce — souhlas musí jít odvolat stejně
+ *  snadno, jako se dával. */
+export function reopenConsent(): void {
+  reopened = true;
+  notify();
+}
+
+export function writeConsent(choice: ConsentChoice): void {
+  // Nejdřív do paměti: platí i tehdy, když zápis do localStorage selže.
+  fallbackChoice = choice;
+  try {
+    window.localStorage.setItem(CONSENT_KEY, choice);
+  } catch {
+    /* private mode – volba platí jen pro tuto návštěvu */
+  }
+  reopened = false;
+  updateGtagConsent(choice);
+  notify();
+}
+
+// Aktualizuje Google Consent Mode v2 po volbě uživatele. Když GA není
+// načtená (vývoj / nenastavené NEXT_PUBLIC_GA_ID), tiše se nic nestane.
+//
+// Přepíná se jen `analytics_storage`. Reklamní souhlas zůstává denied —
+// banner slibuje měření návštěvnosti a nic víc, takže na reklamní účely
+// souhlas nemáme.
+function updateGtagConsent(choice: ConsentChoice): void {
+  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+  if (typeof gtag !== "function") return;
+  gtag("consent", "update", { analytics_storage: choice });
+}
