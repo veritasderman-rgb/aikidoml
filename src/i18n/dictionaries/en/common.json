@@ -40,6 +40,7 @@
   "cookies": {
     "text": "This site uses cookies for anonymous traffic measurement (Google Analytics, Vercel). No analytics cookies are stored without your consent.",
     "accept": "Accept",
-    "reject": "Decline"
+    "reject": "Decline",
+    "settings": "Cookie settings"
   }
 }

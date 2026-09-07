@@ -40,6 +40,7 @@
   "cookies": {
     "text": "Tento web používá cookies pro anonymní měření návštěvnosti (Google Analytics, Vercel). Bez souhlasu se neukládají žádné analytické cookies.",
     "accept": "Souhlasím",
-    "reject": "Odmítnout"
+    "reject": "Odmítnout",
+    "settings": "Nastavení cookies"
   }
 }

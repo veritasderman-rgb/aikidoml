@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { CookieSettingsLink } from "@/components/CookieConsent";
+import { GA_ID } from "@/lib/consent";
 
 export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const f = dict.common.footer;
@@ -53,6 +55,11 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
         </div>
         <div className="border-t border-ink-soft/20 mt-10 pt-6 text-center text-tatami/30 text-xs tracking-wide">
           <p>© {new Date().getFullYear()} {f.copyright}</p>
+          {GA_ID && (
+            <p className="mt-2">
+              <CookieSettingsLink label={dict.common.cookies.settings} />
+            </p>
+          )}
         </div>
       </div>
     </footer>
