@@ -36,5 +36,10 @@
   "meta": {
     "siteTitle": "Aikido Mariánské Lázně – BUDO CLUB",
     "siteDescription": "Aikido club in Mariánské Lázně. Aikido training for children, teens and adults. Tuesdays and Fridays at BUDO CLUB on Tyršova street."
+  },
+  "cookies": {
+    "text": "This site uses cookies for anonymous traffic measurement (Google Analytics, Vercel). No analytics cookies are stored without your consent.",
+    "accept": "Accept",
+    "reject": "Decline"
   }
 }

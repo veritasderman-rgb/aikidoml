@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CampaignPopup from "@/components/CampaignPopup";
+import CookieConsent from "@/components/CookieConsent";
 import { locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
       <main className="flex-1">{children}</main>
       <Footer locale={locale as Locale} dict={dict} />
       <CampaignPopup locale={locale as Locale} dict={dict.popup} />
+      <CookieConsent dict={dict.common.cookies} />
     </>
   );
 }
