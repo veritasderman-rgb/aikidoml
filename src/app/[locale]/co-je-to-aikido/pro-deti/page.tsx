@@ -22,6 +22,12 @@ export default async function ProDeti({ params }: { params: Promise<{ locale: st
         <div className="prose prose-lg text-ink-soft max-w-none">
           <p>{t.intro}</p>
 
+          <div className="bg-washi-dark border-l-3 border-vermillion p-4 my-6 not-prose rounded-r-lg">
+            <p className="text-ink font-semibold">
+              <span className="text-vermillion font-bold mr-1">年齢</span> {t.ageNote}
+            </p>
+          </div>
+
           <h2 style={{ fontFamily: "Georgia, serif" }} className="text-ink tracking-tight">{t.benefitsTitle}</h2>
           <ul>
             {t.benefits.map((item: string, i: number) => (
