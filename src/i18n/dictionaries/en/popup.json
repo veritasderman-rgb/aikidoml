@@ -1,24 +1,50 @@
 {
-  "eyebrow": "September – open month",
-  "title": "Come any time in September",
-  "date": "Every Tuesday 18:30 · Friday 17:30",
-  "place": "BUDO CLUB, Tyršova street, Mariánské Lázně",
-  "lead": "We welcome newcomers all September long. There is no single date to wait for and no need to sign up in advance – come to any training that suits you and start right away.",
-  "bullets": [
-    "Join any training – Tuesday 18:30, Friday 17:30",
-    "First 3 trainings free, no commitment",
-    "Just sweatpants and a long-sleeved t-shirt, we train barefoot",
-    "For children (from about 8), teenagers and adults"
-  ],
-  "countdown": [
-    "{n} days left of the open month",
-    "{n} day left of the open month",
-    "{n} days left of the open month"
-  ],
-  "lastDay": "Last day of the open month!",
-  "ctaPrimary": "I want to come",
-  "ctaSecondary": "Training times",
-  "ctaCall": "Call us",
   "close": "Close",
-  "dismiss": "Not now, thanks"
+  "dismiss": "Not now, thanks",
+  "campaigns": {
+    "zari-mesic-naboru-2026": {
+      "eyebrow": "September – open month",
+      "title": "Come any time in September",
+      "date": "Every Tuesday 18:30 · Friday 17:30",
+      "place": "BUDO CLUB, Tyršova street, Mariánské Lázně",
+      "lead": "We welcome newcomers all September long. There is no single date to wait for and no need to sign up in advance – come to any training that suits you and start right away.",
+      "bullets": [
+        "Join any training – Tuesday 18:30, Friday 17:30",
+        "First 3 trainings free, no commitment",
+        "Just sweatpants and a long-sleeved t-shirt, we train barefoot",
+        "For children (from about 8), teenagers and adults"
+      ],
+      "countdown": [
+        "{n} days left of the open month",
+        "{n} day left of the open month",
+        "{n} days left of the open month"
+      ],
+      "lastDay": "Last day of the open month!",
+      "ctaPrimary": "I want to come",
+      "ctaSecondary": "Training times",
+      "ctaCall": "Call us"
+    },
+    "aikido-cup-open-2026": {
+      "eyebrow": "1st edition · bowling tournament",
+      "title": "Aikido Cup Open",
+      "date": "Sunday 22 November 2026 from 12:00",
+      "place": "Kuželna Teplá (bowling alley), Školní 592",
+      "lead": "We invite members of Aikido Mariánské Lázně, their families and friends to the first edition of our nine-pin bowling tournament. This time a lane instead of the tatami, and pins instead of uke.",
+      "bullets": [
+        "Entry fee CZK 100 + bring one prize",
+        "Sportswear and clean shoes with white soles",
+        "Refreshments during the tournament by Pizzerie Kuželna"
+      ],
+      "countdown": [
+        "{n} days to the tournament",
+        "{n} day to the tournament",
+        "{n} days to the tournament"
+      ],
+      "lastDay": "The tournament is today from 12:00!",
+      "ctaPrimary": "Tournament details",
+      "ctaSecondary": "Directions",
+      "ctaCall": "Call us",
+      "imageAlt": "Aikido Cup Open poster – an aikidoka in hakama bowling"
+    }
+  }
 }

@@ -1,24 +1,50 @@
 {
-  "eyebrow": "September – Monat für Einsteiger",
-  "title": "Kommen Sie im September jederzeit",
-  "date": "Jeden Dienstag 18:30 · Freitag 17:30",
-  "place": "BUDO CLUB, Tyršova-Straße, Marienbad",
-  "lead": "Den ganzen September über nehmen wir neue Mitglieder auf. Sie müssen auf keinen bestimmten Termin warten und sich nicht vorher anmelden – kommen Sie zu einem beliebigen Training und fangen Sie gleich an.",
-  "bullets": [
-    "Kommen Sie zu jedem Training – Dienstag 18:30, Freitag 17:30",
-    "Die ersten 3 Trainings gratis, unverbindlich",
-    "Es genügen Jogginghose und ein langärmeliges T-Shirt, trainiert wird barfuß",
-    "Für Kinder (ab ca. 8 Jahren), Jugendliche und Erwachsene"
-  ],
-  "countdown": [
-    "Noch {n} Tage im Einsteigermonat",
-    "Noch {n} Tag im Einsteigermonat",
-    "Noch {n} Tage im Einsteigermonat"
-  ],
-  "lastDay": "Letzter Tag des Einsteigermonats!",
-  "ctaPrimary": "Ich komme vorbei",
-  "ctaSecondary": "Trainingszeiten",
-  "ctaCall": "Anrufen",
   "close": "Schließen",
-  "dismiss": "Jetzt nicht, danke"
+  "dismiss": "Jetzt nicht, danke",
+  "campaigns": {
+    "zari-mesic-naboru-2026": {
+      "eyebrow": "September – Monat für Einsteiger",
+      "title": "Kommen Sie im September jederzeit",
+      "date": "Jeden Dienstag 18:30 · Freitag 17:30",
+      "place": "BUDO CLUB, Tyršova-Straße, Marienbad",
+      "lead": "Den ganzen September über nehmen wir neue Mitglieder auf. Sie müssen auf keinen bestimmten Termin warten und sich nicht vorher anmelden – kommen Sie zu einem beliebigen Training und fangen Sie gleich an.",
+      "bullets": [
+        "Kommen Sie zu jedem Training – Dienstag 18:30, Freitag 17:30",
+        "Die ersten 3 Trainings gratis, unverbindlich",
+        "Es genügen Jogginghose und ein langärmeliges T-Shirt, trainiert wird barfuß",
+        "Für Kinder (ab ca. 8 Jahren), Jugendliche und Erwachsene"
+      ],
+      "countdown": [
+        "Noch {n} Tage im Einsteigermonat",
+        "Noch {n} Tag im Einsteigermonat",
+        "Noch {n} Tage im Einsteigermonat"
+      ],
+      "lastDay": "Letzter Tag des Einsteigermonats!",
+      "ctaPrimary": "Ich komme vorbei",
+      "ctaSecondary": "Trainingszeiten",
+      "ctaCall": "Anrufen"
+    },
+    "aikido-cup-open-2026": {
+      "eyebrow": "1. Ausgabe · Kegelturnier",
+      "title": "Aikido Cup Open",
+      "date": "Sonntag, 22. 11. 2026 ab 12:00 Uhr",
+      "place": "Kegelbahn Teplá, Školní 592",
+      "lead": "Wir laden die Mitglieder von Aikido Mariánské Lázně, ihre Familien und Freunde zur ersten Ausgabe unseres Kegelturniers ein. Diesmal eine Kegelbahn statt Tatami und Kegel statt Uke.",
+      "bullets": [
+        "Startgeld 100 CZK + einen Sachpreis mitbringen",
+        "Sportkleidung und saubere Schuhe mit weißer Sohle",
+        "Für Verpflegung während des Turniers sorgt die Pizzerie Kuželna"
+      ],
+      "countdown": [
+        "Noch {n} Tage bis zum Turnier",
+        "Noch {n} Tag bis zum Turnier",
+        "Noch {n} Tage bis zum Turnier"
+      ],
+      "lastDay": "Das Turnier ist heute ab 12:00 Uhr!",
+      "ctaPrimary": "Details zum Turnier",
+      "ctaSecondary": "Route",
+      "ctaCall": "Anrufen",
+      "imageAlt": "Plakat Aikido Cup Open – ein Aikidoka im Hakama beim Kegeln"
+    }
+  }
 }

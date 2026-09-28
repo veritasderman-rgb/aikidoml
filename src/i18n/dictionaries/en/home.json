@@ -25,20 +25,29 @@
     "text": "All you need is sweatpants and a long-sleeve shirt. Training is done barefoot. No previous experience is required.",
     "napisteNam": "Contact us"
   },
-  "event": {
-    "title": "Open month",
-    "eventTitle": "September is our open month",
-    "eventOrg": "Aikido Mariánské Lázně",
-    "tagline": "Come any time, to any training",
-    "subTagline": "First 3 trainings free",
+  "tournament": {
+    "title": "Invitation",
+    "eventTitle": "AIKIDO CUP OPEN",
+    "eventOrg": "1st edition of our bowling tournament · hosted by Aikido Mariánské Lázně",
+    "tagline": "For members of Aikido Mariánské Lázně, their families and friends",
     "when": "When",
-    "whenDate": "All September · Tuesdays 18:30 – 20:00 and Fridays 17:30 – 19:00",
+    "whenDate": "Sunday 22 November 2026 from 12:00",
     "where": "Where",
-    "wherePlace": "Budo club Mariánské Lázně",
-    "whereAddress": "Tyršova street, Mariánské Lázně",
-    "intro": "The tatami is open again after the summer and all September long we welcome newcomers. There is no single date to wait for and nothing to sign up for in advance – pick a training that suits you, come along and join in.",
-    "outro": "No previous experience is needed. All you need is sweatpants, a long-sleeved shirt and the willingness to try something new; we train barefoot and you do not need a kimono yet. The first three trainings are free, after that the fee is CZK 200 a month (CZK 160 for students). We train with children from about eight, with teenagers and with adults.",
-    "ctaTimes": "Training times"
+    "wherePlace": "Kuželna Teplá (bowling alley)",
+    "whereAddress": "Školní 592, Teplá",
+    "fee": "Entry fee",
+    "feeText": "CZK 100 + bring one prize",
+    "bringTitle": "Bring along",
+    "bring": [
+      "Sportswear",
+      "Clean shoes with white soles",
+      "One prize for the tournament"
+    ],
+    "food": "Refreshments during the tournament are provided by Pizzerie Kuželna.",
+    "posterAlt": "Aikido Cup Open poster – 1st bowling tournament, Sunday 22 November 2026 from 12:00, Kuželna Teplá, Školní 592",
+    "posterOpen": "Open poster",
+    "ctaMap": "Directions",
+    "ctaCall": "Call us"
   },
   "about": {
     "title": "The path of harmony",
