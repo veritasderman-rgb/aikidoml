@@ -47,7 +47,10 @@
     "posterAlt": "Aikido Cup Open poster – 1st bowling tournament, Sunday 22 November 2026 from 12:00, Kuželna Teplá, Školní 592",
     "ctaMap": "Directions",
     "ctaCall": "Call us",
-    "ctaMore": "More about the tournament"
+    "ctaMore": "More about the tournament",
+    "calendarTitle": "Add to calendar",
+    "calendarGoogle": "Google Calendar",
+    "calendarIcs": "Apple / Outlook / other (.ics)"
   },
   "about": {
     "title": "The path of harmony",

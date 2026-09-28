@@ -47,7 +47,10 @@
     "posterAlt": "Плакат Aikido Cup Open – 1-й турнір з кеглів, неділя 22. 11. 2026 від 12:00, Kuželna Teplá, Školní 592",
     "ctaMap": "Маршрут",
     "ctaCall": "Зателефонувати",
-    "ctaMore": "Більше про турнір"
+    "ctaMore": "Більше про турнір",
+    "calendarTitle": "Додати до календаря",
+    "calendarGoogle": "Google Календар",
+    "calendarIcs": "Apple / Outlook / інший (.ics)"
   },
   "about": {
     "title": "Шлях гармонії",

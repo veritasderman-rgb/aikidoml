@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { aikidoCupMapUrl } from "@/config/campaign";
+import { aikidoCupCalendar, aikidoCupMapUrl } from "@/config/campaign";
 import type { Dictionary } from "@/i18n/getDictionary";
 
 /** Detaily turnaje Aikido Cup Open – sdílí je pozvánka na úvodní stránce i podstránka turnaje. */
@@ -69,6 +69,29 @@ export default function TournamentInfo({
             {t.ctaMore} →
           </Link>
         )}
+      </div>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+        <span className="inline-flex items-center gap-2 text-ink-soft uppercase tracking-widest text-xs font-semibold">
+          <svg className="w-4 h-4 text-vermillion" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="16" rx="2" />
+            <path d="M3 10h18M8 3v4M16 3v4" strokeLinecap="round" />
+          </svg>
+          {t.calendarTitle}
+        </span>
+        <a
+          href={aikidoCupCalendar.google}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-ink underline decoration-tatami underline-offset-4 hover:text-vermillion hover:decoration-vermillion transition-colors"
+        >
+          {t.calendarGoogle}
+        </a>
+        <a
+          href={aikidoCupCalendar.ics}
+          className="text-ink underline decoration-tatami underline-offset-4 hover:text-vermillion hover:decoration-vermillion transition-colors"
+        >
+          {t.calendarIcs}
+        </a>
       </div>
     </>
   );

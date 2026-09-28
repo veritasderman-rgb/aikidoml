@@ -27,6 +27,28 @@ export const aikidoCupPoster = "/akce/aikido-cup-open-2026.jpg";
 /** Kuželna Teplá – odkaz na navigaci sdílí popup i pozvánka na úvodní stránce. */
 export const aikidoCupMapUrl = "https://www.google.com/maps/search/?api=1&query=Ku%C5%BEelna+Tepl%C3%A1,+%C5%A0koln%C3%AD+592,+Tepl%C3%A1";
 
+/**
+ * Turnaj do kalendáře. Plakát uvádí jen začátek (12:00), konec v 17:00 je odhad,
+ * ať má událost v kalendáři rozumnou délku. Stejné časy jsou v `public/akce/aikido-cup-open-2026.ics`.
+ */
+export const aikidoCupCalendar = {
+  /** Soubor .ics – otevře se v kalendáři telefonu / počítače (Apple, Outlook, Android). */
+  ics: "/akce/aikido-cup-open-2026.ics",
+  google: `https://calendar.google.com/calendar/render?${new URLSearchParams({
+    action: "TEMPLATE",
+    text: "Aikido Cup Open – turnaj v kuželkách",
+    dates: "20261122T120000/20261122T170000",
+    ctz: "Europe/Prague",
+    location: "Kuželna Teplá, Školní 592, Teplá",
+    details:
+      "1. ročník turnaje v kuželkách pro členy, rodiny a přátele Aikido Mariánské Lázně.\n" +
+      "Startovné 100 Kč + přinést jednu věcnou cenu.\n" +
+      "Sportovní oblečení a čistou obuv s bílou podrážkou.\n" +
+      "Občerstvení zajišťuje Pizzerie Kuželna.\n" +
+      "https://aikidoml.cz/cs/aikido-cup-open",
+  })}`,
+};
+
 export const campaigns: readonly Campaign[] = [
   {
     // „Září – měsíc náborů“: celý měsíc se dá přijít na kterýkoliv trénink.
