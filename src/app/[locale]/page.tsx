@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { aikidoCupMapUrl } from "@/config/campaign";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 
@@ -87,50 +89,86 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* Pozvánka */}
-      <section className="max-w-5xl mx-auto px-4 pb-16" id="pozvanka">
+      {/* Pozvánka – Aikido Cup Open, turnaj v kuželkách */}
+      <section className="max-w-5xl mx-auto px-4 pb-16 scroll-mt-20" id="pozvanka">
         <div className="text-center mb-10">
-          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>始</span>
-          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>{t.event.title}</h2>
+          <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>招</span>
+          <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>{t.tournament.title}</h2>
         </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md">
-            <div className="bg-ink px-6 py-4">
-              <h3 className="text-washi font-bold text-lg tracking-wide" style={{ fontFamily: "Georgia, serif" }}>{t.event.eventTitle}</h3>
-              <p className="text-tatami/70 text-sm">{t.event.eventOrg}</p>
+        <div className="bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md grid grid-cols-1 md:grid-cols-5">
+          <a
+            href="/akce/aikido-cup-open-2026.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:col-span-2 block bg-washi group relative"
+            title={t.tournament.posterOpen}
+          >
+            <Image
+              src="/akce/aikido-cup-open-2026.jpg"
+              alt={t.tournament.posterAlt}
+              width={1280}
+              height={1956}
+              unoptimized
+              className="w-full h-auto"
+            />
+            <span className="absolute bottom-3 right-3 bg-ink/80 text-washi text-xs tracking-widest uppercase px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">
+              {t.tournament.posterOpen}
+            </span>
+          </a>
+          <div className="md:col-span-3 flex flex-col">
+            <div className="bg-ink px-6 py-5">
+              <h3 className="text-washi font-bold text-2xl tracking-wide" style={{ fontFamily: "Georgia, serif" }}>{t.tournament.eventTitle}</h3>
+              <p className="text-tatami/70 text-sm mt-1">{t.tournament.eventOrg}</p>
             </div>
-            <div className="p-6 space-y-4">
-              <div>
-                <p className="text-ink font-semibold mb-1">{t.event.tagline}</p>
-                <p className="text-vermillion text-sm font-medium">{t.event.subTagline}</p>
-              </div>
+            <div className="p-6 space-y-5 flex-1">
+              <p className="text-ink font-semibold">{t.tournament.tagline}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.event.when}</p>
-                  <p className="text-ink font-medium">{t.event.whenDate}</p>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.tournament.when}</p>
+                  <p className="text-ink font-medium">{t.tournament.whenDate}</p>
                 </div>
                 <div>
-                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.event.where}</p>
-                  <p className="text-ink font-medium">{t.event.wherePlace}</p>
-                  <p className="text-ink-soft">{t.event.whereAddress}</p>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.tournament.where}</p>
+                  <p className="text-ink font-medium">{t.tournament.wherePlace}</p>
+                  <p className="text-ink-soft">{t.tournament.whereAddress}</p>
+                </div>
+                <div>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.tournament.fee}</p>
+                  <p className="text-ink font-medium">{t.tournament.feeText}</p>
+                </div>
+                <div>
+                  <p className="text-ink-soft uppercase tracking-widest text-xs mb-1 font-semibold">{t.tournament.bringTitle}</p>
+                  <ul className="text-ink-soft space-y-0.5">
+                    {t.tournament.bring.map((item: string) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="text-vermillion" aria-hidden="true">▸</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div className="h-px bg-gradient-to-r from-transparent via-tatami to-transparent" />
-              <div className="space-y-3 text-sm text-ink-soft leading-relaxed">
-                <p>{t.event.intro}</p>
-                <p>{t.event.outro}</p>
-              </div>
-              <div className="pt-2">
-                <Link
-                  href={`${p}/detaily-treninku/casy`}
-                  className="inline-flex items-center gap-2 bg-vermillion text-washi font-medium px-6 py-2.5 rounded hover:bg-vermillion-light transition-colors text-sm tracking-widest uppercase"
+              <p className="text-sm text-ink-soft leading-relaxed">{t.tournament.food}</p>
+              <div className="flex flex-col sm:flex-row gap-3 pt-1">
+                <a
+                  href={aikidoCupMapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-vermillion text-washi font-medium px-6 py-2.5 rounded hover:bg-vermillion-light transition-colors text-sm tracking-widest uppercase"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M12 7v5l3 2" strokeLinecap="round" />
+                    <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" strokeLinejoin="round" />
+                    <circle cx="12" cy="9.5" r="2.5" />
                   </svg>
-                  {t.event.ctaTimes}
-                </Link>
+                  {t.tournament.ctaMap}
+                </a>
+                <a
+                  href="tel:+420602492903"
+                  className="inline-flex items-center justify-center gap-2 border border-ink/20 text-ink font-medium px-6 py-2.5 rounded hover:border-vermillion hover:text-vermillion transition-colors text-sm tracking-widest uppercase"
+                >
+                  {t.tournament.ctaCall} · 602 492 903
+                </a>
               </div>
             </div>
           </div>

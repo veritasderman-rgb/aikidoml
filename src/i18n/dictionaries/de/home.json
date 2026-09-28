@@ -25,20 +25,29 @@
     "text": "Sie brauchen nur eine Jogginghose und ein langärmliges T-Shirt. Es wird barfuß trainiert. Keine Vorkenntnisse erforderlich.",
     "napisteNam": "Schreiben Sie uns"
   },
-  "event": {
-    "title": "Einsteigermonat",
-    "eventTitle": "September ist unser Einsteigermonat",
-    "eventOrg": "Aikido Mariánské Lázně",
-    "tagline": "Kommen Sie jederzeit, zu jedem Training",
-    "subTagline": "Die ersten 3 Trainings kostenlos",
+  "tournament": {
+    "title": "Einladung",
+    "eventTitle": "AIKIDO CUP OPEN",
+    "eventOrg": "1. Kegelturnier · veranstaltet von Aikido Mariánské Lázně",
+    "tagline": "Für Mitglieder von Aikido Mariánské Lázně, ihre Familien und Freunde",
     "when": "Wann",
-    "whenDate": "Den ganzen September · dienstags 18:30 – 20:00 und freitags 17:30 – 19:00",
+    "whenDate": "Sonntag, 22. 11. 2026 ab 12:00 Uhr",
     "where": "Wo",
-    "wherePlace": "Budo club Mariánské Lázně",
-    "whereAddress": "Tyršova Straße, Mariánské Lázně",
-    "intro": "Nach den Ferien ist die Tatami wieder offen, und den ganzen September über nehmen wir neue Mitglieder auf. Sie müssen auf keinen bestimmten Termin warten und sich nirgends vorher anmelden – suchen Sie sich ein Training aus, das Ihnen passt, kommen Sie vorbei und machen Sie einfach mit.",
-    "outro": "Vorkenntnisse sind nicht nötig. Es reichen eine Jogginghose, ein langärmliges T-Shirt und die Lust, etwas Neues auszuprobieren; trainiert wird barfuß, ein Kimono ist vorerst nicht nötig. Die ersten drei Trainings sind kostenlos, danach beträgt der Beitrag 200 CZK pro Monat (Studenten 160 CZK). Wir trainieren mit Kindern ab etwa acht Jahren, mit Jugendlichen und mit Erwachsenen.",
-    "ctaTimes": "Trainingszeiten"
+    "wherePlace": "Kegelbahn Teplá (Kuželna Teplá)",
+    "whereAddress": "Školní 592, Teplá",
+    "fee": "Startgeld",
+    "feeText": "100 CZK + einen Sachpreis mitbringen",
+    "bringTitle": "Mitbringen",
+    "bring": [
+      "Sportkleidung",
+      "Saubere Schuhe mit weißer Sohle",
+      "Einen Sachpreis"
+    ],
+    "food": "Für Verpflegung während des Turniers sorgt die Pizzerie Kuželna.",
+    "posterAlt": "Plakat Aikido Cup Open – 1. Kegelturnier, Sonntag 22. 11. 2026 ab 12 Uhr, Kuželna Teplá, Školní 592",
+    "posterOpen": "Plakat öffnen",
+    "ctaMap": "Route",
+    "ctaCall": "Anrufen"
   },
   "about": {
     "title": "Der Weg der Harmonie",

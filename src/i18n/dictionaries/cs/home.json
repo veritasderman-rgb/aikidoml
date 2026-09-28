@@ -25,20 +25,29 @@
     "text": "Stačí tepláky a tričko s dlouhým rukávem. Cvičí se na boso. Žádné předchozí zkušenosti nejsou potřeba.",
     "napisteNam": "Napište nám"
   },
-  "event": {
-    "title": "Měsíc náborů",
-    "eventTitle": "Září – měsíc náborů",
-    "eventOrg": "Aikido Mariánské Lázně",
-    "tagline": "Přijďte kdykoliv, na kterýkoliv trénink",
-    "subTagline": "První 3 tréninky zdarma",
+  "tournament": {
+    "title": "Pozvánka",
+    "eventTitle": "AIKIDO CUP OPEN",
+    "eventOrg": "1. ročník turnaje v kuželkách · pořádá Aikido Mariánské Lázně",
+    "tagline": "Pro členy, jejich rodiny a přátele Aikido Mariánské Lázně",
     "when": "Kdy",
-    "whenDate": "Celé září · úterý 18:30 – 20:00 a pátek 17:30 – 19:00",
+    "whenDate": "Neděle 22. 11. 2026 od 12:00",
     "where": "Kde",
-    "wherePlace": "Budo club Mariánské Lázně",
-    "whereAddress": "Tyršova ulice, Mariánské Lázně",
-    "intro": "Tatami je po prázdninách zase otevřené a celé září u nás běží měsíc náborů. Nemusíte čekat na jeden konkrétní termín ani se nikam hlásit předem – vyberte si trénink, který se vám hodí, přijďte a rovnou se zapojte.",
-    "outro": "Žádné předchozí zkušenosti nepotřebujete. Stačí tepláky, tričko s dlouhým rukávem a chuť zkusit něco nového; cvičí se naboso a kimono zatím není potřeba. První tři tréninky máte zdarma, potom je příspěvek 200 Kč měsíčně (studenti 160 Kč). Cvičíme s dětmi zhruba od osmi let, s dospívajícími i s dospělými.",
-    "ctaTimes": "Časy tréninků"
+    "wherePlace": "Kuželna Teplá",
+    "whereAddress": "Školní 592, Teplá",
+    "fee": "Startovné",
+    "feeText": "100 Kč + přinést jednu věcnou cenu",
+    "bringTitle": "S sebou",
+    "bring": [
+      "Sportovní oblečení",
+      "Čistou obuv s bílou podrážkou",
+      "Jednu věcnou cenu"
+    ],
+    "food": "Občerstvení během turnaje zajišťuje Pizzerie Kuželna.",
+    "posterAlt": "Plakát Aikido Cup Open – 1. ročník turnaje v kuželkách, neděle 22. 11. 2026 od 12 hodin, Kuželna Teplá, Školní 592",
+    "posterOpen": "Otevřít plakát",
+    "ctaMap": "Navigovat",
+    "ctaCall": "Zavolat"
   },
   "about": {
     "title": "Cesta harmonie",
