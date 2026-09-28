@@ -45,9 +45,9 @@
     ],
     "food": "Občerstvení během turnaje zajišťuje Pizzerie Kuželna.",
     "posterAlt": "Plakát Aikido Cup Open – 1. ročník turnaje v kuželkách, neděle 22. 11. 2026 od 12 hodin, Kuželna Teplá, Školní 592",
-    "posterOpen": "Otevřít plakát",
     "ctaMap": "Navigovat",
-    "ctaCall": "Zavolat"
+    "ctaCall": "Zavolat",
+    "ctaMore": "Více o turnaji"
   },
   "about": {
     "title": "Cesta harmonie",

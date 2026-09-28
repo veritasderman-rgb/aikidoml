@@ -21,6 +21,9 @@ export type Campaign = {
   secondary: { href: string; icon: "clock" | "pin"; track: string };
 };
 
+/** Originální plakát turnaje (1280 × 1956). */
+export const aikidoCupPoster = "/akce/aikido-cup-open-2026.jpg";
+
 /** Kuželna Teplá – odkaz na navigaci sdílí popup i pozvánka na úvodní stránce. */
 export const aikidoCupMapUrl = "https://www.google.com/maps/search/?api=1&query=Ku%C5%BEelna+Tepl%C3%A1,+%C5%A0koln%C3%AD+592,+Tepl%C3%A1";
 
@@ -41,8 +44,8 @@ export const campaigns: readonly Campaign[] = [
     startsAt: "2026-10-01T00:00:00+02:00",
     /** Turnaj začíná ve 12:00, potom už popup nemá smysl. */
     endsAt: "2026-11-22T12:00:00+01:00",
-    image: { src: "/akce/aikido-cup-open-2026.jpg", position: "50% 25%" },
-    primaryHref: "/#pozvanka",
+    image: { src: aikidoCupPoster, position: "50% 25%" },
+    primaryHref: "/aikido-cup-open",
     secondary: { href: aikidoCupMapUrl, icon: "pin", track: "popup_cta_map" },
   },
 ];
