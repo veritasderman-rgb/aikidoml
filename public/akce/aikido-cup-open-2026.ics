@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Aikido Mariánské Lázně//aikidoml.cz//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aikido-cup-open-2026@aikidoml.cz
+DTSTAMP:20260928T200000Z
+DTSTART:20261122T110000Z
+DTEND:20261122T160000Z
+SUMMARY:Aikido Cup Open – turnaj v kuželkách
+LOCATION:Kuželna Teplá\, Školní 592\, Teplá
+DESCRIPTION:1. ročník turnaje v kuželkách pro členy\, rodiny a přáte
+ le Aikido Mariánské Lázně.\nStartovné 100 Kč + přinést jednu věcn
+ ou cenu.\nSportovní oblečení a čistou obuv s bílou podrážkou.\nObč
+ erstvení zajišťuje Pizzerie Kuželna.\nhttps://aikidoml.cz/cs/aikido-cu
+ p-open
+URL:https://aikidoml.cz/cs/aikido-cup-open
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Zítra Aikido Cup Open – turnaj v kuželkách
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
