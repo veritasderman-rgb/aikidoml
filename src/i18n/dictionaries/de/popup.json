@@ -45,6 +45,28 @@
       "ctaSecondary": "Route",
       "ctaCall": "Anrufen",
       "imageAlt": "Plakat Aikido Cup Open – ein Aikidoka im Hakama beim Kegeln"
+    },
+    "seminar-wasserbauer-2026": {
+      "eyebrow": "Seminar · 5. Dan Aikikai",
+      "title": "Aikido-Seminar mit Richard Wasserbauer",
+      "date": "6.–7. 11. 2026 · Fr 18:00, Sa 10:00 und 15:00",
+      "place": "Budo club, Tyršova-Straße, Mariánské Lázně",
+      "lead": "Zusammen mit dem Verein Aikido pro každého laden wir zu einem Wochenendseminar unter der Leitung von Richard Wasserbauer, 5. Dan Aikikai, ein. Kommen Sie zum ganzen Seminar oder nur zu einem Training.",
+      "bullets": [
+        "Ganzes Seminar 500 CZK, ein Training 250 CZK",
+        "Freitag 18:00–20:00 · Samstag 10:00–12:00 und 15:00–17:00",
+        "Waffen mitbringen! Übernachtung auf der Tatami möglich"
+      ],
+      "countdown": [
+        "Noch {n} Tage bis zum Seminar",
+        "Noch {n} Tag bis zum Seminar",
+        "Noch {n} Tage bis zum Seminar"
+      ],
+      "lastDay": "Das Seminar beginnt heute um 18:00!",
+      "ctaPrimary": "Details zum Seminar",
+      "ctaSecondary": "Navigieren",
+      "ctaCall": "Anrufen",
+      "imageAlt": "Plakat: Aikido-Seminar unter der Leitung von Richard Wasserbauer, 5. Dan Aikikai"
     }
   }
 }

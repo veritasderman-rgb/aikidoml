@@ -49,7 +49,49 @@ export const aikidoCupCalendar = {
   })}`,
 };
 
+/** Originální plakát semináře (1280 × 1811, převedený z PDF A3). */
+export const seminarPoster = "/akce/seminar-wasserbauer-2026.jpg";
+
+/** BUDO CLUB v Tyršově ulici – tam seminář probíhá (běžné dódžó). */
+export const seminarMapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Budo club, Tyršova, Mariánské Lázně")}`;
+
+/** Spolupořadatel semináře. */
+export const aikidoProKazdehoUrl = "https://www.aikidoprokazdeho.cz";
+
+/**
+ * Seminář do kalendáře. Google odkaz umí jen jednu událost, proto pokrývá celý
+ * seminář (pá 18:00 – so 17:00); soubor .ics obsahuje všechny tři tréninky zvlášť.
+ */
+export const seminarCalendar = {
+  ics: "/akce/seminar-wasserbauer-2026.ics",
+  google: `https://calendar.google.com/calendar/render?${new URLSearchParams({
+    action: "TEMPLATE",
+    text: "Aikido seminář – Richard Wasserbauer, 5. dan Aikikai",
+    dates: "20261106T180000/20261107T170000",
+    ctz: "Europe/Prague",
+    location: "Budo club, Tyršova ulice, Mariánské Lázně",
+    details:
+      "Tréninky:\n" +
+      "Pátek 6. 11. 18:00–20:00\n" +
+      "Sobota 7. 11. 10:00–12:00 a 15:00–17:00\n" +
+      "Celá stáž 500 Kč, jeden trénink 250 Kč. Přespání na tatami možné. Zbraně s sebou!\n" +
+      "https://aikidoml.cz/cs/seminar-wasserbauer",
+  })}`,
+};
+
 export const campaigns: readonly Campaign[] = [
+  {
+    // Seminář s Richardem Wasserbauerem (5. dan Aikikai), 6.–7. 11. 2026 v Budo clubu.
+    // Je v seznamu první, takže do začátku semináře má přednost před Aikido Cup Open;
+    // ten se potom zase ukáže až do 22. 11.
+    id: "seminar-wasserbauer-2026",
+    startsAt: "2026-10-19T00:00:00+02:00",
+    /** Začátek prvního tréninku – k tomu sedí i odpočet „do semináře zbývá…“. */
+    endsAt: "2026-11-06T18:00:00+01:00",
+    image: { src: seminarPoster, position: "50% 22%" },
+    primaryHref: "/seminar-wasserbauer",
+    secondary: { href: seminarMapUrl, icon: "pin", track: "popup_cta_map" },
+  },
   {
     // „Září – měsíc náborů“: celý měsíc se dá přijít na kterýkoliv trénink.
     id: "zari-mesic-naboru-2026",

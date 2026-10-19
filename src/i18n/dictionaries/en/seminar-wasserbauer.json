@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Aikido seminar – Richard Wasserbauer, 5th dan Aikikai",
+    "description": "Aikido seminar led by Richard Wasserbauer (5th dan Aikikai), 6–7 November 2026 at Budo club Mariánské Lázně. Whole seminar CZK 500, single class CZK 250, sleeping on the tatami possible."
+  },
+  "header": {
+    "title": "Aikido seminar",
+    "subtitle": "Richard Wasserbauer, 5th dan Aikikai · 6–7 Nov 2026"
+  },
+  "posterFull": "Full-size poster",
+  "back": "Back to the home page",
+  "info": {
+    "eventTitle": "AIKIDO SEMINAR",
+    "eventOrg": "led by Richard Wasserbauer, 5th dan Aikikai",
+    "tagline": "Join us for the whole seminar or just a single class – whatever suits you.",
+    "when": "When",
+    "whenDate": "6–7 November 2026",
+    "schedule": [
+      "Friday 6 Nov · 18:00–20:00",
+      "Saturday 7 Nov · 10:00–12:00",
+      "Saturday 7 Nov · 15:00–17:00"
+    ],
+    "where": "Where",
+    "wherePlace": "Budo club Mariánské Lázně",
+    "whereAddress": "Tyršova street, Mariánské Lázně",
+    "fee": "Price",
+    "feeFull": "Whole seminar CZK 500",
+    "feeSingle": "Single class CZK 250",
+    "notesTitle": "Good to know",
+    "notes": [
+      "Bring your weapons!",
+      "Sleeping on the tatami possible"
+    ],
+    "coOrg": "Organised together with the Aikido pro každého club –",
+    "posterAlt": "Poster: Aikido seminar led by Richard Wasserbauer, 5th dan Aikikai – 6–7 Nov 2026, Budo club Mariánské Lázně, Tyršova street",
+    "ctaMap": "Directions",
+    "ctaCall": "Call",
+    "ctaMore": "More about the seminar",
+    "calendarTitle": "Add to calendar",
+    "calendarGoogle": "Google Calendar",
+    "calendarIcs": "Apple / Outlook / other (.ics)"
+  }
+}
