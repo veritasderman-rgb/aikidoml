@@ -45,6 +45,28 @@
       "ctaSecondary": "Navigovat",
       "ctaCall": "Zavolat",
       "imageAlt": "Plakát Aikido Cup Open – aikidista v hakamě hází kuželkovou koulí"
+    },
+    "seminar-wasserbauer-2026": {
+      "eyebrow": "Seminář · 5. dan Aikikai",
+      "title": "Aikido seminář s Richardem Wasserbauerem",
+      "date": "6.–7. 11. 2026 · pá 18:00, so 10:00 a 15:00",
+      "place": "Budo club, Tyršova ulice, Mariánské Lázně",
+      "lead": "Spolu s klubem Aikido pro každého zveme na víkendový seminář pod vedením Richarda Wasserbauera, 5. dan Aikikai. Přijďte na celý seminář, nebo jen na jeden trénink.",
+      "bullets": [
+        "Celá stáž 500 Kč, jeden trénink 250 Kč",
+        "Pátek 18:00–20:00 · sobota 10:00–12:00 a 15:00–17:00",
+        "Zbraně s sebou! Přespání na tatami možné"
+      ],
+      "countdown": [
+        "Do semináře zbývá {n} dní",
+        "Do semináře zbývá {n} den",
+        "Do semináře zbývají {n} dny"
+      ],
+      "lastDay": "Seminář začíná dnes v 18:00!",
+      "ctaPrimary": "Detaily semináře",
+      "ctaSecondary": "Navigovat",
+      "ctaCall": "Zavolat",
+      "imageAlt": "Plakát Aikido seminář pod vedením Richarda Wasserbauera, 5. dan Aikikai"
     }
   }
 }

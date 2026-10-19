@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Aikido Mariánské Lázně//aikidoml.cz//CS
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:seminar-wasserbauer-2026-1@aikidoml.cz
+DTSTAMP:20261019T080000Z
+DTSTART:20261106T170000Z
+DTEND:20261106T190000Z
+SUMMARY:Aikido seminář – R. Wasserbauer (pátek večer)
+LOCATION:Budo club\, Tyršova ulice\, Mariánské Lázně
+DESCRIPTION:Seminář pod vedením Richarda Wasserbauera\, 5. dan Aikikai. 
+ Pořádají Aikido pro každého a Aikido Mariánské Lázně.\nCelá stá
+ ž 500 Kč\, jeden trénink 250 Kč. Přespání na tatami možné. Zbran
+ ě s sebou!\nhttps://aikidoml.cz/cs/seminar-wasserbauer
+URL:https://aikidoml.cz/cs/seminar-wasserbauer
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Zítra začíná Aikido seminář s Richardem Wasserbauerem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:seminar-wasserbauer-2026-2@aikidoml.cz
+DTSTAMP:20261019T080000Z
+DTSTART:20261107T090000Z
+DTEND:20261107T110000Z
+SUMMARY:Aikido seminář – R. Wasserbauer (sobota dopoledne)
+LOCATION:Budo club\, Tyršova ulice\, Mariánské Lázně
+DESCRIPTION:Seminář pod vedením Richarda Wasserbauera\, 5. dan Aikikai. 
+ Pořádají Aikido pro každého a Aikido Mariánské Lázně.\nCelá stá
+ ž 500 Kč\, jeden trénink 250 Kč. Přespání na tatami možné. Zbran
+ ě s sebou!\nhttps://aikidoml.cz/cs/seminar-wasserbauer
+URL:https://aikidoml.cz/cs/seminar-wasserbauer
+END:VEVENT
+BEGIN:VEVENT
+UID:seminar-wasserbauer-2026-3@aikidoml.cz
+DTSTAMP:20261019T080000Z
+DTSTART:20261107T140000Z
+DTEND:20261107T160000Z
+SUMMARY:Aikido seminář – R. Wasserbauer (sobota odpoledne)
+LOCATION:Budo club\, Tyršova ulice\, Mariánské Lázně
+DESCRIPTION:Seminář pod vedením Richarda Wasserbauera\, 5. dan Aikikai. 
+ Pořádají Aikido pro každého a Aikido Mariánské Lázně.\nCelá stá
+ ž 500 Kč\, jeden trénink 250 Kč. Přespání na tatami možné. Zbran
+ ě s sebou!\nhttps://aikidoml.cz/cs/seminar-wasserbauer
+URL:https://aikidoml.cz/cs/seminar-wasserbauer
+END:VEVENT
+END:VCALENDAR

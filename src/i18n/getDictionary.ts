@@ -5,7 +5,7 @@ const load = (locale: Locale, page: string) =>
   import(`./dictionaries/${locale}/${page}.json`).then((m) => m.default);
 
 export const getDictionary = async (locale: Locale) => {
-  const [common, home, aikido, aiKiDo, proDospele, proDeti, kdyMohuCvicit, coOcekavat, japonskySlovnik, etiketa, treninkoveZasady, jakZavazatPasek, odkazy, zkousky, cenik, casy, kde, nabor, galerie, napisteNam, oNas, socialniSite, detailyTreninku, popup, aikidoCupOpen] = await Promise.all([
+  const [common, home, aikido, aiKiDo, proDospele, proDeti, kdyMohuCvicit, coOcekavat, japonskySlovnik, etiketa, treninkoveZasady, jakZavazatPasek, odkazy, zkousky, cenik, casy, kde, nabor, galerie, napisteNam, oNas, socialniSite, detailyTreninku, popup, aikidoCupOpen, seminarWasserbauer] = await Promise.all([
     load(locale, "common"),
     load(locale, "home"),
     load(locale, "aikido"),
@@ -31,9 +31,10 @@ export const getDictionary = async (locale: Locale) => {
     load(locale, "detaily-treninku"),
     load(locale, "popup"),
     load(locale, "aikido-cup-open"),
+    load(locale, "seminar-wasserbauer"),
   ]);
 
-  return { common, home, aikido, aiKiDo, proDospele, proDeti, kdyMohuCvicit, coOcekavat, japonskySlovnik, etiketa, treninkoveZasady, jakZavazatPasek, odkazy, zkousky, cenik, casy, kde, nabor, galerie, napisteNam, oNas, socialniSite, detailyTreninku, popup, aikidoCupOpen };
+  return { common, home, aikido, aiKiDo, proDospele, proDeti, kdyMohuCvicit, coOcekavat, japonskySlovnik, etiketa, treninkoveZasady, jakZavazatPasek, odkazy, zkousky, cenik, casy, kde, nabor, galerie, napisteNam, oNas, socialniSite, detailyTreninku, popup, aikidoCupOpen, seminarWasserbauer };
 };
 
 export type Dictionary = Awaited<ReturnType<typeof getDictionary>>;

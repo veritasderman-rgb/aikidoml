@@ -45,6 +45,28 @@
       "ctaSecondary": "Directions",
       "ctaCall": "Call us",
       "imageAlt": "Aikido Cup Open poster – an aikidoka in hakama bowling"
+    },
+    "seminar-wasserbauer-2026": {
+      "eyebrow": "Seminar · 5th dan Aikikai",
+      "title": "Aikido seminar with Richard Wasserbauer",
+      "date": "6–7 Nov 2026 · Fri 18:00, Sat 10:00 and 15:00",
+      "place": "Budo club, Tyršova street, Mariánské Lázně",
+      "lead": "Together with the Aikido pro každého club we invite you to a weekend seminar led by Richard Wasserbauer, 5th dan Aikikai. Come for the whole seminar or just a single class.",
+      "bullets": [
+        "Whole seminar CZK 500, single class CZK 250",
+        "Friday 18:00–20:00 · Saturday 10:00–12:00 and 15:00–17:00",
+        "Bring your weapons! Sleeping on the tatami possible"
+      ],
+      "countdown": [
+        "{n} days until the seminar",
+        "{n} day until the seminar",
+        "{n} days until the seminar"
+      ],
+      "lastDay": "The seminar starts today at 18:00!",
+      "ctaPrimary": "Seminar details",
+      "ctaSecondary": "Directions",
+      "ctaCall": "Call",
+      "imageAlt": "Poster: Aikido seminar led by Richard Wasserbauer, 5th dan Aikikai"
     }
   }
 }

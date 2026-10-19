@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { aikidoCupPoster } from "@/config/campaign";
+import { aikidoCupPoster, seminarPoster } from "@/config/campaign";
+import SeminarInfo from "@/components/SeminarInfo";
 import TournamentInfo from "@/components/TournamentInfo";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
@@ -16,6 +17,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   const t = dict.home;
+  const s = dict.seminarWasserbauer.info;
   const p = `/${locale}`;
 
   return (
@@ -90,11 +92,39 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      {/* Pozvánka – Aikido Cup Open, turnaj v kuželkách */}
-      <section className="max-w-5xl mx-auto px-4 pb-16 scroll-mt-20" id="pozvanka">
-        <div className="text-center mb-10">
+      {/* Pozvánky – seminář s R. Wasserbauerem a Aikido Cup Open, turnaj v kuželkách */}
+      <section className="max-w-5xl mx-auto px-4 pb-16 scroll-mt-20 space-y-10" id="pozvanka">
+        <div className="text-center">
           <span className="text-vermillion text-4xl block mb-4" style={{ fontFamily: "serif" }}>招</span>
           <h2 className="text-2xl font-bold text-ink tracking-tight" style={{ fontFamily: "Georgia, serif" }}>{t.tournament.title}</h2>
+        </div>
+        <div className="bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md grid grid-cols-1 md:grid-cols-5">
+          <Link
+            href={`${p}/seminar-wasserbauer`}
+            className="md:col-span-2 block bg-washi group relative"
+            title={s.ctaMore}
+          >
+            <Image
+              src={seminarPoster}
+              alt={s.posterAlt}
+              width={1280}
+              height={1811}
+              unoptimized
+              className="w-full h-auto"
+            />
+            <span className="absolute bottom-3 right-3 bg-ink/80 text-washi text-xs tracking-widest uppercase px-3 py-1.5 rounded opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">
+              {s.ctaMore}
+            </span>
+          </Link>
+          <div className="md:col-span-3 flex flex-col">
+            <div className="bg-ink px-6 py-5">
+              <h3 className="text-washi font-bold text-2xl tracking-wide" style={{ fontFamily: "Georgia, serif" }}>{s.eventTitle}</h3>
+              <p className="text-tatami/70 text-sm mt-1">{s.eventOrg}</p>
+            </div>
+            <div className="p-6 space-y-5 flex-1">
+              <SeminarInfo t={s} moreHref={`${p}/seminar-wasserbauer`} />
+            </div>
+          </div>
         </div>
         <div className="bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md grid grid-cols-1 md:grid-cols-5">
           <Link
