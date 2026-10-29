@@ -42,5 +42,8 @@
     "accept": "Souhlasím",
     "reject": "Odmítnout",
     "settings": "Nastavení cookies"
+  },
+  "notices": {
+    "zruseny-trenink-2026-10-30": "V pátek 30. 10. aikido trénink z důvodu podzimních prázdnin nebude!"
   }
 }
