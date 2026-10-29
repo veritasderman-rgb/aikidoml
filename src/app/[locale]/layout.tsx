@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CampaignPopup from "@/components/CampaignPopup";
+import NoticeBanner from "@/components/NoticeBanner";
 import CookieConsent from "@/components/CookieConsent";
 import { GA_ID } from "@/lib/consent";
+import { isNoticeActive, notices } from "@/config/notices";
 import { locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 
@@ -50,9 +52,11 @@ export default async function LocaleLayout({
   if (!locales.includes(locale as Locale)) notFound();
 
   const dict = await getDictionary(locale as Locale);
+  const activeNotices = notices.filter((n) => isNoticeActive(n, Date.now()));
 
   return (
     <>
+      <NoticeBanner notices={activeNotices} texts={dict.common.notices} />
       <Navigation locale={locale as Locale} dict={dict} />
       <main className="flex-1">{children}</main>
       <Footer locale={locale as Locale} dict={dict} />
