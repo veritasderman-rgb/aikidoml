@@ -1,10 +1,8 @@
-import Link from "next/link";
-import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/getDictionary";
 import { CookieSettingsLink } from "@/components/CookieConsent";
 import { GA_ID } from "@/lib/consent";
 
-export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+export default function Footer({ dict }: { dict: Dictionary }) {
   const f = dict.common.footer;
   return (
     <footer className="bg-ink text-tatami/80">

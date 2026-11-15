@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { aikidoCupCalendar, aikidoCupMapUrl } from "@/config/campaign";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { asset } from "@/lib/assets";
 
 /** Detaily turnaje Aikido Cup Open – sdílí je pozvánka na úvodní stránce i podstránka turnaje. */
 export default function TournamentInfo({
@@ -87,7 +88,7 @@ export default function TournamentInfo({
           {t.calendarGoogle}
         </a>
         <a
-          href={aikidoCupCalendar.ics}
+          href={asset(aikidoCupCalendar.ics)}
           className="text-ink underline decoration-tatami underline-offset-4 hover:text-vermillion hover:decoration-vermillion transition-colors"
         >
           {t.calendarIcs}

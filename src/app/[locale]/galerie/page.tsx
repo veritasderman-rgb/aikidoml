@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.galerie.meta.title, description: dict.galerie.meta.description };
+  return pageMetadata(locale as Locale, "/galerie", dict.common.meta.siteTitle, dict.galerie.meta);
 }
 
 const photoSrcs = [
@@ -44,7 +46,7 @@ export default async function Galerie({ params }: { params: Promise<{ locale: st
               className="overflow-hidden rounded-lg border border-tatami/30 bg-white"
             >
               <Image
-                src={src}
+                src={asset(src)}
                 alt={t.photos[i].alt}
                 width={800}
                 height={533}

@@ -1,7 +1,8 @@
 /**
  * Krátká oznámení (zrušený trénink apod.) – ukazují se jako pruh nad menu na všech stránkách.
  *
- * Oznámení se samo schová po `endsAt`, takže po skončení není potřeba nic nasazovat.
+ * Oznámení se samo ukáže od `startsAt` a schová po `endsAt` – rozhoduje o tom prohlížeč
+ * návštěvníka, takže ho stačí nasadit kdykoli předem a po skončení není potřeba nic dělat.
  * Nové oznámení = nový záznam s novým `id` a texty pod stejným `id` v `common.json` → `notices`.
  */
 export type Notice = {
@@ -22,3 +23,12 @@ export const notices: readonly Notice[] = [
 
 export const isNoticeActive = (n: Notice, now: number) =>
   new Date(n.startsAt).getTime() <= now && now <= new Date(n.endsAt).getTime();
+
+/**
+ * Oznámení, která v době sestavení ještě neskončila – včetně těch, která teprve
+ * začnou. O tom, co je vidět právě teď, rozhoduje až prohlížeč (NoticeBanner).
+ */
+export const pendingNotices = () => {
+  const now = Date.now();
+  return notices.filter((n) => now <= new Date(n.endsAt).getTime());
+};

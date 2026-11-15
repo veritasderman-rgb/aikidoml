@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { aikidoProKazdehoUrl, seminarCalendar, seminarMapUrl } from "@/config/campaign";
 import type { Dictionary } from "@/i18n/getDictionary";
+import { asset } from "@/lib/assets";
 
 /** Detaily semináře s R. Wasserbauerem – sdílí je pozvánka na úvodní stránce i podstránka semináře. */
 export default function SeminarInfo({
@@ -103,7 +104,7 @@ export default function SeminarInfo({
           {t.calendarGoogle}
         </a>
         <a
-          href={seminarCalendar.ics}
+          href={asset(seminarCalendar.ics)}
           className="text-ink underline decoration-tatami underline-offset-4 hover:text-vermillion hover:decoration-vermillion transition-colors"
         >
           {t.calendarIcs}

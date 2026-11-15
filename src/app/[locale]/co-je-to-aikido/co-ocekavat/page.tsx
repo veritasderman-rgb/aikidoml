@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.coOcekavat.meta.title, description: dict.coOcekavat.meta.description };
+  return pageMetadata(locale as Locale, "/co-je-to-aikido/co-ocekavat", dict.common.meta.siteTitle, dict.coOcekavat.meta);
 }
 
 export default async function CoOcekavat({ params }: { params: Promise<{ locale: string }> }) {

@@ -1,23 +1,15 @@
-import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { CONSENT_KEY, GA_ID } from "@/lib/consent";
-import "./globals.css";
 
-export const metadata: Metadata = {
-  title: {
-    default: "Aikido Mariánské Lázně – BUDO CLUB",
-    template: "%s | Aikido Mariánské Lázně",
-  },
-  description:
-    "Aikido klub v Mariánských Lázních. Tréninky aikida pro děti, dospívající i dospělé. Úterý a pátek v BUDO CLUBu na Tyršově ulici.",
-  metadataBase: new URL("https://aikidoml.cz"),
-  robots: { index: true, follow: true },
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+/**
+ * Společná kostra `<html>` pro všechny kořenové layouty. Je jich víc (jazykové
+ * stránky, kořenová `/` a 404), protože `lang` musí odpovídat jazyku stránky –
+ * z jediného layoutu nad `[locale]` by se k němu nedalo dostat.
+ */
+export default function HtmlShell({ lang, children }: { lang: string; children: React.ReactNode }) {
   return (
-    <html lang="cs">
+    <html lang={lang}>
       <body className="min-h-screen flex flex-col bg-washi text-ink">
         {children}
         {process.env.NODE_ENV === "production" && GA_ID && (
@@ -27,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 volbu z localStorage, ať banner neotravuje podruhé.
                 Reklamní souhlas (ad_*) zůstává vždycky denied — banner mluví
                 jen o měření návštěvnosti, tak se na víc ptát nesmíme. */}
+            {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document -- HtmlShell je kostra kořenových layoutů, kam beforeInteractive patří */}
             <Script id="ga-consent-default" strategy="beforeInteractive">
               {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.socialniSite.meta.title, description: dict.socialniSite.meta.description };
+  return pageMetadata(locale as Locale, "/socialni-site", dict.common.meta.siteTitle, dict.socialniSite.meta);
 }
 
 export default async function SocialniSite({ params }: { params: Promise<{ locale: string }> }) {
