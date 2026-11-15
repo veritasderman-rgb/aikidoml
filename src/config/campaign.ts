@@ -15,11 +15,21 @@ export type Campaign = {
   startsAt: string;
   /** Konec popupu; k tomuhle dni se počítá i odpočet dnů. */
   endsAt: string;
-  /** Obrázek do hlavičky popupu (`position` = object-position výřezu). */
+  /** Obrázek do hlavičky popupu – cesta v `public/` (`position` = object-position výřezu). */
   image?: { src: string; position: string };
   primaryHref: string;
   secondary: { href: string; icon: "clock" | "pin"; track: string };
 };
+
+/**
+ * Konec akce (ISO). Po něm zmizí pozvánka z úvodní stránky – viz `HideAfter`
+ * a úvodní stránka. Podstránka akce zůstává dostupná dál.
+ */
+export const aikidoCupEndsAt = "2026-11-22T17:00:00+01:00";
+export const seminarEndsAt = "2026-11-07T17:00:00+01:00";
+
+/** Je akce v době sestavení ještě před koncem? */
+export const isUpcoming = (endsAt: string) => Date.now() <= new Date(endsAt).getTime();
 
 /** Originální plakát turnaje (1280 × 1956). */
 export const aikidoCupPoster = "/akce/aikido-cup-open-2026.jpg";

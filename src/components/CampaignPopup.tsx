@@ -1,10 +1,12 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { track } from "@vercel/analytics";
 import { pickCampaign, popupSettings, popupStorageKey, type Campaign } from "@/config/campaign";
 import type { Locale } from "@/i18n/config";
+import { asset } from "@/lib/assets";
+import { GA_ID, isConsentOpen, isConsentOpenOnServer, subscribeConsent } from "@/lib/consent";
 
 type CampaignDict = {
   eyebrow: string;
@@ -101,6 +103,10 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
   const [days, setDays] = useState<number | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const openerRef = useRef<Element | null>(null);
+  // Dokud visí cookie lišta, popup počká: na mobilu sedí obojí u spodního okraje
+  // a lišta by zakryla hlavní tlačítko popupu. Bez GA se lišta vůbec nekreslí.
+  const consentOpen = useSyncExternalStore(subscribeConsent, isConsentOpen, isConsentOpenOnServer);
+  const waitForConsent = Boolean(GA_ID) && consentOpen;
 
   const dismiss = useCallback(
     (reason: "close" | "cta") => {
@@ -121,6 +127,8 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
     const forcedId = new URLSearchParams(window.location.search).get("popup");
     const picked = pickCampaign(Date.now(), forcedId);
     if (!picked || !dict.campaigns[picked.id]) return;
+    // Náhled přes ?popup= na lištu nečeká.
+    if (waitForConsent && !forcedId) return;
     if (!forcedId) {
       try {
         if (localStorage.getItem(popupStorageKey(picked.id))) return;
@@ -159,7 +167,7 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("mouseout", onExitIntent);
     return cleanup;
-  }, [dict.campaigns]);
+  }, [dict.campaigns, waitForConsent]);
 
   // Esc, focus a zámek scrollu, dokud je popup otevřený.
   useEffect(() => {
@@ -220,7 +228,7 @@ export default function CampaignPopup({ locale, dict }: { locale: Locale; dict: 
         {campaign.image && (
           // eslint-disable-next-line @next/next/no-img-element -- statický export, obrázek se nijak neoptimalizuje
           <img
-            src={campaign.image.src}
+            src={asset(campaign.image.src)}
             alt={t.imageAlt ?? ""}
             className="block w-full h-48 sm:h-56 object-cover bg-washi"
             style={{ objectPosition: campaign.image.position }}

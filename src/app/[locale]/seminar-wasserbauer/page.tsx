@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 import SeminarInfo from "@/components/SeminarInfo";
 import { seminarPoster } from "@/config/campaign";
@@ -11,18 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   const t = dict.seminarWasserbauer;
-  return {
-    title: t.meta.title,
-    description: t.meta.description,
-    alternates: { canonical: `/${locale}/seminar-wasserbauer` },
-    // Při sdílení odkazu (Facebook, WhatsApp) se ukáže plakát.
-    openGraph: {
-      title: t.meta.title,
-      description: t.meta.description,
-      url: `/${locale}/seminar-wasserbauer`,
-      images: [{ url: seminarPoster, width: 1280, height: 1811, alt: t.info.posterAlt }],
-    },
-  };
+  // Při sdílení odkazu (Facebook, WhatsApp) se ukáže plakát.
+  return pageMetadata(locale as Locale, "/seminar-wasserbauer", dict.common.meta.siteTitle, t.meta, {
+    url: seminarPoster,
+    width: 1280,
+    height: 1811,
+    alt: t.info.posterAlt,
+  });
 }
 
 export default async function SeminarWasserbauer({ params }: { params: Promise<{ locale: string }> }) {
@@ -38,14 +35,14 @@ export default async function SeminarWasserbauer({ params }: { params: Promise<{
           {/* Originální plakát v celku, bez ořezu */}
           <figure className="lg:col-span-7">
             <a
-              href={seminarPoster}
+              href={asset(seminarPoster)}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md"
               title={t.posterFull}
             >
               <Image
-                src={seminarPoster}
+                src={asset(seminarPoster)}
                 alt={t.info.posterAlt}
                 width={1280}
                 height={1811}
@@ -56,7 +53,7 @@ export default async function SeminarWasserbauer({ params }: { params: Promise<{
             </a>
             <figcaption className="mt-3 text-center">
               <a
-                href={seminarPoster}
+                href={asset(seminarPoster)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink-soft text-sm hover:text-vermillion transition-colors"

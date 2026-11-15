@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 import TournamentInfo from "@/components/TournamentInfo";
 import { aikidoCupPoster } from "@/config/campaign";
@@ -11,18 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   const t = dict.aikidoCupOpen;
-  return {
-    title: t.meta.title,
-    description: t.meta.description,
-    alternates: { canonical: `/${locale}/aikido-cup-open` },
-    // Při sdílení odkazu (Facebook, WhatsApp) se ukáže plakát.
-    openGraph: {
-      title: t.meta.title,
-      description: t.meta.description,
-      url: `/${locale}/aikido-cup-open`,
-      images: [{ url: aikidoCupPoster, width: 1280, height: 1956, alt: dict.home.tournament.posterAlt }],
-    },
-  };
+  // Při sdílení odkazu (Facebook, WhatsApp) se ukáže plakát.
+  return pageMetadata(locale as Locale, "/aikido-cup-open", dict.common.meta.siteTitle, t.meta, {
+    url: aikidoCupPoster,
+    width: 1280,
+    height: 1956,
+    alt: dict.home.tournament.posterAlt,
+  });
 }
 
 export default async function AikidoCupOpen({ params }: { params: Promise<{ locale: string }> }) {
@@ -39,14 +36,14 @@ export default async function AikidoCupOpen({ params }: { params: Promise<{ loca
           {/* Originální plakát v celku, bez ořezu */}
           <figure className="lg:col-span-7">
             <a
-              href={aikidoCupPoster}
+              href={asset(aikidoCupPoster)}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white border border-tatami/30 rounded-lg overflow-hidden shadow-md"
               title={t.posterFull}
             >
               <Image
-                src={aikidoCupPoster}
+                src={asset(aikidoCupPoster)}
                 alt={tt.posterAlt}
                 width={1280}
                 height={1956}
@@ -57,7 +54,7 @@ export default async function AikidoCupOpen({ params }: { params: Promise<{ loca
             </a>
             <figcaption className="mt-3 text-center">
               <a
-                href={aikidoCupPoster}
+                href={asset(aikidoCupPoster)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink-soft text-sm hover:text-vermillion transition-colors"

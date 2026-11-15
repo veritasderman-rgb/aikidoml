@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.etiketa.meta.title, description: dict.etiketa.meta.description };
+  return pageMetadata(locale as Locale, "/co-je-to-aikido/etiketa", dict.common.meta.siteTitle, dict.etiketa.meta);
 }
 
 export default async function Etiketa({ params }: { params: Promise<{ locale: string }> }) {

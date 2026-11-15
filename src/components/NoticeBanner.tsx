@@ -4,29 +4,37 @@ import { useEffect, useState } from "react";
 import { isNoticeActive, type Notice } from "@/config/notices";
 
 /**
- * Pruh s oznámeními nad menu. Stránky jsou statické, takže server pošle oznámení
- * aktivní v době sestavení a prohlížeč je po `endsAt` schová sám.
+ * Pruh s oznámeními nad menu. Stránky jsou statické, takže server pošle všechna
+ * oznámení, která v době sestavení ještě neskončila, a o tom, která jsou vidět
+ * právě teď, rozhodne až prohlížeč – oznámení nasazené před `startsAt` se tak
+ * ukáže samo a po `endsAt` zase zmizí, i na stránce, která zůstala otevřená.
+ *
+ * Do prvního vykreslení v prohlížeči je `now` null a pruh se nekreslí, ať se
+ * HTML ze serveru shoduje s hydratací.
  */
 export default function NoticeBanner({ notices, texts }: { notices: readonly Notice[]; texts: Record<string, string> }) {
-  const [active, setActive] = useState(notices);
+  const [now, setNow] = useState<number | null>(null);
 
   useEffect(() => {
-    setActive(notices.filter((n) => isNoticeActive(n, Date.now())));
+    let timer: ReturnType<typeof setTimeout>;
+    const tick = () => {
+      const current = Date.now();
+      setNow(current);
+      // Nejbližší okamžik, kdy nějaké oznámení začne nebo skončí.
+      const next = notices
+        .flatMap((n) => [new Date(n.startsAt).getTime(), new Date(n.endsAt).getTime()])
+        .filter((t) => t >= current)
+        .sort((a, b) => a - b)[0];
+      if (next === undefined) return;
+      // setTimeout neumí víc než ~24 dní, delší čekání se prostě přeplánuje.
+      timer = setTimeout(tick, Math.min(next - current + 1000, 2 ** 31 - 1));
+    };
+    tick();
+    return () => clearTimeout(timer);
   }, [notices]);
 
-  // Ať pruh zmizí i na stránce, která zůstala otevřená přes `endsAt`.
-  useEffect(() => {
-    if (active.length === 0) return;
-    const nextEnd = Math.min(...active.map((n) => new Date(n.endsAt).getTime()));
-    const timer = setTimeout(
-      () => setActive((a) => a.filter((n) => isNoticeActive(n, Date.now()))),
-      // setTimeout neumí víc než ~24 dní, delší oznámení se prostě přeplánuje.
-      Math.min(Math.max(0, nextEnd - Date.now()) + 1000, 2 ** 31 - 1),
-    );
-    return () => clearTimeout(timer);
-  }, [active]);
-
-  const shown = active.filter((n) => texts[n.id]);
+  if (now === null) return null;
+  const shown = notices.filter((n) => isNoticeActive(n, now) && texts[n.id]);
   if (shown.length === 0) return null;
 
   return (

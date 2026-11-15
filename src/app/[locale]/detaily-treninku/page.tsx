@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.detailyTreninku.meta.title, description: dict.detailyTreninku.meta.description };
+  return pageMetadata(locale as Locale, "/detaily-treninku", dict.common.meta.siteTitle, dict.detailyTreninku.meta);
 }
 
 const kanji: Record<string, string> = {

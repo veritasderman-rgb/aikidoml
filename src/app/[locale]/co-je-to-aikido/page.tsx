@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.aikido.meta.title, description: dict.aikido.meta.description };
+  return pageMetadata(locale as Locale, "/co-je-to-aikido", dict.common.meta.siteTitle, dict.aikido.meta);
 }
 
 export default async function CoJeToAikido({ params }: { params: Promise<{ locale: string }> }) {

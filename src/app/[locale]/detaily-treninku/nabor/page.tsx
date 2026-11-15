@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
+import { pageMetadata } from "@/lib/seo";
 import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
-  return { title: dict.nabor.meta.title, description: dict.nabor.meta.description };
+  return pageMetadata(locale as Locale, "/detaily-treninku/nabor", dict.common.meta.siteTitle, dict.nabor.meta);
 }
 
 export default async function Nabor({ params }: { params: Promise<{ locale: string }> }) {
